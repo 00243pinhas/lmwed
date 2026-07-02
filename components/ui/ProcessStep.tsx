@@ -20,7 +20,7 @@ export function ProcessStep({
   imageLeft = false,
 }: Props) {
   return (
-    <div className="border-t border-hairline border-border-l py-2xl md:py-3xl">
+    <div className="border-t-hairline border-border-l py-2xl md:py-3xl">
       <div className="flex flex-col md:flex-row md:items-center md:gap-2xl">
         <p className="font-display font-light text-[80px] md:text-[120px] leading-none text-[#E8E2DA] md:w-[180px] md:shrink-0">
           {number}

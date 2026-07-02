@@ -23,7 +23,7 @@ export function CollectionsGrid({ looks }: { looks: Look[] }) {
             role="tab"
             aria-selected={active === filter}
             onClick={() => setActive(filter)}
-            className={`font-body text-nav uppercase pb-xs border-b border-hairline transition-colors duration-ui ease-standard ${
+            className={`font-body text-nav uppercase pb-xs border-b-hairline transition-colors duration-ui ease-standard ${
               active === filter ? 'text-ink border-ink' : 'text-muted border-transparent hover:text-ink'
             }`}
           >

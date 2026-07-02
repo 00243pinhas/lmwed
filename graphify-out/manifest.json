@@ -125,9 +125,9 @@
     "semantic_hash": "ee9d759cb116440a6cd24b8f122e69cc"
   },
   "CLAUDE.md": {
-    "mtime": 1782980612.0730114,
-    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
-    "semantic_hash": "82efb97a359f5c7290bf2513d14686be"
+    "mtime": 1782991935.9069295,
+    "ast_hash": "f5e7608820cc2154bb14b228354b3f23",
+    "semantic_hash": ""
   },
   "CLAUDE_lmweddyli.md": {
     "mtime": 1782906427.382163,
@@ -245,13 +245,13 @@
     "semantic_hash": ""
   },
   "components/ui/CollectionsGrid.tsx": {
-    "mtime": 1782989102.690467,
-    "ast_hash": "a90015f73a242fc6cab56ca8ea483565",
+    "mtime": 1783022660.5448003,
+    "ast_hash": "21ff56e4736e2fe2ca72c09e222c29b3",
     "semantic_hash": ""
   },
   "components/ui/ProcessStep.tsx": {
-    "mtime": 1782987127.8932357,
-    "ast_hash": "ef6f1d62a5a4b9a477a18fa2bc60625f",
+    "mtime": 1783022680.4647167,
+    "ast_hash": "08a50f032697527048e1103311789a98",
     "semantic_hash": ""
   },
   "data/dummy/collection-info.ts": {
@@ -262,6 +262,31 @@
   "types/collection-info.ts": {
     "mtime": 1782989056.0624099,
     "ast_hash": "29b9aba0f06450efc602aa0bc5c46675",
+    "semantic_hash": ""
+  },
+  "app/(marketing)/collections/[slug]/page.tsx": {
+    "mtime": 1782993014.311217,
+    "ast_hash": "905380905b3fbc558335904fee40bb56",
+    "semantic_hash": ""
+  },
+  "components/ui/Breadcrumb.tsx": {
+    "mtime": 1782992761.304468,
+    "ast_hash": "3f6df4b2e9e62d908509589859982536",
+    "semantic_hash": ""
+  },
+  "components/ui/DetailHero.tsx": {
+    "mtime": 1782992777.8523722,
+    "ast_hash": "63e8ed1c9f6bf2a00eccd0fce6b881d1",
+    "semantic_hash": ""
+  },
+  "components/ui/DressDetails.tsx": {
+    "mtime": 1783022605.621031,
+    "ast_hash": "14c214e3422275babdeefe92d457a819",
+    "semantic_hash": ""
+  },
+  "components/ui/StickyInquiryBar.tsx": {
+    "mtime": 1783022670.7047577,
+    "ast_hash": "1c42689c5e42737930d9a812d06150ee",
     "semantic_hash": ""
   }
 }

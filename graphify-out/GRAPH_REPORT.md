@@ -1,16 +1,16 @@
 # Graph Report - lmwed  (2026-07-02)
 
 ## Corpus Check
-- 40 files · ~997,149 words
+- 45 files · ~998,270 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 407 nodes · 376 edges · 90 communities (27 shown, 63 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
+- 427 nodes · 415 edges · 94 communities (31 shown, 63 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b23a96cf`
+- Built from commit: `2599ced2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -105,6 +105,10 @@
 - [[_COMMUNITY_Mobile Testing Checklist|Mobile Testing Checklist]]
 - [[_COMMUNITY_Mobile Typography Scale|Mobile Typography Scale]]
 - [[_COMMUNITY_iOS-Specific Rules (16px input font, safe-area)|iOS-Specific Rules (16px input font, safe-area)]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_CollectionsGrid.tsx|CollectionsGrid.tsx]]
+- [[_COMMUNITY_DressDetails.tsx|DressDetails.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — LM Weddyli Frontend` - 18 edges
@@ -129,11 +133,11 @@
 - **Augen Pro Visual Language Applied Across Design Docs** — skills_augen_pro_numbered_navigation, skills_augen_pro_section_markers, skills_augen_pro_oversized_headlines, skills_design_system_navigation_pattern, skills_design_system_section_structure, claude_lmweddyli_augen_pro_reference [INFERRED 0.85]
 - **Standard Luxury Easing Curve Used Across Animation Contexts** — skills_animation_luxury_ease, skills_animation_standard_section_reveal, skills_animation_form_step_transition, claude_lmweddyli_animation_rules, skills_forms_step_transitions [INFERRED 0.85]
 
-## Communities (90 total, 63 thin omitted)
+## Communities (94 total, 63 thin omitted)
 
 ### Community 0 - "Homepage Composition"
-Cohesion: 0.06
-Nodes (34): metadata, featuredLooks, featuredSlugs, previewSteps, CollectionsGrid(), Filter, filters, ease (+26 more)
+Cohesion: 0.14
+Nodes (11): metadata, ease, HeroSection(), Props, sentence, word, Reveal, Props (+3 more)
 
 ### Community 1 - "NPM Package Dependencies"
 Cohesion: 0.08
@@ -239,12 +243,28 @@ Nodes (15): 1. Numbered Navigation, 2. Section Markers, 3. Oversized Sparse Head
 Cohesion: 0.11
 Nodes (18): 10. HeroSection, 1. SectionMarker, 2. Navbar, 3. Footer, 4. LookCard, 5. ProcessStep, 6. TestimonialCard, 7. MeasurementCard (+10 more)
 
+### Community 90 - "page.tsx"
+Cohesion: 0.13
+Nodes (10): Props, Breadcrumb(), Crumb, DetailHero(), Props, ease, Props, StickyInquiryBar() (+2 more)
+
+### Community 91 - "page.tsx"
+Cohesion: 0.17
+Nodes (9): featuredLooks, featuredSlugs, previewSteps, ProcessStep(), Props, Props, TestimonialCard(), processSteps (+1 more)
+
+### Community 92 - "CollectionsGrid.tsx"
+Cohesion: 0.18
+Nodes (10): CollectionsGrid(), Filter, filters, ease, LookCard(), Props, container, ease (+2 more)
+
+### Community 93 - "DressDetails.tsx"
+Cohesion: 0.28
+Nodes (6): DressDetails(), ease, sentence, word, looks, Look
+
 ## Ambiguous Edges - Review These
 - `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` → `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`  [AMBIGUOUS]
   public/brand_assets/photography/naomi-hero.jpg.jpg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **255 isolated node(s):** `extends`, `metadata`, `featuredSlugs`, `featuredLooks`, `previewSteps` (+250 more)
+- **263 isolated node(s):** `extends`, `Props`, `metadata`, `featuredSlugs`, `featuredLooks` (+258 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **63 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -253,10 +273,10 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` and `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What connects `extends`, `metadata`, `featuredSlugs` to the rest of the system?**
-  _262 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `extends`, `Props`, `metadata` to the rest of the system?**
+  _270 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Homepage Composition` be split into smaller, more focused modules?**
-  _Cohesion score 0.0573025856044724 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1437908496732026 - nodes in this community are weakly interconnected._
 - **Should `NPM Package Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `TypeScript Compiler Config` be split into smaller, more focused modules?**

@@ -88,5 +88,9 @@
   "86": "Mobile Layout Rules",
   "87": "Mobile Testing Checklist",
   "88": "Mobile Typography Scale",
-  "89": "iOS-Specific Rules (16px input font, safe-area)"
+  "89": "iOS-Specific Rules (16px input font, safe-area)",
+  "90": "page.tsx",
+  "91": "page.tsx",
+  "92": "CollectionsGrid.tsx",
+  "93": "DressDetails.tsx"
 }
