@@ -1,0 +1,242 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1782980612.1010125,
+    "ast_hash": "e51077b6a7f1f67afc748f1a32a1557d",
+    "semantic_hash": "e51077b6a7f1f67afc748f1a32a1557d"
+  },
+  ".eslintrc.json": {
+    "mtime": 1782907292.4409928,
+    "ast_hash": "5cc89077d438e3d0d0a8308ab7e06a5a",
+    "semantic_hash": "5cc89077d438e3d0d0a8308ab7e06a5a"
+  },
+  "app/(marketing)/layout.tsx": {
+    "mtime": 1782948929.989865,
+    "ast_hash": "ea6c7f70a596a911703c1fe600c209ad",
+    "semantic_hash": "ea6c7f70a596a911703c1fe600c209ad"
+  },
+  "app/(marketing)/page.tsx": {
+    "mtime": 1782951091.2062151,
+    "ast_hash": "11eec5725d14530cd8b28f360d40b283",
+    "semantic_hash": "11eec5725d14530cd8b28f360d40b283"
+  },
+  "app/layout.tsx": {
+    "mtime": 1782907334.5373454,
+    "ast_hash": "7b13d2844ee98ec1aee4ffc25725d525",
+    "semantic_hash": "7b13d2844ee98ec1aee4ffc25725d525"
+  },
+  "components/layout/Footer.tsx": {
+    "mtime": 1782948917.7179143,
+    "ast_hash": "7c938c9c5bd11d1cb1efb54cfd7fde52",
+    "semantic_hash": "7c938c9c5bd11d1cb1efb54cfd7fde52"
+  },
+  "components/layout/Navbar.tsx": {
+    "mtime": 1782950554.003166,
+    "ast_hash": "638ba394e8620a673b99c9e136eb4f09",
+    "semantic_hash": "638ba394e8620a673b99c9e136eb4f09"
+  },
+  "components/ui/HeroSection.tsx": {
+    "mtime": 1782949023.0694869,
+    "ast_hash": "d6c7a34a8097659952049acb4b2a82e3",
+    "semantic_hash": "d6c7a34a8097659952049acb4b2a82e3"
+  },
+  "components/ui/LookCard.tsx": {
+    "mtime": 1782948978.929667,
+    "ast_hash": "51c2e76e525ae8f3c1382041e8491811",
+    "semantic_hash": "51c2e76e525ae8f3c1382041e8491811"
+  },
+  "components/ui/Reveal.tsx": {
+    "mtime": 1782949069.0332978,
+    "ast_hash": "f0f98eb452d5a2648a2ca884e4e12a71",
+    "semantic_hash": "f0f98eb452d5a2648a2ca884e4e12a71"
+  },
+  "components/ui/SectionMarker.tsx": {
+    "mtime": 1782948941.4538188,
+    "ast_hash": "ed0b71783272e392539ec92652230c4e",
+    "semantic_hash": "ed0b71783272e392539ec92652230c4e"
+  },
+  "components/ui/StaggerReveal.tsx": {
+    "mtime": 1782949087.381222,
+    "ast_hash": "71e5c67b6723b8cfb4702bd140636b97",
+    "semantic_hash": "71e5c67b6723b8cfb4702bd140636b97"
+  },
+  "components/ui/TestimonialCard.tsx": {
+    "mtime": 1782948990.4376202,
+    "ast_hash": "a08964117ee52c9693637f531f608f82",
+    "semantic_hash": "a08964117ee52c9693637f531f608f82"
+  },
+  "data/dummy/collections.ts": {
+    "mtime": 1782948826.2382786,
+    "ast_hash": "cbf6c2082673a779b8230da00d20368e",
+    "semantic_hash": "cbf6c2082673a779b8230da00d20368e"
+  },
+  "data/dummy/process-steps.ts": {
+    "mtime": 1782948850.5701826,
+    "ast_hash": "0989bede529f02051dc2dd532768343b",
+    "semantic_hash": "0989bede529f02051dc2dd532768343b"
+  },
+  "data/dummy/testimonials.ts": {
+    "mtime": 1782948838.1822314,
+    "ast_hash": "0463da8c0eff5206251bdb086208b301",
+    "semantic_hash": "0463da8c0eff5206251bdb086208b301"
+  },
+  "lib/fonts.ts": {
+    "mtime": 1782907332.1253252,
+    "ast_hash": "0968823a3af5c5c9ca20458548689fa7",
+    "semantic_hash": "0968823a3af5c5c9ca20458548689fa7"
+  },
+  "next.config.mjs": {
+    "mtime": 1782907285.880938,
+    "ast_hash": "d2c0c512641e882f6549a7567a9b3d15",
+    "semantic_hash": "d2c0c512641e882f6549a7567a9b3d15"
+  },
+  "package.json": {
+    "mtime": 1782907526.6634142,
+    "ast_hash": "398b075742b256115a32b5d01f0584be",
+    "semantic_hash": "398b075742b256115a32b5d01f0584be"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1782907289.4049675,
+    "ast_hash": "c56b5f3c12f777a86e2513f45daab56a",
+    "semantic_hash": "c56b5f3c12f777a86e2513f45daab56a"
+  },
+  "tailwind.config.ts": {
+    "mtime": 1782907313.745171,
+    "ast_hash": "2f017b93a2c05d924d42103396464bc6",
+    "semantic_hash": "2f017b93a2c05d924d42103396464bc6"
+  },
+  "tsconfig.json": {
+    "mtime": 1782907282.288908,
+    "ast_hash": "fb3479c72198cb7294e17631c80a47ce",
+    "semantic_hash": "fb3479c72198cb7294e17631c80a47ce"
+  },
+  "types/look.ts": {
+    "mtime": 1782948737.906623,
+    "ast_hash": "be0d0bffb841acaad68435e7b32ec74a",
+    "semantic_hash": "be0d0bffb841acaad68435e7b32ec74a"
+  },
+  "types/process-step.ts": {
+    "mtime": 1782948797.070393,
+    "ast_hash": "a8cb8386ab81499e28da5ee78c900e29",
+    "semantic_hash": "a8cb8386ab81499e28da5ee78c900e29"
+  },
+  "types/testimonial.ts": {
+    "mtime": 1782948782.5064502,
+    "ast_hash": "ee9d759cb116440a6cd24b8f122e69cc",
+    "semantic_hash": "ee9d759cb116440a6cd24b8f122e69cc"
+  },
+  "CLAUDE.md": {
+    "mtime": 1782980612.0730114,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": "82efb97a359f5c7290bf2513d14686be"
+  },
+  "CLAUDE_lmweddyli.md": {
+    "mtime": 1782906427.382163,
+    "ast_hash": "a6cd2dffa93ef52832c6c859095802db",
+    "semantic_hash": "a6cd2dffa93ef52832c6c859095802db"
+  },
+  "skills/README.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "9b5e68f455d23367520a631fe312dde2",
+    "semantic_hash": "9b5e68f455d23367520a631fe312dde2"
+  },
+  "skills/animation.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "52d4d4380207b98c4ab0e869bbfb71b2",
+    "semantic_hash": "52d4d4380207b98c4ab0e869bbfb71b2"
+  },
+  "skills/augen-pro.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "f4c46ac80f61a36da09cea8a358051c4",
+    "semantic_hash": "f4c46ac80f61a36da09cea8a358051c4"
+  },
+  "skills/components.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "b97e996b0991c6e5498570366a0b63da",
+    "semantic_hash": "b97e996b0991c6e5498570366a0b63da"
+  },
+  "skills/design-system.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "19f2fc838b9c32079eb61f63fc355539",
+    "semantic_hash": "19f2fc838b9c32079eb61f63fc355539"
+  },
+  "skills/dummy-data.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "ef2a7712cc7ac0fc571c49b8234cb138",
+    "semantic_hash": "ef2a7712cc7ac0fc571c49b8234cb138"
+  },
+  "skills/forms.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "824e3f634eddc95a9600df62080cae66",
+    "semantic_hash": "824e3f634eddc95a9600df62080cae66"
+  },
+  "skills/images.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "cfa46e4146df952f6c0f22061e5ef5e5",
+    "semantic_hash": "cfa46e4146df952f6c0f22061e5ef5e5"
+  },
+  "skills/mobile.md": {
+    "mtime": 1782894542.0,
+    "ast_hash": "8273c5dee3205348cf169e3939a3cdea",
+    "semantic_hash": "8273c5dee3205348cf169e3939a3cdea"
+  },
+  "public/brand_assets/photography/amara-hero.jpg": {
+    "mtime": 1782947059.894275,
+    "ast_hash": "f68fdaea937e184a7d27e66f889ab602",
+    "semantic_hash": "f68fdaea937e184a7d27e66f889ab602"
+  },
+  "public/brand_assets/photography/clarisse-hero.jpg.jpg": {
+    "mtime": 1782946773.975807,
+    "ast_hash": "789c9e7d010314545c2cbd2c3111110a",
+    "semantic_hash": "789c9e7d010314545c2cbd2c3111110a"
+  },
+  "public/brand_assets/photography/diata-hero.jpg.jpg": {
+    "mtime": 1782946603.568708,
+    "ast_hash": "cf3ec9de5fd3640245d31f7547c7199e",
+    "semantic_hash": "cf3ec9de5fd3640245d31f7547c7199e"
+  },
+  "public/brand_assets/photography/elise-hero.jpg.jpg": {
+    "mtime": 1782946921.867017,
+    "ast_hash": "05a94a1c41018a21f312e63e8862b6e2",
+    "semantic_hash": "05a94a1c41018a21f312e63e8862b6e2"
+  },
+  "public/brand_assets/photography/fleur-hero.jpg": {
+    "mtime": 1782946656.488429,
+    "ast_hash": "c8329271d2680bc079235bd160135009",
+    "semantic_hash": "c8329271d2680bc079235bd160135009"
+  },
+  "public/brand_assets/photography/isabelle-hero.png": {
+    "mtime": 1782946967.90277,
+    "ast_hash": "746efca161fcf92206813270a0bc31e4",
+    "semantic_hash": "746efca161fcf92206813270a0bc31e4"
+  },
+  "public/brand_assets/photography/joelle-hero.jpg": {
+    "mtime": 1782947068.438229,
+    "ast_hash": "99c304ee28dad6fc02fd36994af1289e",
+    "semantic_hash": "99c304ee28dad6fc02fd36994af1289e"
+  },
+  "public/brand_assets/photography/margot-hero.jpg": {
+    "mtime": 1782946621.392614,
+    "ast_hash": "8c2b72ba01f6b5fc77430e4f9eb4faa3",
+    "semantic_hash": "8c2b72ba01f6b5fc77430e4f9eb4faa3"
+  },
+  "public/brand_assets/photography/naomi-hero.jpg.jpg": {
+    "mtime": 1782946814.65159,
+    "ast_hash": "53938bd79de53397f5f91cc5a10b6f9a",
+    "semantic_hash": "53938bd79de53397f5f91cc5a10b6f9a"
+  },
+  "public/brand_assets/photography/rachel-hero.jpg": {
+    "mtime": 1782947700.52927,
+    "ast_hash": "a71b250f831949b71f2cc9e67d9fd552",
+    "semantic_hash": "a71b250f831949b71f2cc9e67d9fd552"
+  },
+  "public/brand_assets/photography/solene-hero.jpg": {
+    "mtime": 1782947619.845244,
+    "ast_hash": "b2a7daef0ae0ac10a40b3d80521a88f2",
+    "semantic_hash": "b2a7daef0ae0ac10a40b3d80521a88f2"
+  },
+  "public/brand_assets/photography/zara-hero.jpg": {
+    "mtime": 1782946664.580387,
+    "ast_hash": "76d1faaa7be08dfbdc593497b9ebab68",
+    "semantic_hash": "76d1faaa7be08dfbdc593497b9ebab68"
+  }
+}

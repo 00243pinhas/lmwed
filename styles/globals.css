@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Design system colors — single source of truth. Mirror of tailwind.config. */
+  --dark: #0c0a08;
+  --light: #f8f4ef;
+  --surface: #f0ebe3;
+  --ink: #1a1612;
+  --muted: #7a7068;
+  --accent: #c4b8ac;
+  --border-d: #2a2420;
+  --border-l: #ddd8d0;
+  --white: #ffffff;
+
+  /* Standard easing */
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--light);
+    color: var(--ink);
+    font-family: var(--font-jost), sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  ::selection {
+    background-color: var(--ink);
+    color: var(--light);
+  }
+
+  /* Hairline borders everywhere — never thicker */
+  * {
+    border-color: var(--border-l);
+  }
+}
+
+@layer utilities {
+  /* Section marker label: 0.1 Label — Jost 10px uppercase */
+  .label {
+    font-family: var(--font-jost), sans-serif;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  /* Text CTA underline slide — hairline underline animates left to right on hover */
+  .cta-link {
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+  }
+  .cta-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background: currentColor;
+    transition: width 300ms var(--ease-standard);
+  }
+  .cta-link:hover::after,
+  .cta-link:focus-visible::after {
+    width: 100%;
+  }
+}
+
+/* Respect reduced-motion at the platform level as a safety net.
+   Framer Motion animations are additionally gated per-component. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
