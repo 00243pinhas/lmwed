@@ -15,9 +15,9 @@
     "semantic_hash": "ea6c7f70a596a911703c1fe600c209ad"
   },
   "app/(marketing)/page.tsx": {
-    "mtime": 1782951091.2062151,
-    "ast_hash": "11eec5725d14530cd8b28f360d40b283",
-    "semantic_hash": "11eec5725d14530cd8b28f360d40b283"
+    "mtime": 1782987192.8331978,
+    "ast_hash": "70a221d27b6ad1ec8314f14fb61a0163",
+    "semantic_hash": ""
   },
   "app/layout.tsx": {
     "mtime": 1782907334.5373454,
@@ -70,9 +70,9 @@
     "semantic_hash": "cbf6c2082673a779b8230da00d20368e"
   },
   "data/dummy/process-steps.ts": {
-    "mtime": 1782948850.5701826,
-    "ast_hash": "0989bede529f02051dc2dd532768343b",
-    "semantic_hash": "0989bede529f02051dc2dd532768343b"
+    "mtime": 1782987067.5772538,
+    "ast_hash": "bd6e54aed70c2bb65262407e8e9922c3",
+    "semantic_hash": ""
   },
   "data/dummy/testimonials.ts": {
     "mtime": 1782948838.1822314,
@@ -115,9 +115,9 @@
     "semantic_hash": "be0d0bffb841acaad68435e7b32ec74a"
   },
   "types/process-step.ts": {
-    "mtime": 1782948797.070393,
-    "ast_hash": "a8cb8386ab81499e28da5ee78c900e29",
-    "semantic_hash": "a8cb8386ab81499e28da5ee78c900e29"
+    "mtime": 1782987045.865256,
+    "ast_hash": "3fce9f03f99a3844ebb2a88966b5983c",
+    "semantic_hash": ""
   },
   "types/testimonial.ts": {
     "mtime": 1782948782.5064502,
@@ -238,5 +238,30 @@
     "mtime": 1782946664.580387,
     "ast_hash": "76d1faaa7be08dfbdc593497b9ebab68",
     "semantic_hash": "76d1faaa7be08dfbdc593497b9ebab68"
+  },
+  "app/(marketing)/collections/page.tsx": {
+    "mtime": 1782989136.8545022,
+    "ast_hash": "a39bdd0aa2b9265e670c9fc8e95f2855",
+    "semantic_hash": ""
+  },
+  "components/ui/CollectionsGrid.tsx": {
+    "mtime": 1782989102.690467,
+    "ast_hash": "a90015f73a242fc6cab56ca8ea483565",
+    "semantic_hash": ""
+  },
+  "components/ui/ProcessStep.tsx": {
+    "mtime": 1782987127.8932357,
+    "ast_hash": "ef6f1d62a5a4b9a477a18fa2bc60625f",
+    "semantic_hash": ""
+  },
+  "data/dummy/collection-info.ts": {
+    "mtime": 1782989058.394413,
+    "ast_hash": "047be6e218adffbb993bf825ffea36f5",
+    "semantic_hash": ""
+  },
+  "types/collection-info.ts": {
+    "mtime": 1782989056.0624099,
+    "ast_hash": "29b9aba0f06450efc602aa0bc5c46675",
+    "semantic_hash": ""
   }
 }

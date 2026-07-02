@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { HeroSection } from '@/components/ui/HeroSection';
 import { SectionMarker } from '@/components/ui/SectionMarker';
 import { LookCard } from '@/components/ui/LookCard';
+import { ProcessStep } from '@/components/ui/ProcessStep';
 import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import { Reveal } from '@/components/ui/Reveal';
 import { StaggerReveal } from '@/components/ui/StaggerReveal';
@@ -93,18 +94,18 @@ export default function HomePage() {
           </h2>
         </Reveal>
 
-        <StaggerReveal className="mt-2xl md:mt-3xl flex flex-col md:flex-row md:gap-xl">
-          {previewSteps.map((step) => (
-            <div key={step.number} className="border-t border-hairline border-border-l py-lg md:flex-1 md:py-0">
-              <p className="font-display font-light text-[80px] md:text-[120px] leading-none text-[#E8E2DA]">
-                {step.number}
-              </p>
-              <p className="font-body text-[9px] uppercase tracking-[0.14em] text-muted mt-sm">
-                {step.eyebrow}
-              </p>
-              <h3 className="font-display font-light text-display-2xs text-ink mt-xs">{step.title}</h3>
-              <p className="font-body text-body text-muted mt-sm max-w-[36ch]">{step.description}</p>
-            </div>
+        <StaggerReveal className="mt-2xl md:mt-3xl">
+          {previewSteps.map((step, i) => (
+            <ProcessStep
+              key={step.number}
+              number={step.number}
+              title={step.title}
+              eyebrow={step.eyebrow}
+              description={step.description}
+              image={step.image}
+              imageAlt={step.imageAlt}
+              imageLeft={i % 2 === 1}
+            />
           ))}
         </StaggerReveal>
 

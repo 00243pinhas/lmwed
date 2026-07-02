@@ -1,12 +1,18 @@
-# Graph Report - .  (2026-07-02)
+# Graph Report - lmwed  (2026-07-02)
 
 ## Corpus Check
-- Large corpus: 48 files · ~996,698 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- 40 files · ~997,149 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 282 nodes · 244 edges · 89 communities (22 shown, 67 thin omitted)
-- Extraction: 77% EXTRACTED · 22% INFERRED · 1% AMBIGUOUS · INFERRED: 53 edges (avg confidence: 0.83)
-- Token cost: 332,956 input · 0 output
+- 407 nodes · 376 edges · 90 communities (27 shown, 63 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `b23a96cf`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Homepage Composition|Homepage Composition]]
@@ -98,30 +104,22 @@
 - [[_COMMUNITY_Mobile Layout Rules|Mobile Layout Rules]]
 - [[_COMMUNITY_Mobile Testing Checklist|Mobile Testing Checklist]]
 - [[_COMMUNITY_Mobile Typography Scale|Mobile Typography Scale]]
+- [[_COMMUNITY_iOS-Specific Rules (16px input font, safe-area)|iOS-Specific Rules (16px input font, safe-area)]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 15 edges
-2. `Skills Library Read-Before-Task Table` - 9 edges
-3. `Skills Library Index (skills/README.md)` - 9 edges
-4. `Component Rules & Build Order` - 8 edges
-5. `Fleur Hero Bridal Portrait` - 6 edges
-6. `Solene Hero Bridal Portrait` - 6 edges
-7. `Smiling Bride Subject` - 6 edges
-8. `scripts` - 5 edges
-9. `Diata Hero Photograph` - 5 edges
-10. `Isabelle Hero Photo` - 5 edges
+1. `CLAUDE.md — LM Weddyli Frontend` - 18 edges
+2. `compilerOptions` - 15 edges
+3. `SKILL: Forms` - 14 edges
+4. `Component Inventory & Specs` - 11 edges
+5. `SKILL: Images` - 11 edges
+6. `SKILL: Design System` - 10 edges
+7. `SKILL: Mobile` - 10 edges
+8. `Framer Motion Patterns` - 9 edges
+9. `What Augen Pro Does That We Copy Directly` - 9 edges
+10. `SKILL: Animation` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Graphify Knowledge Graph Workflow` --references--> `LM Weddyli Frontend Project Context`  [AMBIGUOUS]
-  CLAUDE.md → CLAUDE_lmweddyli.md
-- `Component Rules & Build Order` --references--> `Footer Component Spec`  [INFERRED]
-  CLAUDE_lmweddyli.md → skills/components.md
-- `Component Rules & Build Order` --references--> `InquiryForm Component Spec`  [INFERRED]
-  CLAUDE_lmweddyli.md → skills/components.md
-- `Component Rules & Build Order` --references--> `Navbar Component Spec`  [INFERRED]
-  CLAUDE_lmweddyli.md → skills/components.md
-- `Component Rules & Build Order` --references--> `ProcessStep Component Spec`  [INFERRED]
-  CLAUDE_lmweddyli.md → skills/components.md
+- None detected - all connections are within the same source files.
 
 ## Import Cycles
 - None detected.
@@ -131,11 +129,11 @@
 - **Augen Pro Visual Language Applied Across Design Docs** — skills_augen_pro_numbered_navigation, skills_augen_pro_section_markers, skills_augen_pro_oversized_headlines, skills_design_system_navigation_pattern, skills_design_system_section_structure, claude_lmweddyli_augen_pro_reference [INFERRED 0.85]
 - **Standard Luxury Easing Curve Used Across Animation Contexts** — skills_animation_luxury_ease, skills_animation_standard_section_reveal, skills_animation_form_step_transition, claude_lmweddyli_animation_rules, skills_forms_step_transitions [INFERRED 0.85]
 
-## Communities (89 total, 67 thin omitted)
+## Communities (90 total, 63 thin omitted)
 
 ### Community 0 - "Homepage Composition"
-Cohesion: 0.07
-Nodes (26): featuredLooks, featuredSlugs, previewSteps, ease, HeroSection(), Props, sentence, word (+18 more)
+Cohesion: 0.06
+Nodes (34): metadata, featuredLooks, featuredSlugs, previewSteps, CollectionsGrid(), Filter, filters, ease (+26 more)
 
 ### Community 1 - "NPM Package Dependencies"
 Cohesion: 0.08
@@ -146,16 +144,16 @@ Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
 ### Community 3 - "Component Specs Documentation"
-Cohesion: 0.15
-Nodes (14): Component Rules & Build Order, Dummy Data Rules (CLAUDE.md copy), Image Hover Scale Pattern, Footer Component Spec, InquiryForm Component Spec, LookCard Component Spec, Navbar Component Spec, ProcessStep Component Spec (+6 more)
+Cohesion: 0.08
+Nodes (25): Always Do First, Animation Rules, Before creating any component:, Brand Assets (check before every session), CLAUDE.md — LM Weddyli Frontend, Colors — use only these, no exceptions, Component Rules, Definition of Done (per page) (+17 more)
 
 ### Community 4 - "Layout, Navbar & Footer"
 Cohesion: 0.22
 Nodes (7): Footer(), navLinks, socialHandles, ease, Navbar(), primaryLinks, secondaryLinks
 
 ### Community 5 - "Skills Library Index"
-Cohesion: 0.38
-Nodes (10): Skills Library Read-Before-Task Table, Animation Skill (skills/animation.md), Augen Pro Reference Skill (skills/augen-pro.md), Components Skill (skills/components.md), Design System Skill (skills/design-system.md), Dummy Data Skill (skills/dummy-data.md), Forms Skill (skills/forms.md), Images Skill (skills/images.md) (+2 more)
+Cohesion: 0.11
+Nodes (18): Core Rules, CSS Hover Animations, Form Step Transition, Framer Motion Patterns, Image Hover Scale (LookCard, gallery images), Nav Background on Scroll, Page Transitions (App Router layout), Parallax (hero images and section images) (+10 more)
 
 ### Community 6 - "Clarisse Look Photography"
 Cohesion: 0.33
@@ -190,8 +188,8 @@ Cohesion: 0.60
 Nodes (6): Margot Hero Photograph, Beaded Tiara Headpiece, Cathedral-Length Veil, Grand Staircase Interior Setting, Margot Gown (Illusion Long-Sleeve Beaded Ball Gown), Romantic Dramatic Editorial Mood
 
 ### Community 14 - "Augen Pro Navigation Patterns"
-Cohesion: 0.40
-Nodes (5): Visual Reference: augen.pro Section, Numbered Navigation Pattern, Section Markers Pattern (0.1 / 1.0 / 2.0), Navigation Pattern Spec, Section Structure Pattern
+Cohesion: 0.14
+Nodes (13): Absolute Rules, Body Font — Jost, Color Tokens — Use Only These, CTA Patterns, Display Font — Cormorant Garamond, Geometry Rules, Navigation Pattern, Read this before writing any CSS, Tailwind class, or styling decision. (+5 more)
 
 ### Community 15 - "Elise Look Photography"
 Cohesion: 0.60
@@ -209,43 +207,61 @@ Nodes (4): Purple and Lavender Wedding Bouquet (roses, dahlias, hydrangea, green
 Cohesion: 0.67
 Nodes (4): Rose and Baby's Breath Bridal Bouquet, Illusion-Back Beaded Mermaid Gown, Monochrome Editorial Bridal Mood, Rachel Hero Bridal Photograph
 
-### Community 19 - "Standard Animation Easing"
-Cohesion: 0.67
-Nodes (3): Animation Rules (CLAUDE.md copy), Standard Easing Curve ("luxury ease" [0.16,1,0.3,1]), Standard Section Reveal Pattern
-
 ### Community 20 - "Amara Look Photography"
 Cohesion: 1.00
 Nodes (3): Amara Gown (Beaded Lace Ball Gown with Cathedral Veil), Amara Hero Photograph, Dramatic Chiaroscuro Editorial Mood
 
 ### Community 21 - "Hero Parallax Pattern"
-Cohesion: 0.67
-Nodes (3): Parallax Scroll Pattern, HeroSection Component Spec, Parallax Treatment for Images
+Cohesion: 0.15
+Nodes (12): Alt Text Rules, Always Use next/image, Aspect Ratios, Dark Overlay (required on all hero and dark-section images), Hover Scale, Parallax Treatment, Performance Rules, Photography Art Direction for Linda (+4 more)
+
+### Community 24 - "Geometry Rules"
+Cohesion: 0.22
+Nodes (8): Core Rule, Data Usage Pattern, Dummy Data — Collections, Dummy Data — Testimonials, File Structure, Read this before creating any data file or hardcoding content., SKILL: Dummy Data, TypeScript Types
+
+### Community 26 - "Mobile"
+Cohesion: 0.11
+Nodes (18): Breakpoints, Detail Page Split Layout, Grids, Horizontal Scrolls, iOS-Specific Rules, Layout on Mobile, Mobile Menu (Hamburger), Mobile-Specific Components (+10 more)
+
+### Community 27 - "Spacing Tokens"
+Cohesion: 0.40
+Nodes (4): File locations, How Claude uses these files, LM Weddyli — Skills Library, Rule
+
+### Community 32 - "Form Step Transition Pattern"
+Cohesion: 0.11
+Nodes (17): Confirmation Screen, Desktop Trust Sidebar, Error States, Field Styling Rules, Form Steps Content, Option Row Fields (no dropdowns ever), Qualification Logic (internal — bride never sees this), Read this before building the inquiry form or any input component. (+9 more)
+
+### Community 58 - ""The Test" Design Heuristic"
+Cohesion: 0.12
+Nodes (15): 1. Numbered Navigation, 2. Section Markers, 3. Oversized Sparse Headlines, 4. Full-Bleed Dark Sections Alternating with Light, 5. Text-Only CTAs, 6. Extreme Negative Space, 7. Editorial Photography Approach, 8. Oversized Step Numbers as Decoration (+7 more)
+
+### Community 60 - "Shared Component Patterns"
+Cohesion: 0.11
+Nodes (18): 10. HeroSection, 1. SectionMarker, 2. Navbar, 3. Footer, 4. LookCard, 5. ProcessStep, 6. TestimonialCard, 7. MeasurementCard (+10 more)
 
 ## Ambiguous Edges - Review These
-- `Graphify Knowledge Graph Workflow` → `LM Weddyli Frontend Project Context`  [AMBIGUOUS]
-  CLAUDE.md · relation: references
 - `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` → `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`  [AMBIGUOUS]
   public/brand_assets/photography/naomi-hero.jpg.jpg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **151 isolated node(s):** `extends`, `featuredSlugs`, `featuredLooks`, `previewSteps`, `metadata` (+146 more)
+- **255 isolated node(s):** `extends`, `metadata`, `featuredSlugs`, `featuredLooks`, `previewSteps` (+250 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **67 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **63 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What is the exact relationship between `Graphify Knowledge Graph Workflow` and `LM Weddyli Frontend Project Context`?**
-  _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` and `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Are the 8 inferred relationships involving `Component Rules & Build Order` (e.g. with `Footer Component Spec` and `InquiryForm Component Spec`) actually correct?**
-  _`Component Rules & Build Order` has 8 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `extends`, `featuredSlugs`, `featuredLooks` to the rest of the system?**
-  _160 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `extends`, `metadata`, `featuredSlugs` to the rest of the system?**
+  _262 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Homepage Composition` be split into smaller, more focused modules?**
-  _Cohesion score 0.06538461538461539 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0573025856044724 - nodes in this community are weakly interconnected._
 - **Should `NPM Package Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `TypeScript Compiler Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+- **Should `Component Specs Documentation` be split into smaller, more focused modules?**
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
+- **Should `Skills Library Index` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

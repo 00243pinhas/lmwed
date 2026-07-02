@@ -32,3 +32,6 @@ next-env.d.ts
 
 # local Claude Code environment config (contains active hooks — not for publishing)
 .claude/
+
+.claude/
+graphify-out/

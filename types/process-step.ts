@@ -4,4 +4,6 @@ export type ProcessStep = {
   eyebrow: string;
   description: string;
   detail: string;
+  image?: string;
+  imageAlt?: string;
 };
