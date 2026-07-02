@@ -1,5 +1,5 @@
 {
-  "0": "Homepage Composition",
+  "0": "page.tsx",
   "1": "NPM Package Dependencies",
   "2": "TypeScript Compiler Config",
   "3": "Component Specs Documentation",
@@ -91,6 +91,5 @@
   "89": "iOS-Specific Rules (16px input font, safe-area)",
   "90": "page.tsx",
   "91": "page.tsx",
-  "92": "CollectionsGrid.tsx",
-  "93": "DressDetails.tsx"
+  "94": "InquiryForm.tsx"
 }

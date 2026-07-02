@@ -29,13 +29,15 @@ import Image from 'next/image'
 
 ## Placeholder Images (before real photography arrives)
 ```tsx
-// Format: placehold.co/WIDTHxHEIGHT/BACKGROUND/TEXT
+// Format: placehold.co/WIDTHxHEIGHT/BACKGROUND/TEXT.png
+// Always append a .png extension — without it, placehold.co returns SVG,
+// which next/image's optimizer rejects by default (renders as a broken image).
 // Use our dark tone for hero/editorial placeholders:
-`https://placehold.co/800x1067/1a1612/2a2420`  // dress card (3:4)
-`https://placehold.co/1440x900/0c0a08/2a2420`  // hero (wide dark)
-`https://placehold.co/400x500/b89060/a07840`   // founder portrait (warm)
-`https://placehold.co/600x800/e0d0bc/c8b09c`   // atelier/process (light warm)
-`https://placehold.co/64x64/c4a882/a08060`     // testimonial portrait (square)
+`https://placehold.co/800x1067/1a1612/2a2420.png`  // dress card (3:4)
+`https://placehold.co/1440x900/0c0a08/2a2420.png`  // hero (wide dark)
+`https://placehold.co/400x500/b89060/a07840.png`   // founder portrait (warm)
+`https://placehold.co/600x800/e0d0bc/c8b09c.png`   // atelier/process (light warm)
+`https://placehold.co/64x64/c4a882/a08060.png`     // testimonial portrait (square)
 ```
 
 ---

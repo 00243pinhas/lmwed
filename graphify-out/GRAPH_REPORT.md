@@ -1,21 +1,21 @@
-# Graph Report - lmwed  (2026-07-02)
+# Graph Report - lmwed  (2026-07-03)
 
 ## Corpus Check
-- 45 files · ~998,270 words
+- 65 files · ~1,002,569 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 427 nodes · 415 edges · 94 communities (31 shown, 63 thin omitted)
-- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
+- 502 nodes · 540 edges · 93 communities (30 shown, 63 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2599ced2`
+- Built from commit: `4f7ec271`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Homepage Composition|Homepage Composition]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
 - [[_COMMUNITY_NPM Package Dependencies|NPM Package Dependencies]]
 - [[_COMMUNITY_TypeScript Compiler Config|TypeScript Compiler Config]]
 - [[_COMMUNITY_Component Specs Documentation|Component Specs Documentation]]
@@ -107,8 +107,7 @@
 - [[_COMMUNITY_iOS-Specific Rules (16px input font, safe-area)|iOS-Specific Rules (16px input font, safe-area)]]
 - [[_COMMUNITY_page.tsx|page.tsx]]
 - [[_COMMUNITY_page.tsx|page.tsx]]
-- [[_COMMUNITY_CollectionsGrid.tsx|CollectionsGrid.tsx]]
-- [[_COMMUNITY_DressDetails.tsx|DressDetails.tsx]]
+- [[_COMMUNITY_InquiryForm.tsx|InquiryForm.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CLAUDE.md — LM Weddyli Frontend` - 18 edges
@@ -118,9 +117,9 @@
 5. `SKILL: Images` - 11 edges
 6. `SKILL: Design System` - 10 edges
 7. `SKILL: Mobile` - 10 edges
-8. `Framer Motion Patterns` - 9 edges
-9. `What Augen Pro Does That We Copy Directly` - 9 edges
-10. `SKILL: Animation` - 8 edges
+8. `SectionMarker()` - 9 edges
+9. `Framer Motion Patterns` - 9 edges
+10. `What Augen Pro Does That We Copy Directly` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -133,11 +132,11 @@
 - **Augen Pro Visual Language Applied Across Design Docs** — skills_augen_pro_numbered_navigation, skills_augen_pro_section_markers, skills_augen_pro_oversized_headlines, skills_design_system_navigation_pattern, skills_design_system_section_structure, claude_lmweddyli_augen_pro_reference [INFERRED 0.85]
 - **Standard Luxury Easing Curve Used Across Animation Contexts** — skills_animation_luxury_ease, skills_animation_standard_section_reveal, skills_animation_form_step_transition, claude_lmweddyli_animation_rules, skills_forms_step_transitions [INFERRED 0.85]
 
-## Communities (94 total, 63 thin omitted)
+## Communities (93 total, 63 thin omitted)
 
-### Community 0 - "Homepage Composition"
-Cohesion: 0.14
-Nodes (11): metadata, ease, HeroSection(), Props, sentence, word, Reveal, Props (+3 more)
+### Community 0 - "page.tsx"
+Cohesion: 0.09
+Nodes (22): metadata, metadata, AboutHero(), ease, fade, ease, HeroSection(), Props (+14 more)
 
 ### Community 1 - "NPM Package Dependencies"
 Cohesion: 0.08
@@ -244,27 +243,23 @@ Cohesion: 0.11
 Nodes (18): 10. HeroSection, 1. SectionMarker, 2. Navbar, 3. Footer, 4. LookCard, 5. ProcessStep, 6. TestimonialCard, 7. MeasurementCard (+10 more)
 
 ### Community 90 - "page.tsx"
-Cohesion: 0.13
-Nodes (10): Props, Breadcrumb(), Crumb, DetailHero(), Props, ease, Props, StickyInquiryBar() (+2 more)
+Cohesion: 0.08
+Nodes (24): Props, Breadcrumb(), Crumb, CollectionsGrid(), Filter, filters, DetailHero(), Props (+16 more)
 
 ### Community 91 - "page.tsx"
-Cohesion: 0.17
-Nodes (9): featuredLooks, featuredSlugs, previewSteps, ProcessStep(), Props, Props, TestimonialCard(), processSteps (+1 more)
+Cohesion: 0.08
+Nodes (23): featuredLooks, featuredSlugs, previewSteps, metadata, timelineStages, MeasurementCard(), Props, ease (+15 more)
 
-### Community 92 - "CollectionsGrid.tsx"
-Cohesion: 0.18
-Nodes (10): CollectionsGrid(), Filter, filters, ease, LookCard(), Props, container, ease (+2 more)
-
-### Community 93 - "DressDetails.tsx"
-Cohesion: 0.28
-Nodes (6): DressDetails(), ease, sentence, word, looks, Look
+### Community 94 - "InquiryForm.tsx"
+Cohesion: 0.07
+Nodes (28): metadata, FormField(), Props, budgetOptions, ease, FieldError, FormData, foundUsOptions (+20 more)
 
 ## Ambiguous Edges - Review These
 - `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` → `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`  [AMBIGUOUS]
   public/brand_assets/photography/naomi-hero.jpg.jpg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **263 isolated node(s):** `extends`, `Props`, `metadata`, `featuredSlugs`, `featuredLooks` (+258 more)
+- **293 isolated node(s):** `extends`, `metadata`, `Props`, `metadata`, `metadata` (+288 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **63 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -273,15 +268,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` and `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What connects `extends`, `Props`, `metadata` to the rest of the system?**
-  _270 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Homepage Composition` be split into smaller, more focused modules?**
-  _Cohesion score 0.1437908496732026 - nodes in this community are weakly interconnected._
+- **Why does `SectionMarker()` connect `page.tsx` to `page.tsx`, `page.tsx`, `InquiryForm.tsx`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `testimonials` connect `InquiryForm.tsx` to `page.tsx`, `page.tsx`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **What connects `extends`, `metadata`, `Props` to the rest of the system?**
+  _300 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `page.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.08739495798319327 - nodes in this community are weakly interconnected._
 - **Should `NPM Package Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `TypeScript Compiler Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `Component Specs Documentation` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `Skills Library Index` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
