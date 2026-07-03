@@ -163,7 +163,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_marketing_collections_page",
-      "community": 0,
+      "community": 90,
       "norm_label": "page.tsx"
     },
     {
@@ -173,7 +173,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "app_marketing_collections_page_metadata",
-      "community": 0,
+      "community": 90,
       "norm_label": "metadata"
     },
     {
@@ -183,7 +183,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "app_marketing_collections_page_collectionspage",
-      "community": 0,
+      "community": 90,
       "norm_label": "collectionspage()"
     },
     {
@@ -235,6 +235,46 @@
       "id": "app_marketing_layout_marketinglayout",
       "community": 4,
       "norm_label": "marketinglayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_marketing_love_notes_page",
+      "community": 91,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "app_marketing_love_notes_page_metadata",
+      "community": 91,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "remainingTestimonials",
+      "file_type": "code",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "app_marketing_love_notes_page_remainingtestimonials",
+      "community": 91,
+      "norm_label": "remainingtestimonials"
+    },
+    {
+      "label": "LoveNotesPage()",
+      "file_type": "code",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "app_marketing_love_notes_page_lovenotespage",
+      "community": 91,
+      "norm_label": "lovenotespage()"
     },
     {
       "label": "page.tsx",
@@ -873,7 +913,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_herosection",
-      "community": 0,
+      "community": 91,
       "norm_label": "herosection.tsx"
     },
     {
@@ -883,7 +923,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_ui_herosection_props",
-      "community": 0,
+      "community": 91,
       "norm_label": "props"
     },
     {
@@ -893,7 +933,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_ui_herosection_ease",
-      "community": 0,
+      "community": 91,
       "norm_label": "ease"
     },
     {
@@ -903,7 +943,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "components_ui_herosection_sentence",
-      "community": 0,
+      "community": 91,
       "norm_label": "sentence"
     },
     {
@@ -913,7 +953,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "components_ui_herosection_word",
-      "community": 0,
+      "community": 91,
       "norm_label": "word"
     },
     {
@@ -923,7 +963,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "components_ui_herosection_herosection",
-      "community": 0,
+      "community": 91,
       "norm_label": "herosection()"
     },
     {
@@ -1133,7 +1173,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_reveal",
-      "community": 0,
+      "community": 91,
       "norm_label": "reveal.tsx"
     },
     {
@@ -1143,7 +1183,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "components_ui_reveal_reveal",
-      "community": 0,
+      "community": 91,
       "norm_label": "reveal"
     },
     {
@@ -1183,7 +1223,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_staggerreveal",
-      "community": 90,
+      "community": 91,
       "norm_label": "staggerreveal.tsx"
     },
     {
@@ -1193,7 +1233,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_ease",
-      "community": 90,
+      "community": 91,
       "norm_label": "ease"
     },
     {
@@ -1203,7 +1243,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_container",
-      "community": 90,
+      "community": 91,
       "norm_label": "container"
     },
     {
@@ -1213,7 +1253,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_item",
-      "community": 90,
+      "community": 91,
       "norm_label": "item"
     },
     {
@@ -1223,7 +1263,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_staggerreveal",
-      "community": 90,
+      "community": 91,
       "norm_label": "staggerreveal()"
     },
     {
@@ -1413,7 +1453,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_dummy_collection_info",
-      "community": 0,
+      "community": 90,
       "norm_label": "collection-info.ts"
     },
     {
@@ -1423,7 +1463,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_dummy_collection_info_collectioninfo",
-      "community": 0,
+      "community": 90,
       "norm_label": "collectioninfo"
     },
     {
@@ -1465,6 +1505,46 @@
       "id": "data_dummy_contact_contact",
       "community": 94,
       "norm_label": "contact"
+    },
+    {
+      "label": "love-notes-content.ts",
+      "file_type": "code",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_dummy_love_notes_content",
+      "community": 91,
+      "norm_label": "love-notes-content.ts"
+    },
+    {
+      "label": "loveNotesHeader",
+      "file_type": "code",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_dummy_love_notes_content_lovenotesheader",
+      "community": 91,
+      "norm_label": "lovenotesheader"
+    },
+    {
+      "label": "instagramSection",
+      "file_type": "code",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "data_dummy_love_notes_content_instagramsection",
+      "community": 91,
+      "norm_label": "instagramsection"
+    },
+    {
+      "label": "scarcityNote",
+      "file_type": "code",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "data_dummy_love_notes_content_scarcitynote",
+      "community": 91,
+      "norm_label": "scarcitynote"
     },
     {
       "label": "measurements.ts",
@@ -2073,7 +2153,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_collection_info",
-      "community": 0,
+      "community": 90,
       "norm_label": "collection-info.ts"
     },
     {
@@ -2083,7 +2163,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_collection_info_collectioninfo",
-      "community": 0,
+      "community": 90,
       "norm_label": "collectioninfo"
     },
     {
@@ -6236,6 +6316,190 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "app_marketing_love_notes_page_lovenotespage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "app_marketing_love_notes_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "app_marketing_love_notes_page_remainingtestimonials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_reveal_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_sectionmarker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_sectionmarker_sectionmarker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_staggerreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_staggerreveal_staggerreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_testimonialcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "components_ui_testimonialcard_testimonialcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "data_dummy_love_notes_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "data_dummy_love_notes_content_instagramsection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "data_dummy_love_notes_content_lovenotesheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "data_dummy_love_notes_content_scarcitynote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "data_dummy_testimonials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(marketing)/love-notes/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_marketing_love_notes_page",
+      "target": "data_dummy_testimonials_testimonials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/(marketing)/page.tsx",
       "source_location": "L18",
       "weight": 1.0,
@@ -8030,6 +8294,36 @@
       "weight": 1.0,
       "source": "data_dummy_contact",
       "target": "data_dummy_contact_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "data_dummy_love_notes_content",
+      "target": "data_dummy_love_notes_content_instagramsection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "data_dummy_love_notes_content",
+      "target": "data_dummy_love_notes_content_lovenotesheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/dummy/love-notes-content.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "data_dummy_love_notes_content",
+      "target": "data_dummy_love_notes_content_scarcitynote",
       "confidence_score": 1.0
     },
     {
@@ -11053,5 +11347,5 @@
       "source_file": "skills/animation.md"
     }
   ],
-  "built_at_commit": "4f7ec271d14bf28891ea16e2faed1b5008b22f63"
+  "built_at_commit": "0a677c475f846a437aaf3c7068ed38969ee2de78"
 }

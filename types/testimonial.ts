@@ -8,5 +8,6 @@ export type Testimonial = {
   dress: string;
   collection: 'Lumière' | 'Harmattan';
   image?: string;
+  heroImage?: string;
   featured: boolean;
 };

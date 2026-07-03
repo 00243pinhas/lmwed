@@ -16,8 +16,8 @@ export const productionModel = {
     'Every gown begins in Lubumbashi — a conversation, a sketch, and measurements taken in your own home, guided by Linda on a video call.',
     'That pattern travels to our Istanbul atelier, where a small team of couture-trained seamstresses hand-construct the gown: boning, interior corsetry, and finishing you won\'t find in ready-to-wear. Then it comes home to you.',
   ],
-  image: 'https://placehold.co/1200x900/0c0a08/2a2420.png?text=Atelier+Placeholder&font=roboto',
-  imageAlt: 'Placeholder — LM Weddyli atelier workspace, Istanbul',
+  image: '/brand_assets/photography/atelier-istanbul.jpg',
+  imageAlt: 'LM Weddyli atelier workspace, Istanbul',
 };
 
 export const values: Value[] = [

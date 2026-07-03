@@ -11,6 +11,8 @@ export const testimonials: Testimonial[] = [
     year: '2024',
     dress: 'Naomi',
     collection: 'Harmattan',
+    image: 'https://placehold.co/64x64/c4a882/a08060',
+    heroImage: 'https://placehold.co/1600x2000/151009/2a2420',
     featured: true,
   },
   {
@@ -23,6 +25,7 @@ export const testimonials: Testimonial[] = [
     year: '2023',
     dress: 'Elise',
     collection: 'Lumière',
+    image: 'https://placehold.co/64x64/b8a080/9c8060',
     featured: false,
   },
   {
@@ -35,6 +38,7 @@ export const testimonials: Testimonial[] = [
     year: '2024',
     dress: 'Solène',
     collection: 'Lumière',
+    image: 'https://placehold.co/64x64/d0b898/b09870',
     featured: false,
   },
   {
@@ -47,6 +51,7 @@ export const testimonials: Testimonial[] = [
     year: '2023',
     dress: 'Diata',
     collection: 'Harmattan',
+    image: 'https://placehold.co/64x64/c8a888/a88868',
     featured: false,
   },
   {
@@ -58,6 +63,7 @@ export const testimonials: Testimonial[] = [
     year: '2024',
     dress: 'Margot',
     collection: 'Harmattan',
+    image: 'https://placehold.co/64x64/b89878/987858',
     featured: false,
   },
   {
@@ -70,6 +76,7 @@ export const testimonials: Testimonial[] = [
     year: '2024',
     dress: 'Fleur',
     collection: 'Lumière',
+    image: 'https://placehold.co/64x64/c4a07a/a08050',
     featured: false,
   },
 ];

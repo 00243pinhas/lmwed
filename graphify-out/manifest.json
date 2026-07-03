@@ -75,9 +75,9 @@
     "semantic_hash": ""
   },
   "data/dummy/testimonials.ts": {
-    "mtime": 1782948838.1822314,
-    "ast_hash": "0463da8c0eff5206251bdb086208b301",
-    "semantic_hash": "0463da8c0eff5206251bdb086208b301"
+    "mtime": 1783060150.4443455,
+    "ast_hash": "16ed8e14a6c69aae381910c643c0bd14",
+    "semantic_hash": ""
   },
   "lib/fonts.ts": {
     "mtime": 1782907332.1253252,
@@ -120,9 +120,9 @@
     "semantic_hash": ""
   },
   "types/testimonial.ts": {
-    "mtime": 1782948782.5064502,
-    "ast_hash": "ee9d759cb116440a6cd24b8f122e69cc",
-    "semantic_hash": "ee9d759cb116440a6cd24b8f122e69cc"
+    "mtime": 1783060141.9642463,
+    "ast_hash": "f91564ce0a06d670ae610db2004e964a",
+    "semantic_hash": ""
   },
   "CLAUDE.md": {
     "mtime": 1783027403.8687427,
@@ -370,13 +370,13 @@
     "semantic_hash": ""
   },
   "components/ui/AboutHero.tsx": {
-    "mtime": 1783033739.1250205,
-    "ast_hash": "891ca45d4de71f38b4262b8e5a8b899c",
+    "mtime": 1783059510.4465325,
+    "ast_hash": "01c53db3d06e47d9cfb52916bec179fa",
     "semantic_hash": ""
   },
   "data/dummy/about-content.ts": {
-    "mtime": 1783033752.8369956,
-    "ast_hash": "df44c3358747ce7e3758d639a42da726",
+    "mtime": 1783059527.194878,
+    "ast_hash": "c999532875e84e4d182fbfdb9b7d5c43",
     "semantic_hash": ""
   },
   "types/stat.ts": {
@@ -387,6 +387,26 @@
   "types/value.ts": {
     "mtime": 1783032474.518,
     "ast_hash": "2cab0556ba7e8abfc632c649cee79765",
+    "semantic_hash": ""
+  },
+  "app/(marketing)/love-notes/page.tsx": {
+    "mtime": 1783060254.8495293,
+    "ast_hash": "9468d84d3c13486bf592515798ac7459",
+    "semantic_hash": ""
+  },
+  "data/dummy/love-notes-content.ts": {
+    "mtime": 1783060224.105188,
+    "ast_hash": "acef2d653198d3f2e0d7c51210871e57",
+    "semantic_hash": ""
+  },
+  "public/brand_assets/photography/atelier-istanbul.jpg": {
+    "mtime": 1783059369.45932,
+    "ast_hash": "3b1cae146f712a1d98df017b6b1a87e6",
+    "semantic_hash": ""
+  },
+  "public/brand_assets/photography/linda-portrait.jpg": {
+    "mtime": 1783058158.238887,
+    "ast_hash": "3791dbd410843e1af7d558d269d1e196",
     "semantic_hash": ""
   }
 }

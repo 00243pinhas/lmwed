@@ -18,11 +18,10 @@ export function AboutHero() {
   return (
     <section className="relative w-full h-[100svh] overflow-hidden bg-dark">
       <Image
-        src="https://placehold.co/1600x2000/0c0a08/2a2420.png?text=Portrait+Placeholder&font=roboto"
-        alt="Placeholder — Linda Monga, founder of LM Weddyli, Lubumbashi"
+        src="/brand_assets/photography/linda-portrait.jpg"
+        alt="Linda Monga, founder of LM Weddyli, Lubumbashi"
         fill
         priority
-        quality={90}
         className="object-cover"
         sizes="100vw"
       />
