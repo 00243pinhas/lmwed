@@ -2,7 +2,8 @@ type Props = {
   label: string;
   value: string;
   onChange: (value: string) => void;
-  type?: 'text' | 'tel' | 'email' | 'url';
+  type?: 'text' | 'tel' | 'email' | 'url' | 'password';
+  name?: string;
   placeholder?: string;
   optional?: boolean;
   note?: string;
@@ -15,6 +16,7 @@ export function FormField({
   value,
   onChange,
   type = 'text',
+  name,
   placeholder,
   optional,
   note,
@@ -29,6 +31,7 @@ export function FormField({
       </label>
       <input
         type={type}
+        name={name}
         value={value}
         autoComplete={autoComplete}
         onChange={(e) => onChange(e.target.value)}

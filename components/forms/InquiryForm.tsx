@@ -18,6 +18,28 @@ const silhouetteOptions = ['A-Line', 'Ball Gown', 'Mermaid', 'Slip', 'Not sure']
 const budgetOptions = ['Under $500', '$500–$1,200', '$1,200–$2,500', '$2,500+'];
 const foundUsOptions = ['Instagram', 'TikTok', 'A friend', 'Other'];
 
+// Maps the human-readable option labels shown in the UI to the exact enum
+// slugs app/api/inquire/route.ts validates with zod.
+const serviceTypeSlugs: Record<string, string> = {
+  'Custom Gown': 'custom',
+  Rental: 'rental',
+  'Not sure yet': 'not_sure',
+};
+
+const budgetSlugs: Record<string, string> = {
+  'Under $500': 'under_500',
+  '$500–$1,200': '500_1200',
+  '$1,200–$2,500': '1200_2500',
+  '$2,500+': '2500_plus',
+};
+
+const foundUsSlugs: Record<string, string> = {
+  Instagram: 'instagram',
+  TikTok: 'tiktok',
+  'A friend': 'friend',
+  Other: 'other',
+};
+
 type FormData = {
   firstName: string;
   city: string;
@@ -86,6 +108,8 @@ type Props = {
 export function InquiryForm({ trustPoints, testimonial }: Props) {
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [data, setData] = useState<FormData>(initialData);
   const [error, setError] = useState<FieldError>(null);
   const prefersReduced = useReducedMotion();
@@ -116,13 +140,49 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
     setStep((s) => s - 1);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const err = validateStep(step, data);
     if (err) {
       setError(err);
       return;
     }
-    setSubmitted(true);
+
+    setSubmitError(null);
+    setSubmitting(true);
+
+    try {
+      const res = await fetch('/api/inquire', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: data.firstName,
+          city: data.city,
+          whatsapp: data.whatsapp,
+          email: data.email,
+          serviceType: serviceTypeSlugs[data.serviceType],
+          silhouette: data.silhouette,
+          dreamDress: data.dreamDress,
+          inspirationLink: data.inspirationLink,
+          weddingMonth: data.weddingMonth,
+          weddingYear: data.weddingYear,
+          weddingCity: data.weddingCity,
+          budget: budgetSlugs[data.budget],
+          foundUs: foundUsSlugs[data.foundUs],
+        }),
+      });
+
+      const result = await res.json();
+
+      if (result.ok) {
+        setSubmitted(true);
+      } else {
+        setSubmitError(result.error || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setSubmitError('Something went wrong. Please check your connection and try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -307,12 +367,19 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                     <button
                       type="button"
                       onClick={handleSubmit}
-                      className="order-1 md:order-2 w-full md:w-auto md:min-w-[280px] h-14 bg-dark text-white font-body text-[13px] uppercase tracking-[0.14em] hover:bg-[#2A2420] transition-colors duration-200 ease-standard"
+                      disabled={submitting}
+                      className="order-1 md:order-2 w-full md:w-auto md:min-w-[280px] h-14 bg-dark text-white font-body text-[13px] uppercase tracking-[0.14em] hover:bg-[#2A2420] transition-colors duration-200 ease-standard disabled:opacity-60"
                     >
-                      Send My Inquiry
+                      {submitting ? 'Sending...' : 'Send My Inquiry'}
                     </button>
                   )}
                 </div>
+
+                {submitError && (
+                  <p className="font-body text-[10px] text-[#B91C1C] mt-md text-center md:text-left">
+                    {submitError}
+                  </p>
+                )}
 
                 {step === 2 && (
                   <div className="mt-lg text-center md:text-left">
