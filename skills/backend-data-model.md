@@ -166,7 +166,20 @@ create policy "authenticated read rentals" on rentals for select using (my_role(
 create policy "staff+owner insert rentals" on rentals for insert
   with check (my_role() is not null and entered_by = auth.uid());
 create policy "owner only update rentals" on rentals for update using (my_role() = 'owner');
+-- Staff may also complete a rental (the return flow), but ONLY the exact
+-- deposit_paid -> completed transition — added in migration 005 alongside
+-- complete_rental(). They cannot rewrite any other rental field.
+create policy "staff completes rentals" on rentals for update
+  using (my_role() is not null and state = 'deposit_paid')
+  with check (state = 'completed');
 -- NOTE: no DELETE policy exists for anyone. Rentals are permanent.
+-- NOTE: RLS's WITH CHECK can't compare OLD vs NEW columns, so the policy
+-- above only constrains the resulting `state` — it does NOT stop staff from
+-- also rewriting client_name/client_phone/out_date/due_date/dress_id in the
+-- same update. Migration 006 adds a BEFORE UPDATE trigger
+-- (enforce_rentals_staff_transition) that closes this: for any non-owner,
+-- the ONLY permitted change is state deposit_paid -> completed, with every
+-- other column identical to OLD, or the update is rejected. Owner is exempt.
 
 -- ===== PAYMENTS ===== same append-only pattern
 create policy "authenticated read payments" on payments for select using (my_role() is not null);
@@ -187,6 +200,55 @@ create policy "owner insert updates" on order_updates for insert
 ```
 
 ---
+
+## Migration 006 — the rentals field-smuggling guard (a trigger, not a policy)
+RLS `with check` only sees the proposed NEW row; it cannot reference OLD. That means
+the `staff completes rentals` policy above can only constrain the resulting `state`
+column — it cannot stop a staff member from *also* rewriting `client_name`,
+`client_phone`, `out_date`, `due_date`, or `dress_id` in the same UPDATE statement.
+The app never does this (`complete_rental()` only ever sets `state`), but that means
+the real protection was living in app code, not the database wall — a staff session
+calling the `rentals` table directly (anon key + their cookie, bypassing the API
+route entirely) could smuggle other field changes through.
+
+```sql
+create or replace function enforce_rentals_staff_transition() returns trigger
+language plpgsql
+as $$
+begin
+  if my_role() = 'owner' then
+    return new;
+  end if;
+
+  if old.state = 'deposit_paid'
+     and new.state = 'completed'
+     and new.id = old.id
+     and new.dress_id = old.dress_id
+     and new.entered_by = old.entered_by
+     and new.client_name = old.client_name
+     and new.client_phone = old.client_phone
+     and new.out_date = old.out_date
+     and new.due_date = old.due_date
+     and new.created_at = old.created_at
+  then
+    return new;
+  end if;
+
+  raise exception 'Only the owner may modify a rental beyond completing it — staff may only transition deposit_paid to completed, with no other field changes';
+end;
+$$;
+
+create trigger rentals_staff_transition_guard
+  before update on rentals
+  for each row
+  execute function enforce_rentals_staff_transition();
+```
+
+A BEFORE UPDATE trigger runs after RLS has already allowed the row through, and can
+compare OLD to NEW — closing exactly the gap RLS structurally can't. Owner is
+exempt (`my_role() = 'owner'` returns immediately, no restriction). Any other
+caller that reaches this trigger must be transitioning `deposit_paid -> completed`
+with every other column byte-identical to OLD, or the whole statement is rejected.
 
 ## Why payments have NO update policy even for the owner
 Accounting integrity. If a payment was entered wrong, the correction is a NEW row

@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1782907526.6634142,
-    "ast_hash": "398b075742b256115a32b5d01f0584be",
-    "semantic_hash": "398b075742b256115a32b5d01f0584be"
+    "mtime": 1783269429.0997138,
+    "ast_hash": "092aa01e48e245cee969114f38ca9b4b",
+    "semantic_hash": ""
   },
   "postcss.config.mjs": {
     "mtime": 1782907289.4049675,
@@ -100,9 +100,9 @@
     "semantic_hash": "c56b5f3c12f777a86e2513f45daab56a"
   },
   "tailwind.config.ts": {
-    "mtime": 1782907313.745171,
-    "ast_hash": "2f017b93a2c05d924d42103396464bc6",
-    "semantic_hash": "2f017b93a2c05d924d42103396464bc6"
+    "mtime": 1783261552.3091033,
+    "ast_hash": "11415e11a4ad665a2cb0df1bf098058e",
+    "semantic_hash": ""
   },
   "tsconfig.json": {
     "mtime": 1782907282.288908,
@@ -125,14 +125,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1783027403.8687427,
-    "ast_hash": "bbd1d8aefefb0775b28da0cc211b405c",
+    "mtime": 1783104748.383263,
+    "ast_hash": "671ff2a2ef4a75b05ae77d11f72aaab3",
     "semantic_hash": ""
-  },
-  "CLAUDE_lmweddyli.md": {
-    "mtime": 1782906427.382163,
-    "ast_hash": "a6cd2dffa93ef52832c6c859095802db",
-    "semantic_hash": "a6cd2dffa93ef52832c6c859095802db"
   },
   "skills/README.md": {
     "mtime": 1782894542.0,
@@ -295,13 +290,13 @@
     "semantic_hash": ""
   },
   "components/forms/FormField.tsx": {
-    "mtime": 1783024988.5100622,
-    "ast_hash": "140cb18eff07aa6cd7b20bb043277acb",
+    "mtime": 1783215639.3815012,
+    "ast_hash": "2f7e6ed0d05d20e3925d562404f5b0d3",
     "semantic_hash": ""
   },
   "components/forms/InquiryForm.tsx": {
-    "mtime": 1783026667.311214,
-    "ast_hash": "153a5ea74ac6f8a06d0cef76436bc0d6",
+    "mtime": 1783200050.6468828,
+    "ast_hash": "cb64f71ba00f86efeadadecbb4e9a81d",
     "semantic_hash": ""
   },
   "components/forms/OptionRow.tsx": {
@@ -407,6 +402,166 @@
   "public/brand_assets/photography/linda-portrait.jpg": {
     "mtime": 1783058158.238887,
     "ast_hash": "3791dbd410843e1af7d558d269d1e196",
+    "semantic_hash": ""
+  },
+  "app/api/inquire/route.ts": {
+    "mtime": 1783117815.2754698,
+    "ast_hash": "1541b685c881f7adda48361bcd399511",
+    "semantic_hash": ""
+  },
+  "app/dashboard/(protected)/dresses/page.tsx": {
+    "mtime": 1783261881.5522544,
+    "ast_hash": "ad689acd7b620fc8d10445481f06db8a",
+    "semantic_hash": ""
+  },
+  "app/dashboard/(protected)/layout.tsx": {
+    "mtime": 1783215736.9234352,
+    "ast_hash": "47a495dc6744a38bd377d03e45877241",
+    "semantic_hash": ""
+  },
+  "app/dashboard/(protected)/page.tsx": {
+    "mtime": 1783215757.5678446,
+    "ast_hash": "81b8c2d60d0b49a0ca4084eac82cda04",
+    "semantic_hash": ""
+  },
+  "app/dashboard/actions.ts": {
+    "mtime": 1783215672.918166,
+    "ast_hash": "eb89497114abdc6e4ecf1cc138846b4e",
+    "semantic_hash": ""
+  },
+  "app/dashboard/login/actions.ts": {
+    "mtime": 1783215662.0139499,
+    "ast_hash": "fecc957926f4541cb3d139aa85518f31",
+    "semantic_hash": ""
+  },
+  "app/dashboard/login/page.tsx": {
+    "mtime": 1783215687.646458,
+    "ast_hash": "fb3817bca6561752151e3617aacdde82",
+    "semantic_hash": ""
+  },
+  "components/dashboard/DashboardShell.tsx": {
+    "mtime": 1783264251.5788498,
+    "ast_hash": "0de13eb9dbfa922be9f98ff61009b9ab",
+    "semantic_hash": ""
+  },
+  "components/dashboard/DressesTable.tsx": {
+    "mtime": 1783261832.0762866,
+    "ast_hash": "d9bcb57549a39b982535d5ab4b932d56",
+    "semantic_hash": ""
+  },
+  "components/dashboard/StatusPill.tsx": {
+    "mtime": 1783261815.2254481,
+    "ast_hash": "9b77ce0d365ff92d65b3464899108db0",
+    "semantic_hash": ""
+  },
+  "lib/supabase.ts": {
+    "mtime": 1783113775.1144693,
+    "ast_hash": "91b1943189feadf2e0b0a6e619f4de6d",
+    "semantic_hash": ""
+  },
+  "middleware.ts": {
+    "mtime": 1783215654.0177913,
+    "ast_hash": "543bed01e757e3de611722f1afb01e05",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/003_seed_dresses.sql": {
+    "mtime": 1783261765.6528094,
+    "ast_hash": "e35e4ec7d2fde140522fbeeb258f1d24",
+    "semantic_hash": ""
+  },
+  "types/dress.ts": {
+    "mtime": 1783261800.8024354,
+    "ast_hash": "3180772ea7cfc86630c76a416fef2a67",
+    "semantic_hash": ""
+  },
+  "skills/CLAUDE_backend_section.md": {
+    "mtime": 1783094604.0,
+    "ast_hash": "5035f104942137024e32abacddad0c83",
+    "semantic_hash": ""
+  },
+  "skills/backend-api.md": {
+    "mtime": 1783094604.0,
+    "ast_hash": "96aae82b467e72f89da29f1c3771b030",
+    "semantic_hash": ""
+  },
+  "skills/backend-auth.md": {
+    "mtime": 1783215337.2635183,
+    "ast_hash": "dd15d77fa87231f2fe5baf722b12f31e",
+    "semantic_hash": ""
+  },
+  "skills/backend-data-model.md": {
+    "mtime": 1783270302.54965,
+    "ast_hash": "f237efc8f3017a958972678d923de4b1",
+    "semantic_hash": ""
+  },
+  "skills/backend-notifications.md": {
+    "mtime": 1783094604.0,
+    "ast_hash": "21f6f585f4d38d602365a0714bbe6a00",
+    "semantic_hash": ""
+  },
+  "skills/backend-security.md": {
+    "mtime": 1783094604.0,
+    "ast_hash": "214a0affb381a1e1e8a6a2e0368f92d6",
+    "semantic_hash": ""
+  },
+  "skills/backend-storage.md": {
+    "mtime": 1783094604.0,
+    "ast_hash": "fe740d37efc7b3b41ce7fda8efaa60a2",
+    "semantic_hash": ""
+  },
+  "skills/dashboard-design.md": {
+    "mtime": 1783261111.4788764,
+    "ast_hash": "2dd1a7ebb807ad5424e2756cbd09bfbb",
+    "semantic_hash": ""
+  },
+  "app/api/rentals/route.ts": {
+    "mtime": 1783264163.7981722,
+    "ast_hash": "9e9bc64d30e6540bbf4ba7cb834faf40",
+    "semantic_hash": ""
+  },
+  "app/dashboard/(protected)/rentals/page.tsx": {
+    "mtime": 1783267915.3481405,
+    "ast_hash": "22b82292317e5f5ccb735bbe9f0f4f2d",
+    "semantic_hash": ""
+  },
+  "components/dashboard/LogRentalForm.tsx": {
+    "mtime": 1783264224.8585892,
+    "ast_hash": "601fbce72b78787c21e66d5123f11612",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/004_log_rental_rpc.sql": {
+    "mtime": 1783264118.046139,
+    "ast_hash": "c9f3fab80de96cf53872e2f2109302b5",
+    "semantic_hash": ""
+  },
+  "types/rental.ts": {
+    "mtime": 1783267887.6958869,
+    "ast_hash": "9f5da52d0ce0fb7aad6009a10a51228a",
+    "semantic_hash": ""
+  },
+  "app/api/rentals/complete/route.ts": {
+    "mtime": 1783266570.600004,
+    "ast_hash": "305dd79af4a540ac3424397e968c5567",
+    "semantic_hash": ""
+  },
+  "components/dashboard/ActiveRentalsTable.tsx": {
+    "mtime": 1783267953.6844885,
+    "ast_hash": "f634798a175663b4f591f5c754363aeb",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/005_complete_rental_rpc.sql": {
+    "mtime": 1783266516.906417,
+    "ast_hash": "abc09e6663d0bbf2426c23a24e0084c9",
+    "semantic_hash": ""
+  },
+  "scripts/verify-staff-rls.mjs": {
+    "mtime": 1783269805.188505,
+    "ast_hash": "c8842293ab3597d37d3e73a741a1ced1",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/006_rentals_staff_transition_guard.sql": {
+    "mtime": 1783270257.966519,
+    "ast_hash": "6b9118295986ecc6e30b9c51a71a8e0f",
     "semantic_hash": ""
   }
 }

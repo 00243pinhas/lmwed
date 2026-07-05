@@ -20,12 +20,24 @@ const config: Config = {
       'border-d': '#2A2420', // borders on dark backgrounds
       'border-l': '#DDD8D0', // borders on light backgrounds
       white: '#FFFFFF',     // text on dark backgrounds
+      // Dashboard-only status colors — see skills/dashboard-design.md.
+      // Never used on the marketing site.
+      ok: '#2E6E44',
+      'ok-bg': '#E4F2EA',
+      warn: '#B8860B',
+      'warn-bg': '#F5EFE0',
+      alert: '#A03028',
+      'alert-bg': '#F5E8E4',
     },
     borderRadius: {
       none: '0',
+      // Dashboard-only small radius — marketing site stays sharp (0px).
+      sm: '6px',
     },
     boxShadow: {
       none: 'none',
+      // Dashboard-only subtle lift for cards/tables — marketing site stays flat.
+      card: '0 1px 3px 0 rgba(12, 10, 8, 0.08)',
     },
     fontFamily: {
       display: ['var(--font-cormorant)', 'serif'],

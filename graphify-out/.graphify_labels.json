@@ -91,5 +91,20 @@
   "89": "iOS-Specific Rules (16px input font, safe-area)",
   "90": "page.tsx",
   "91": "page.tsx",
-  "94": "InquiryForm.tsx"
+  "92": "SKILL: Dashboard Design",
+  "93": "SKILL: Backend Security",
+  "94": "InquiryForm.tsx",
+  "95": "page.tsx",
+  "96": "CollectionsGrid.tsx",
+  "97": "SKILL: Backend API",
+  "98": "SKILL: Backend Auth",
+  "99": "page.tsx",
+  "100": "SKILL: Backend Data Model",
+  "101": "SKILL: Backend Notifications",
+  "102": "SKILL: Backend Storage",
+  "103": "route.ts",
+  "104": "page.tsx",
+  "105": "DressDetails.tsx",
+  "106": "middleware.ts",
+  "107": "DressesTable.tsx"
 }

@@ -14,6 +14,15 @@
   --border-l: #ddd8d0;
   --white: #ffffff;
 
+  /* Dashboard-only status colors — see skills/dashboard-design.md. Never used
+     on the marketing site. */
+  --ok: #2e6e44;
+  --ok-bg: #e4f2ea;
+  --warn: #b8860b;
+  --warn-bg: #f5efe0;
+  --alert: #a03028;
+  --alert-bg: #f5e8e4;
+
   /* Standard easing */
   --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
 }

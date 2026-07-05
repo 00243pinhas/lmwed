@@ -1,16 +1,16 @@
-# Graph Report - lmwed  (2026-07-03)
+# Graph Report - lmwed  (2026-07-05)
 
 ## Corpus Check
-- 67 files · ~1,212,077 words
+- 98 files · ~1,227,095 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 510 nodes · 560 edges · 93 communities (30 shown, 63 thin omitted)
-- Extraction: 95% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
+- 720 nodes · 826 edges · 108 communities (45 shown, 63 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0a677c47`
+- Built from commit: `d8fbd960`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -107,22 +107,46 @@
 - [[_COMMUNITY_iOS-Specific Rules (16px input font, safe-area)|iOS-Specific Rules (16px input font, safe-area)]]
 - [[_COMMUNITY_page.tsx|page.tsx]]
 - [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_SKILL Dashboard Design|SKILL: Dashboard Design]]
+- [[_COMMUNITY_SKILL Backend Security|SKILL: Backend Security]]
 - [[_COMMUNITY_InquiryForm.tsx|InquiryForm.tsx]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_CollectionsGrid.tsx|CollectionsGrid.tsx]]
+- [[_COMMUNITY_SKILL Backend API|SKILL: Backend API]]
+- [[_COMMUNITY_SKILL Backend Auth|SKILL: Backend Auth]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_SKILL Backend Data Model|SKILL: Backend Data Model]]
+- [[_COMMUNITY_SKILL Backend Notifications|SKILL: Backend Notifications]]
+- [[_COMMUNITY_SKILL Backend Storage|SKILL: Backend Storage]]
+- [[_COMMUNITY_route.ts|route.ts]]
+- [[_COMMUNITY_page.tsx|page.tsx]]
+- [[_COMMUNITY_DressDetails.tsx|DressDetails.tsx]]
+- [[_COMMUNITY_middleware.ts|middleware.ts]]
+- [[_COMMUNITY_DressesTable.tsx|DressesTable.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `CLAUDE.md — LM Weddyli Frontend` - 18 edges
-2. `compilerOptions` - 15 edges
-3. `SKILL: Forms` - 14 edges
-4. `Component Inventory & Specs` - 11 edges
-5. `SKILL: Images` - 11 edges
-6. `SectionMarker()` - 10 edges
-7. `SKILL: Design System` - 10 edges
-8. `SKILL: Mobile` - 10 edges
-9. `Framer Motion Patterns` - 9 edges
-10. `What Augen Pro Does That We Copy Directly` - 9 edges
+1. `CLAUDE.md — LM Weddyli Frontend` - 25 edges
+2. `createUserScopedClient()` - 15 edges
+3. `compilerOptions` - 15 edges
+4. `SKILL: Forms` - 14 edges
+5. `main()` - 11 edges
+6. `SKILL: Backend API` - 11 edges
+7. `SKILL: Backend Auth` - 11 edges
+8. `SKILL: Backend Data Model` - 11 edges
+9. `SKILL: Backend Security` - 11 edges
+10. `Component Inventory & Specs` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- None detected - all connections are within the same source files.
+- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/api/rentals/complete/route.ts → lib/supabase.ts
+- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/api/rentals/route.ts → lib/supabase.ts
+- `DressesPage()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/dashboard/(protected)/dresses/page.tsx → lib/supabase.ts
+- `ProtectedDashboardLayout()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/dashboard/(protected)/layout.tsx → lib/supabase.ts
+- `RentalsPage()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/dashboard/(protected)/rentals/page.tsx → lib/supabase.ts
 
 ## Import Cycles
 - None detected.
@@ -132,23 +156,23 @@
 - **Augen Pro Visual Language Applied Across Design Docs** — skills_augen_pro_numbered_navigation, skills_augen_pro_section_markers, skills_augen_pro_oversized_headlines, skills_design_system_navigation_pattern, skills_design_system_section_structure, claude_lmweddyli_augen_pro_reference [INFERRED 0.85]
 - **Standard Luxury Easing Curve Used Across Animation Contexts** — skills_animation_luxury_ease, skills_animation_standard_section_reveal, skills_animation_form_step_transition, claude_lmweddyli_animation_rules, skills_forms_step_transitions [INFERRED 0.85]
 
-## Communities (93 total, 63 thin omitted)
+## Communities (108 total, 63 thin omitted)
 
 ### Community 0 - "page.tsx"
-Cohesion: 0.16
-Nodes (13): metadata, AboutHero(), ease, fade, Props, SectionMarker(), founderTestimonial, productionModel (+5 more)
+Cohesion: 0.07
+Nodes (31): budgetLabels, buildEmailBody(), foundUsLabels, inquirySchema, isWithinWeeks(), POST(), qualificationTag(), serviceLabels (+23 more)
 
 ### Community 1 - "NPM Package Dependencies"
-Cohesion: 0.08
-Nodes (23): dependencies, framer-motion, next, react, react-dom, devDependencies, autoprefixer, eslint (+15 more)
+Cohesion: 0.07
+Nodes (29): dependencies, framer-motion, next, react, react-dom, resend, server-only, @supabase/ssr (+21 more)
 
 ### Community 2 - "TypeScript Compiler Config"
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
 ### Community 3 - "Component Specs Documentation"
-Cohesion: 0.08
-Nodes (25): Always Do First, Animation Rules, Before creating any component:, Brand Assets (check before every session), CLAUDE.md — LM Weddyli Frontend, Colors — use only these, no exceptions, Component Rules, Definition of Done (per page) (+17 more)
+Cohesion: 0.12
+Nodes (16): ==========================================================, ==========================================================, (after the frontend rules, before or after the graphify block), Always Do First (backend tasks), API Route Conventions, APPEND EVERYTHING BELOW THIS LINE TO YOUR EXISTING CLAUDE.md, Architecture, BACKEND — Architecture & Rules (+8 more)
 
 ### Community 4 - "Layout, Navbar & Footer"
 Cohesion: 0.22
@@ -230,6 +254,10 @@ Nodes (18): Breakpoints, Detail Page Split Layout, Grids, Horizontal Scrolls, iO
 Cohesion: 0.40
 Nodes (4): File locations, How Claude uses these files, LM Weddyli — Skills Library, Rule
 
+### Community 28 - "LM Weddyli Typography Spec"
+Cohesion: 0.05
+Nodes (38): Always Do First, Always Do First (backend tasks), Animation Rules, API Route Conventions, Architecture, BACKEND — Architecture & Rules, Backend Build Order (Phase 2), Backend Hard Rules — Never Break (+30 more)
+
 ### Community 32 - "Form Step Transition Pattern"
 Cohesion: 0.11
 Nodes (17): Confirmation Screen, Desktop Trust Sidebar, Error States, Field Styling Rules, Form Steps Content, Option Row Fields (no dropdowns ever), Qualification Logic (internal — bride never sees this), Read this before building the inquiry form or any input component. (+9 more)
@@ -243,23 +271,79 @@ Cohesion: 0.11
 Nodes (18): 10. HeroSection, 1. SectionMarker, 2. Navbar, 3. Footer, 4. LookCard, 5. ProcessStep, 6. TestimonialCard, 7. MeasurementCard (+10 more)
 
 ### Community 90 - "page.tsx"
-Cohesion: 0.07
-Nodes (23): metadata, Props, Breadcrumb(), Crumb, CollectionsGrid(), Filter, filters, DetailHero() (+15 more)
+Cohesion: 0.16
+Nodes (8): Props, Breadcrumb(), Crumb, DetailHero(), Props, ease, Props, StickyInquiryBar()
 
 ### Community 91 - "page.tsx"
-Cohesion: 0.05
-Nodes (38): metadata, remainingTestimonials, featuredLooks, featuredSlugs, previewSteps, metadata, timelineStages, ease (+30 more)
+Cohesion: 0.07
+Nodes (29): metadata, metadata, timelineStages, AboutHero(), ease, fade, MeasurementCard(), Props (+21 more)
+
+### Community 92 - "SKILL: Dashboard Design"
+Cohesion: 0.12
+Nodes (16): Buttons, Components & patterns, Core principle, Empty states, Forms (log rental, record payment, add staff), Hard rules, Layout, Read this before building any /dashboard page or admin component. (+8 more)
+
+### Community 93 - "SKILL: Backend Security"
+Cohesion: 0.13
+Nodes (14): 1. User-scoped client (default for authenticated actions), 2. Service-role client (the two exceptions only), Auth model, Checking role in a route, Environment & secrets, Input trust, Read this before anything touching auth, roles, keys, or data access., Security definition of done (every route) (+6 more)
 
 ### Community 94 - "InquiryForm.tsx"
-Cohesion: 0.07
-Nodes (28): metadata, FormField(), Props, budgetOptions, ease, FieldError, FormData, foundUsOptions (+20 more)
+Cohesion: 0.06
+Nodes (29): metadata, budgetOptions, budgetSlugs, ease, FieldError, FormData, foundUsOptions, foundUsSlugs (+21 more)
+
+### Community 95 - "page.tsx"
+Cohesion: 0.18
+Nodes (9): metadata, CollectionsGrid(), ease, HeroSection(), Props, sentence, word, collectionInfo (+1 more)
+
+### Community 96 - "CollectionsGrid.tsx"
+Cohesion: 0.20
+Nodes (9): Filter, filters, ease, LookCard(), Props, container, ease, item (+1 more)
+
+### Community 97 - "SKILL: Backend API"
+Cohesion: 0.17
+Nodes (11): Calling routes from the frontend, Input validation with zod, Never do, Read this before creating or changing any API route., Route handler shape, SKILL: Backend API, Standard response shape — ALWAYS, The four rules every route follows (+3 more)
+
+### Community 98 - "SKILL: Backend Auth"
+Cohesion: 0.17
+Nodes (11): Account creation model, Checking auth in a route (pattern), First-login password change, Hard rules, Login, Read this before anything touching login, sessions, roles, or the dashboard., Roles, Session & route protection (+3 more)
+
+### Community 99 - "page.tsx"
+Cohesion: 0.22
+Nodes (7): featuredLooks, featuredSlugs, previewSteps, ProcessStep(), Props, Props, TestimonialCard()
+
+### Community 100 - "SKILL: Backend Data Model"
+Cohesion: 0.17
+Nodes (11): Core security principles (why the schema looks like this), Migration 002 — Row Level Security (the theft protection), Migration 006 — the rentals field-smuggling guard (a trigger, not a policy), Read this before touching anything database-related. This is the source of truth for the schema., Seed data (migration 003) — after Linda provides real info, SKILL: Backend Data Model, Stack, Storage bucket (+3 more)
+
+### Community 101 - "SKILL: Backend Notifications"
+Cohesion: 0.18
+Nodes (10): Current scope, LATER (not now) — WhatsApp alert, Phase 2 is EMAIL-FIRST. WhatsApp is a documented later step, not built now., Read this before sending any email or alert to Linda., Resend setup, Rules, SKILL: Backend Notifications, The email body (+2 more)
+
+### Community 102 - "SKILL: Backend Storage"
+Cohesion: 0.18
+Nodes (10): File validation, Read this before handling any file, photo, or video upload., Rules, Serving media to the bride (magic-link page), SKILL: Backend Storage, Supabase Storage setup, Upload flow (owner only), Used for: custom order progress media (the bride's magic-link page). (+2 more)
+
+### Community 103 - "route.ts"
+Cohesion: 0.33
+Nodes (14): createFixtures(), main(), printSummary(), record(), results, signIn(), testInquiries(), testPaymentImmutability() (+6 more)
+
+### Community 104 - "page.tsx"
+Cohesion: 0.29
+Nodes (6): metadata, remainingTestimonials, Reveal, instagramSection, loveNotesHeader, scarcityNote
+
+### Community 105 - "DressDetails.tsx"
+Cohesion: 0.28
+Nodes (6): DressDetails(), ease, sentence, word, looks, Look
+
+### Community 107 - "DressesTable.tsx"
+Cohesion: 0.14
+Nodes (14): ActiveRentalsTable(), METHOD_OPTIONS, STATUS_CONFIG, formatPrice(), LogRentalForm(), METHOD_OPTIONS, PillTone, StatusPill() (+6 more)
 
 ## Ambiguous Edges - Review These
 - `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` → `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`  [AMBIGUOUS]
   public/brand_assets/photography/naomi-hero.jpg.jpg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **295 isolated node(s):** `extends`, `metadata`, `Props`, `metadata`, `metadata` (+290 more)
+- **417 isolated node(s):** `extends`, `metadata`, `Props`, `metadata`, `metadata` (+412 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **63 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -268,15 +352,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` and `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `SectionMarker()` connect `page.tsx` to `page.tsx`, `page.tsx`, `InquiryForm.tsx`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `testimonials` connect `InquiryForm.tsx` to `page.tsx`, `page.tsx`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `createUserScopedClient()` connect `page.tsx` to `DressesTable.tsx`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `FormField()` connect `page.tsx` to `InquiryForm.tsx`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `extends`, `metadata`, `Props` to the rest of the system?**
-  _302 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _424 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `page.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `NPM Package Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `TypeScript Compiler Config` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `Component Specs Documentation` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
