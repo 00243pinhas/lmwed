@@ -16,9 +16,10 @@ export function useDashboardUser(): DashboardUser {
 }
 
 const NAV_ITEMS = [
-  { label: 'Overview', href: '/dashboard' },
-  { label: 'Rentals', href: '/dashboard/rentals' },
-  { label: 'Dresses', href: '/dashboard/dresses' },
+  { label: 'Overview', href: '/dashboard', ownerOnly: false },
+  { label: 'Rentals', href: '/dashboard/rentals', ownerOnly: false },
+  { label: 'Dresses', href: '/dashboard/dresses', ownerOnly: false },
+  { label: 'Orders', href: '/dashboard/orders', ownerOnly: true },
 ];
 
 function sectionTitle(pathname: string) {
@@ -34,12 +35,15 @@ export function DashboardShell({
 }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  // UI hiding for clarity only — every owner-only route is also enforced
+  // server-side (see skills/backend-auth.md, skills/dashboard-design.md).
+  const navItems = NAV_ITEMS.filter((item) => !item.ownerOnly || user.role === 'owner');
 
   return (
     <DashboardUserContext.Provider value={user}>
       <div className="min-h-screen bg-light md:flex">
         {/* Sidebar — tablet/desktop */}
-        <aside className="hidden md:flex md:w-[200px] md:shrink-0 md:flex-col md:justify-between md:border-r-hairline md:border-border-d bg-dark px-lg py-lg">
+        <aside className="hidden md:flex md:w-[200px] md:shrink-0 md:flex-col md:justify-between md:border-r-hairline md:border-border-d bg-dark px-lg py-lg md:sticky md:top-0 md:h-screen md:overflow-y-auto">
           <div>
             <p className="font-body text-[13px] uppercase tracking-[0.1em] text-white">
               LM Weddyli
@@ -48,7 +52,7 @@ export function DashboardShell({
               Dashboard
             </p>
             <nav className="mt-2xl flex flex-col gap-xs">
-              {NAV_ITEMS.map((item) => {
+              {navItems.map((item) => {
                 const active = pathname === item.href;
                 return (
                   <a
@@ -105,7 +109,7 @@ export function DashboardShell({
 
           {menuOpen && (
             <nav className="md:hidden flex flex-col border-b-hairline border-border-l bg-white">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}

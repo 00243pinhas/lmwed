@@ -153,7 +153,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "app_marketing_collections_slug_page_dressdetailpage",
-      "community": 90,
+      "community": 0,
       "norm_label": "dressdetailpage()"
     },
     {
@@ -163,7 +163,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_marketing_collections_page",
-      "community": 95,
+      "community": 105,
       "norm_label": "page.tsx"
     },
     {
@@ -173,7 +173,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "app_marketing_collections_page_metadata",
-      "community": 95,
+      "community": 105,
       "norm_label": "metadata"
     },
     {
@@ -183,7 +183,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "app_marketing_collections_page_collectionspage",
-      "community": 95,
+      "community": 105,
       "norm_label": "collectionspage()"
     },
     {
@@ -333,7 +333,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_marketing_process_page",
-      "community": 91,
+      "community": 96,
       "norm_label": "page.tsx"
     },
     {
@@ -343,7 +343,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "app_marketing_process_page_metadata",
-      "community": 91,
+      "community": 96,
       "norm_label": "metadata"
     },
     {
@@ -353,7 +353,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_marketing_process_page_timelinestages",
-      "community": 91,
+      "community": 96,
       "norm_label": "timelinestages"
     },
     {
@@ -363,7 +363,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "app_marketing_process_page_processpage",
-      "community": 91,
+      "community": 96,
       "norm_label": "processpage()"
     },
     {
@@ -453,6 +453,146 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "app_api_inquire_route_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_api_order_updates_route",
+      "community": 0,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "OK_IMAGE_TYPES",
+      "file_type": "code",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_api_order_updates_route_ok_image_types",
+      "community": 0,
+      "norm_label": "ok_image_types"
+    },
+    {
+      "label": "OK_VIDEO_TYPES",
+      "file_type": "code",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_api_order_updates_route_ok_video_types",
+      "community": 0,
+      "norm_label": "ok_video_types"
+    },
+    {
+      "label": "metaSchema",
+      "file_type": "code",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "app_api_order_updates_route_metaschema",
+      "community": 0,
+      "norm_label": "metaschema"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "app_api_order_updates_route_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_api_orders_advance_route",
+      "community": 0,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "advanceSchema",
+      "file_type": "code",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_api_orders_advance_route_advanceschema",
+      "community": 0,
+      "norm_label": "advanceschema"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "app_api_orders_advance_route_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_api_orders_complete_route",
+      "community": 0,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "completeSchema",
+      "file_type": "code",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "app_api_orders_complete_route_completeschema",
+      "community": 0,
+      "norm_label": "completeschema"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "app_api_orders_complete_route_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_api_orders_route",
+      "community": 0,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "orderSchema",
+      "file_type": "code",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_api_orders_route_orderschema",
+      "community": 0,
+      "norm_label": "orderschema"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "app_api_orders_route_post",
       "community": 0,
       "norm_label": "post()"
     },
@@ -559,21 +699,121 @@
     {
       "label": "page.tsx",
       "file_type": "code",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_orders_page",
+      "community": 107,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "OrdersPage()",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_orders_page_orderspage",
+      "community": 107,
+      "norm_label": "orderspage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
       "source_file": "app/dashboard/(protected)/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_dashboard_protected_page",
-      "community": 0,
+      "community": 95,
       "norm_label": "page.tsx"
+    },
+    {
+      "label": "formatMoney()",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_formatmoney",
+      "community": 95,
+      "norm_label": "formatmoney()"
+    },
+    {
+      "label": "RentalRow",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_rentalrow",
+      "community": 95,
+      "norm_label": "rentalrow"
+    },
+    {
+      "label": "OrderRow",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_orderrow",
+      "community": 95,
+      "norm_label": "orderrow"
+    },
+    {
+      "label": "RecentRentalRow",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_recentrentalrow",
+      "community": 95,
+      "norm_label": "recentrentalrow"
+    },
+    {
+      "label": "RecentOrderRow",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_recentorderrow",
+      "community": 95,
+      "norm_label": "recentorderrow"
+    },
+    {
+      "label": "ReturnPaymentRow",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_returnpaymentrow",
+      "community": 95,
+      "norm_label": "returnpaymentrow"
+    },
+    {
+      "label": "DeliveryPaymentRow",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_deliverypaymentrow",
+      "community": 95,
+      "norm_label": "deliverypaymentrow"
+    },
+    {
+      "label": "toSummary()",
+      "file_type": "code",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "app_dashboard_protected_page_tosummary",
+      "community": 95,
+      "norm_label": "tosummary()"
     },
     {
       "label": "DashboardPage()",
       "file_type": "code",
       "source_file": "app/dashboard/(protected)/page.tsx",
-      "source_location": "L5",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "app_dashboard_protected_page_dashboardpage",
-      "community": 0,
+      "community": 95,
       "norm_label": "dashboardpage()"
     },
     {
@@ -593,7 +833,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_dashboard_protected_rentals_page_rentalspage",
-      "community": 0,
+      "community": 107,
       "norm_label": "rentalspage()"
     },
     {
@@ -663,7 +903,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_dashboard_login_page",
-      "community": 0,
+      "community": 94,
       "norm_label": "page.tsx"
     },
     {
@@ -673,7 +913,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "app_dashboard_login_page_dashboardloginpage",
-      "community": 0,
+      "community": 94,
       "norm_label": "dashboardloginpage()"
     },
     {
@@ -705,6 +945,56 @@
       "id": "app_layout_rootlayout",
       "community": 10,
       "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_my_dress_token_page",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "app_my_dress_token_page_metadata",
+      "community": 0,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "app_my_dress_token_page_formatdate",
+      "community": 0,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "NotFound()",
+      "file_type": "code",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "app_my_dress_token_page_notfound",
+      "community": 0,
+      "norm_label": "notfound()"
+    },
+    {
+      "label": "MyDressPage()",
+      "file_type": "code",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "app_my_dress_token_page_mydresspage",
+      "community": 0,
+      "norm_label": "mydresspage()"
     },
     {
       "label": "ActiveRentalsTable.tsx",
@@ -755,6 +1045,56 @@
       "id": "components_dashboard_activerentalstable_activerentalstable",
       "community": 107,
       "norm_label": "activerentalstable()"
+    },
+    {
+      "label": "ActivityFeed.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_activityfeed",
+      "community": 95,
+      "norm_label": "activityfeed.tsx"
+    },
+    {
+      "label": "formatWhen()",
+      "file_type": "code",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "components_dashboard_activityfeed_formatwhen",
+      "community": 95,
+      "norm_label": "formatwhen()"
+    },
+    {
+      "label": "ActivityFeed()",
+      "file_type": "code",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "components_dashboard_activityfeed_activityfeed",
+      "community": 95,
+      "norm_label": "activityfeed()"
+    },
+    {
+      "label": "AttentionList.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_attentionlist",
+      "community": 95,
+      "norm_label": "attentionlist.tsx"
+    },
+    {
+      "label": "AttentionList()",
+      "file_type": "code",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "components_dashboard_attentionlist_attentionlist",
+      "community": 95,
+      "norm_label": "attentionlist()"
     },
     {
       "label": "DashboardShell.tsx",
@@ -810,7 +1150,7 @@
       "label": "sectionTitle()",
       "file_type": "code",
       "source_file": "components/dashboard/DashboardShell.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "components_dashboard_dashboardshell_sectiontitle",
       "community": 0,
@@ -820,11 +1160,41 @@
       "label": "DashboardShell()",
       "file_type": "code",
       "source_file": "components/dashboard/DashboardShell.tsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "components_dashboard_dashboardshell_dashboardshell",
       "community": 0,
       "norm_label": "dashboardshell()"
+    },
+    {
+      "label": "DressesOutList.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_dressesoutlist",
+      "community": 95,
+      "norm_label": "dressesoutlist.tsx"
+    },
+    {
+      "label": "isOverdue()",
+      "file_type": "code",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "components_dashboard_dressesoutlist_isoverdue",
+      "community": 95,
+      "norm_label": "isoverdue()"
+    },
+    {
+      "label": "DressesOutList()",
+      "file_type": "code",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "components_dashboard_dressesoutlist_dressesoutlist",
+      "community": 95,
+      "norm_label": "dressesoutlist()"
     },
     {
       "label": "DressesTable.tsx",
@@ -907,6 +1277,206 @@
       "norm_label": "logrentalform()"
     },
     {
+      "label": "NewOrderForm.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_neworderform",
+      "community": 107,
+      "norm_label": "neworderform.tsx"
+    },
+    {
+      "label": "METHOD_OPTIONS",
+      "file_type": "code",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "components_dashboard_neworderform_method_options",
+      "community": 107,
+      "norm_label": "method_options"
+    },
+    {
+      "label": "formatPrice()",
+      "file_type": "code",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "components_dashboard_neworderform_formatprice",
+      "community": 107,
+      "norm_label": "formatprice()"
+    },
+    {
+      "label": "NewOrderForm()",
+      "file_type": "code",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "components_dashboard_neworderform_neworderform",
+      "community": 107,
+      "norm_label": "neworderform()"
+    },
+    {
+      "label": "OrderProgressUpdates.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_orderprogressupdates",
+      "community": 107,
+      "norm_label": "orderprogressupdates.tsx"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "components_dashboard_orderprogressupdates_formatdate",
+      "community": 107,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "OrderProgressUpdates()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "components_dashboard_orderprogressupdates_orderprogressupdates",
+      "community": 107,
+      "norm_label": "orderprogressupdates()"
+    },
+    {
+      "label": "OrdersTable.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable",
+      "community": 107,
+      "norm_label": "orderstable.tsx"
+    },
+    {
+      "label": "STAGE_CONFIG",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_stage_config",
+      "community": 107,
+      "norm_label": "stage_config"
+    },
+    {
+      "label": "NEXT_STAGE",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_next_stage",
+      "community": 107,
+      "norm_label": "next_stage"
+    },
+    {
+      "label": "METHOD_OPTIONS",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_method_options",
+      "community": 107,
+      "norm_label": "method_options"
+    },
+    {
+      "label": "formatPrice()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_formatprice",
+      "community": 107,
+      "norm_label": "formatprice()"
+    },
+    {
+      "label": "AdvanceStageAction()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_advancestageaction",
+      "community": 107,
+      "norm_label": "advancestageaction()"
+    },
+    {
+      "label": "RecordDeliveryAction()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_recorddeliveryaction",
+      "community": 107,
+      "norm_label": "recorddeliveryaction()"
+    },
+    {
+      "label": "OrderActions()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_orderactions",
+      "community": 107,
+      "norm_label": "orderactions()"
+    },
+    {
+      "label": "OrdersTable()",
+      "file_type": "code",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "components_dashboard_orderstable_orderstable",
+      "community": 107,
+      "norm_label": "orderstable()"
+    },
+    {
+      "label": "ShareLinkButton.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/ShareLinkButton.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_sharelinkbutton",
+      "community": 107,
+      "norm_label": "sharelinkbutton.tsx"
+    },
+    {
+      "label": "ShareLinkButton()",
+      "file_type": "code",
+      "source_file": "components/dashboard/ShareLinkButton.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "components_dashboard_sharelinkbutton_sharelinkbutton",
+      "community": 107,
+      "norm_label": "sharelinkbutton()"
+    },
+    {
+      "label": "StatCard.tsx",
+      "file_type": "code",
+      "source_file": "components/dashboard/StatCard.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_statcard",
+      "community": 95,
+      "norm_label": "statcard.tsx"
+    },
+    {
+      "label": "StatCard()",
+      "file_type": "code",
+      "source_file": "components/dashboard/StatCard.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dashboard_statcard_statcard",
+      "community": 95,
+      "norm_label": "statcard()"
+    },
+    {
       "label": "StatusPill.tsx",
       "file_type": "code",
       "source_file": "components/dashboard/StatusPill.tsx",
@@ -943,7 +1513,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_dashboard_statuspill_statuspill",
-      "community": 107,
+      "community": 95,
       "norm_label": "statuspill()"
     },
     {
@@ -953,7 +1523,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_forms_formfield",
-      "community": 0,
+      "community": 94,
       "norm_label": "formfield.tsx"
     },
     {
@@ -963,7 +1533,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_forms_formfield_props",
-      "community": 0,
+      "community": 94,
       "norm_label": "props"
     },
     {
@@ -973,7 +1543,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "components_forms_formfield_formfield",
-      "community": 0,
+      "community": 94,
       "norm_label": "formfield()"
     },
     {
@@ -1303,7 +1873,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_abouthero",
-      "community": 91,
+      "community": 109,
       "norm_label": "abouthero.tsx"
     },
     {
@@ -1313,7 +1883,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_ui_abouthero_ease",
-      "community": 91,
+      "community": 109,
       "norm_label": "ease"
     },
     {
@@ -1323,7 +1893,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_ui_abouthero_fade",
-      "community": 91,
+      "community": 109,
       "norm_label": "fade"
     },
     {
@@ -1333,7 +1903,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "components_ui_abouthero_abouthero",
-      "community": 91,
+      "community": 109,
       "norm_label": "abouthero()"
     },
     {
@@ -1373,7 +1943,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_collectionsgrid",
-      "community": 96,
+      "community": 111,
       "norm_label": "collectionsgrid.tsx"
     },
     {
@@ -1383,7 +1953,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "components_ui_collectionsgrid_filter",
-      "community": 96,
+      "community": 111,
       "norm_label": "filter"
     },
     {
@@ -1393,7 +1963,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_ui_collectionsgrid_filters",
-      "community": 96,
+      "community": 111,
       "norm_label": "filters"
     },
     {
@@ -1403,7 +1973,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "components_ui_collectionsgrid_collectionsgrid",
-      "community": 95,
+      "community": 105,
       "norm_label": "collectionsgrid()"
     },
     {
@@ -1443,7 +2013,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_dressdetails",
-      "community": 105,
+      "community": 90,
       "norm_label": "dressdetails.tsx"
     },
     {
@@ -1453,7 +2023,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_ui_dressdetails_ease",
-      "community": 105,
+      "community": 90,
       "norm_label": "ease"
     },
     {
@@ -1463,7 +2033,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_ui_dressdetails_sentence",
-      "community": 105,
+      "community": 90,
       "norm_label": "sentence"
     },
     {
@@ -1473,7 +2043,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "components_ui_dressdetails_word",
-      "community": 105,
+      "community": 90,
       "norm_label": "word"
     },
     {
@@ -1483,8 +2053,88 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "components_ui_dressdetails_dressdetails",
-      "community": 105,
+      "community": 90,
       "norm_label": "dressdetails()"
+    },
+    {
+      "label": "DressJourney.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_ui_dressjourney",
+      "community": 107,
+      "norm_label": "dressjourney.tsx"
+    },
+    {
+      "label": "ease",
+      "file_type": "code",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "components_ui_dressjourney_ease",
+      "community": 107,
+      "norm_label": "ease"
+    },
+    {
+      "label": "STAGES",
+      "file_type": "code",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "components_ui_dressjourney_stages",
+      "community": 107,
+      "norm_label": "stages"
+    },
+    {
+      "label": "DressJourney()",
+      "file_type": "code",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "components_ui_dressjourney_dressjourney",
+      "community": 107,
+      "norm_label": "dressjourney()"
+    },
+    {
+      "label": "DressUpdateCard.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_ui_dressupdatecard",
+      "community": 107,
+      "norm_label": "dressupdatecard.tsx"
+    },
+    {
+      "label": "STAGE_LABELS",
+      "file_type": "code",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "components_ui_dressupdatecard_stage_labels",
+      "community": 107,
+      "norm_label": "stage_labels"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "components_ui_dressupdatecard_formatdate",
+      "community": 107,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "DressUpdateCard()",
+      "file_type": "code",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "components_ui_dressupdatecard_dressupdatecard",
+      "community": 107,
+      "norm_label": "dressupdatecard()"
     },
     {
       "label": "HeroSection.tsx",
@@ -1493,7 +2143,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_herosection",
-      "community": 95,
+      "community": 105,
       "norm_label": "herosection.tsx"
     },
     {
@@ -1503,7 +2153,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_ui_herosection_props",
-      "community": 95,
+      "community": 105,
       "norm_label": "props"
     },
     {
@@ -1513,7 +2163,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_ui_herosection_ease",
-      "community": 95,
+      "community": 105,
       "norm_label": "ease"
     },
     {
@@ -1523,7 +2173,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "components_ui_herosection_sentence",
-      "community": 95,
+      "community": 105,
       "norm_label": "sentence"
     },
     {
@@ -1533,7 +2183,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "components_ui_herosection_word",
-      "community": 95,
+      "community": 105,
       "norm_label": "word"
     },
     {
@@ -1543,7 +2193,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "components_ui_herosection_herosection",
-      "community": 95,
+      "community": 105,
       "norm_label": "herosection()"
     },
     {
@@ -1603,7 +2253,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_lookcard",
-      "community": 96,
+      "community": 111,
       "norm_label": "lookcard.tsx"
     },
     {
@@ -1613,7 +2263,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_ui_lookcard_props",
-      "community": 96,
+      "community": 111,
       "norm_label": "props"
     },
     {
@@ -1623,7 +2273,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "components_ui_lookcard_ease",
-      "community": 96,
+      "community": 111,
       "norm_label": "ease"
     },
     {
@@ -1633,7 +2283,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_ui_lookcard_lookcard",
-      "community": 96,
+      "community": 111,
       "norm_label": "lookcard()"
     },
     {
@@ -1643,7 +2293,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_measurementcard",
-      "community": 91,
+      "community": 96,
       "norm_label": "measurementcard.tsx"
     },
     {
@@ -1653,7 +2303,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_measurementcard_props",
-      "community": 91,
+      "community": 96,
       "norm_label": "props"
     },
     {
@@ -1663,7 +2313,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_ui_measurementcard_measurementcard",
-      "community": 91,
+      "community": 96,
       "norm_label": "measurementcard()"
     },
     {
@@ -1673,7 +2323,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_processhero",
-      "community": 91,
+      "community": 109,
       "norm_label": "processhero.tsx"
     },
     {
@@ -1683,7 +2333,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_ui_processhero_ease",
-      "community": 91,
+      "community": 109,
       "norm_label": "ease"
     },
     {
@@ -1693,7 +2343,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_ui_processhero_sentence",
-      "community": 91,
+      "community": 109,
       "norm_label": "sentence"
     },
     {
@@ -1703,7 +2353,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "components_ui_processhero_word",
-      "community": 91,
+      "community": 109,
       "norm_label": "word"
     },
     {
@@ -1713,7 +2363,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "components_ui_processhero_processhero",
-      "community": 91,
+      "community": 109,
       "norm_label": "processhero()"
     },
     {
@@ -1723,7 +2373,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_processstep",
-      "community": 99,
+      "community": 96,
       "norm_label": "processstep.tsx"
     },
     {
@@ -1733,7 +2383,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_ui_processstep_props",
-      "community": 99,
+      "community": 96,
       "norm_label": "props"
     },
     {
@@ -1743,7 +2393,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_ui_processstep_processstep",
-      "community": 99,
+      "community": 96,
       "norm_label": "processstep()"
     },
     {
@@ -1753,7 +2403,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_reveal",
-      "community": 104,
+      "community": 105,
       "norm_label": "reveal.tsx"
     },
     {
@@ -1763,7 +2413,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "components_ui_reveal_reveal",
-      "community": 104,
+      "community": 105,
       "norm_label": "reveal"
     },
     {
@@ -1773,7 +2423,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_sectionmarker",
-      "community": 91,
+      "community": 109,
       "norm_label": "sectionmarker.tsx"
     },
     {
@@ -1783,7 +2433,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_sectionmarker_props",
-      "community": 91,
+      "community": 109,
       "norm_label": "props"
     },
     {
@@ -1793,7 +2443,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_ui_sectionmarker_sectionmarker",
-      "community": 91,
+      "community": 109,
       "norm_label": "sectionmarker()"
     },
     {
@@ -1803,7 +2453,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_staggerreveal",
-      "community": 96,
+      "community": 111,
       "norm_label": "staggerreveal.tsx"
     },
     {
@@ -1813,7 +2463,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_ease",
-      "community": 96,
+      "community": 111,
       "norm_label": "ease"
     },
     {
@@ -1823,7 +2473,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_container",
-      "community": 96,
+      "community": 111,
       "norm_label": "container"
     },
     {
@@ -1833,7 +2483,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_item",
-      "community": 96,
+      "community": 111,
       "norm_label": "item"
     },
     {
@@ -1843,7 +2493,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_ui_staggerreveal_staggerreveal",
-      "community": 96,
+      "community": 111,
       "norm_label": "staggerreveal()"
     },
     {
@@ -1923,7 +2573,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_ui_timeline",
-      "community": 91,
+      "community": 96,
       "norm_label": "timeline.tsx"
     },
     {
@@ -1933,7 +2583,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "components_ui_timeline_stage",
-      "community": 91,
+      "community": 96,
       "norm_label": "stage"
     },
     {
@@ -1943,7 +2593,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_ui_timeline_props",
-      "community": 91,
+      "community": 96,
       "norm_label": "props"
     },
     {
@@ -1953,7 +2603,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "components_ui_timeline_ease",
-      "community": 91,
+      "community": 96,
       "norm_label": "ease"
     },
     {
@@ -1963,7 +2613,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "components_ui_timeline_timeline",
-      "community": 91,
+      "community": 96,
       "norm_label": "timeline()"
     },
     {
@@ -2033,7 +2683,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_dummy_collection_info",
-      "community": 95,
+      "community": 105,
       "norm_label": "collection-info.ts"
     },
     {
@@ -2043,7 +2693,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_dummy_collection_info_collectioninfo",
-      "community": 95,
+      "community": 105,
       "norm_label": "collectioninfo"
     },
     {
@@ -2053,7 +2703,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_dummy_collections",
-      "community": 105,
+      "community": 90,
       "norm_label": "collections.ts"
     },
     {
@@ -2063,7 +2713,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_dummy_collections_looks",
-      "community": 105,
+      "community": 90,
       "norm_label": "looks"
     },
     {
@@ -2133,7 +2783,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_dummy_measurements",
-      "community": 91,
+      "community": 96,
       "norm_label": "measurements.ts"
     },
     {
@@ -2143,7 +2793,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_dummy_measurements_measurements",
-      "community": 91,
+      "community": 96,
       "norm_label": "measurements"
     },
     {
@@ -2153,7 +2803,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_dummy_process_steps",
-      "community": 91,
+      "community": 99,
       "norm_label": "process-steps.ts"
     },
     {
@@ -2163,7 +2813,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_dummy_process_steps_processsteps",
-      "community": 91,
+      "community": 99,
       "norm_label": "processsteps"
     },
     {
@@ -2173,7 +2823,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_dummy_testimonials",
-      "community": 94,
+      "community": 104,
       "norm_label": "testimonials.ts"
     },
     {
@@ -2183,7 +2833,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_dummy_testimonials_testimonials",
-      "community": 94,
+      "community": 104,
       "norm_label": "testimonials"
     },
     {
@@ -3003,7 +3653,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_collection_info",
-      "community": 95,
+      "community": 105,
       "norm_label": "collection-info.ts"
     },
     {
@@ -3013,8 +3663,38 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_collection_info_collectioninfo",
-      "community": 95,
+      "community": 105,
       "norm_label": "collectioninfo"
+    },
+    {
+      "label": "dashboard.ts",
+      "file_type": "code",
+      "source_file": "types/dashboard.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "types_dashboard",
+      "community": 95,
+      "norm_label": "dashboard.ts"
+    },
+    {
+      "label": "ActiveRentalSummary",
+      "file_type": "code",
+      "source_file": "types/dashboard.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "types_dashboard_activerentalsummary",
+      "community": 95,
+      "norm_label": "activerentalsummary"
+    },
+    {
+      "label": "ActivityItem",
+      "file_type": "code",
+      "source_file": "types/dashboard.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "types_dashboard_activityitem",
+      "community": 95,
+      "norm_label": "activityitem"
     },
     {
       "label": "dress.ts",
@@ -3053,7 +3733,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_look",
-      "community": 105,
+      "community": 90,
       "norm_label": "look.ts"
     },
     {
@@ -3063,7 +3743,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_look_look",
-      "community": 105,
+      "community": 90,
       "norm_label": "look"
     },
     {
@@ -3073,7 +3753,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_measurement",
-      "community": 91,
+      "community": 96,
       "norm_label": "measurement.ts"
     },
     {
@@ -3083,8 +3763,88 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_measurement_measurement",
-      "community": 91,
+      "community": 96,
       "norm_label": "measurement"
+    },
+    {
+      "label": "order.ts",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "types_order",
+      "community": 107,
+      "norm_label": "order.ts"
+    },
+    {
+      "label": "OrderStage",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "types_order_orderstage",
+      "community": 107,
+      "norm_label": "orderstage"
+    },
+    {
+      "label": "Order",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "types_order_order",
+      "community": 107,
+      "norm_label": "order"
+    },
+    {
+      "label": "BrideOrder",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "types_order_brideorder",
+      "community": 107,
+      "norm_label": "brideorder"
+    },
+    {
+      "label": "UnconvertedInquiry",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "types_order_unconvertedinquiry",
+      "community": 107,
+      "norm_label": "unconvertedinquiry"
+    },
+    {
+      "label": "MediaType",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "types_order_mediatype",
+      "community": 107,
+      "norm_label": "mediatype"
+    },
+    {
+      "label": "OrderUpdate",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "types_order_orderupdate",
+      "community": 107,
+      "norm_label": "orderupdate"
+    },
+    {
+      "label": "OrderUpdateWithSignedUrl",
+      "file_type": "code",
+      "source_file": "types/order.ts",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "types_order_orderupdatewithsignedurl",
+      "community": 107,
+      "norm_label": "orderupdatewithsignedurl"
     },
     {
       "label": "process-step.ts",
@@ -3093,7 +3853,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_process_step",
-      "community": 91,
+      "community": 99,
       "norm_label": "process-step.ts"
     },
     {
@@ -3103,7 +3863,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_process_step_processstep",
-      "community": 91,
+      "community": 99,
       "norm_label": "processstep"
     },
     {
@@ -3173,7 +3933,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_testimonial",
-      "community": 94,
+      "community": 104,
       "norm_label": "testimonial.ts"
     },
     {
@@ -3183,7 +3943,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "types_testimonial_testimonial",
-      "community": 94,
+      "community": 104,
       "norm_label": "testimonial"
     },
     {
@@ -4655,6 +5415,146 @@
       "id": "skills_backend_notifications_later_not_now_whatsapp_alert",
       "community": 101,
       "norm_label": "later (not now) \u2014 whatsapp alert"
+    },
+    {
+      "label": "backend-orders.md",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_backend_orders",
+      "community": 108,
+      "norm_label": "backend-orders.md"
+    },
+    {
+      "label": "SKILL: Backend Orders (Custom Commissions)",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "community": 108,
+      "norm_label": "skill: backend orders (custom commissions)"
+    },
+    {
+      "label": "Read this before building anything related to custom orders.",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "skills_backend_orders_read_this_before_building_anything_related_to_custom_orders",
+      "community": 108,
+      "norm_label": "read this before building anything related to custom orders."
+    },
+    {
+      "label": "Custom orders are ~half of Linda's income \u2014 the other half of the business alongside rentals.",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "skills_backend_orders_custom_orders_are_half_of_linda_s_income_the_other_half_of_the_business_alongside_rentals",
+      "community": 108,
+      "norm_label": "custom orders are ~half of linda's income \u2014 the other half of the business alongside rentals."
+    },
+    {
+      "label": "What a custom order IS",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "skills_backend_orders_what_a_custom_order_is",
+      "community": 108,
+      "norm_label": "what a custom order is"
+    },
+    {
+      "label": "The key difference from rentals: PRICE IS SET BY LINDA",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "skills_backend_orders_the_key_difference_from_rentals_price_is_set_by_linda",
+      "community": 108,
+      "norm_label": "the key difference from rentals: price is set by linda"
+    },
+    {
+      "label": "Permissions (owner-centric \u2014 this is Linda's domain)",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "skills_backend_orders_permissions_owner_centric_this_is_linda_s_domain",
+      "community": 108,
+      "norm_label": "permissions (owner-centric \u2014 this is linda's domain)"
+    },
+    {
+      "label": "Data model (orders table already exists \u2014 see backend-data-model.md)",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "skills_backend_orders_data_model_orders_table_already_exists_see_backend_data_model_md",
+      "community": 108,
+      "norm_label": "data model (orders table already exists \u2014 see backend-data-model.md)"
+    },
+    {
+      "label": "Order creation flow",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "skills_backend_orders_order_creation_flow",
+      "community": 108,
+      "norm_label": "order creation flow"
+    },
+    {
+      "label": "Stage advancement",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "skills_backend_orders_stage_advancement",
+      "community": 108,
+      "norm_label": "stage advancement"
+    },
+    {
+      "label": "Delivery / completion",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "skills_backend_orders_delivery_completion",
+      "community": 108,
+      "norm_label": "delivery / completion"
+    },
+    {
+      "label": "Append-only & attribution (same theft protection as rentals)",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "skills_backend_orders_append_only_attribution_same_theft_protection_as_rentals",
+      "community": 108,
+      "norm_label": "append-only & attribution (same theft protection as rentals)"
+    },
+    {
+      "label": "The bride's progress page (separate feature \u2014 see backend-storage.md)",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "skills_backend_orders_the_bride_s_progress_page_separate_feature_see_backend_storage_md",
+      "community": 108,
+      "norm_label": "the bride's progress page (separate feature \u2014 see backend-storage.md)"
+    },
+    {
+      "label": "Hard rules",
+      "file_type": "document",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "skills_backend_orders_hard_rules",
+      "community": 108,
+      "norm_label": "hard rules"
     },
     {
       "label": "backend-security.md",
@@ -8100,6 +9000,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/(marketing)/collections/[slug]/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "app_marketing_collections_slug_page_dressdetailpage",
+      "target": "app_my_dress_token_page_notfound"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/(marketing)/collections/page.tsx",
@@ -9278,6 +10189,238 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route",
+      "target": "app_api_order_updates_route_metaschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route",
+      "target": "app_api_order_updates_route_ok_image_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route",
+      "target": "app_api_order_updates_route_ok_video_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route",
+      "target": "app_api_order_updates_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route",
+      "target": "lib_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route",
+      "target": "lib_supabase_createuserscopedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/order-updates/route.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "app_api_order_updates_route_post",
+      "target": "lib_supabase_createuserscopedclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_api_orders_advance_route",
+      "target": "app_api_orders_advance_route_advanceschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_api_orders_advance_route",
+      "target": "app_api_orders_advance_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_orders_advance_route",
+      "target": "lib_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_orders_advance_route",
+      "target": "lib_supabase_createuserscopedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/orders/advance/route.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "app_api_orders_advance_route_post",
+      "target": "lib_supabase_createuserscopedclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_orders_complete_route",
+      "target": "app_api_orders_complete_route_completeschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_api_orders_complete_route",
+      "target": "app_api_orders_complete_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_api_orders_complete_route",
+      "target": "lib_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_api_orders_complete_route",
+      "target": "lib_supabase_createuserscopedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/orders/complete/route.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "app_api_orders_complete_route_post",
+      "target": "lib_supabase_createuserscopedclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_api_orders_route",
+      "target": "app_api_orders_route_orderschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "app_api_orders_route",
+      "target": "app_api_orders_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_orders_route",
+      "target": "lib_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_api_orders_route",
+      "target": "lib_supabase_createuserscopedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/orders/route.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "app_api_orders_route_post",
+      "target": "lib_supabase_createuserscopedclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/api/rentals/complete/route.ts",
       "source_location": "L12",
       "weight": 1.0,
@@ -9514,11 +10657,321 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "app_dashboard_protected_orders_page_orderspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "components_dashboard_neworderform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "components_dashboard_neworderform_neworderform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "components_dashboard_orderstable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "components_dashboard_orderstable_orderstable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "lib_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "lib_supabase_createuserscopedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "types_order_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "types_order_orderupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "types_order_orderupdatewithsignedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page",
+      "target": "types_order_unconvertedinquiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/dashboard/(protected)/orders/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_orders_page_orderspage",
+      "target": "lib_supabase_createuserscopedclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_dashboardpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_deliverypaymentrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_formatmoney",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_orderrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_recentorderrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_recentrentalrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_rentalrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_returnpaymentrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "app_dashboard_protected_page_tosummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_activityfeed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_activityfeed_activityfeed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/dashboard/(protected)/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
       "source": "app_dashboard_protected_page",
-      "target": "app_dashboard_protected_page_dashboardpage",
+      "target": "components_dashboard_attentionlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_attentionlist_attentionlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_dressesoutlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_dressesoutlist_dressesoutlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_statcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "components_dashboard_statcard_statcard",
       "confidence_score": 1.0
     },
     {
@@ -9529,7 +10982,7 @@
       "source_location": "L3",
       "weight": 1.0,
       "source": "app_dashboard_protected_page",
-      "target": "components_dashboard_dashboardshell",
+      "target": "lib_supabase",
       "confidence_score": 1.0
     },
     {
@@ -9540,7 +10993,62 @@
       "source_location": "L3",
       "weight": 1.0,
       "source": "app_dashboard_protected_page",
-      "target": "components_dashboard_dashboardshell_usedashboarduser",
+      "target": "lib_supabase_createuserscopedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "types_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "types_dashboard_activerentalsummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page",
+      "target": "types_dashboard_activityitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page_dashboardpage",
+      "target": "app_dashboard_protected_page_formatmoney",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/dashboard/(protected)/page.tsx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "app_dashboard_protected_page_dashboardpage",
+      "target": "app_dashboard_protected_page_tosummary",
       "confidence_score": 1.0
     },
     {
@@ -9549,10 +11057,10 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/dashboard/(protected)/page.tsx",
-      "source_location": "L6",
+      "source_location": "L62",
       "weight": 1.0,
       "source": "app_dashboard_protected_page_dashboardpage",
-      "target": "components_dashboard_dashboardshell_usedashboarduser"
+      "target": "lib_supabase_createuserscopedclient"
     },
     {
       "relation": "contains",
@@ -9901,6 +11409,222 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "app_my_dress_token_page_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "app_my_dress_token_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "app_my_dress_token_page_mydresspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "app_my_dress_token_page_notfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_dressjourney",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_dressjourney_dressjourney",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_dressupdatecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_dressupdatecard_dressupdatecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_reveal_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_staggerreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "components_ui_staggerreveal_staggerreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "lib_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "lib_supabase_createserviceroleclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "types_order_brideorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "types_order_orderupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page",
+      "target": "types_order_orderupdatewithsignedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page_mydresspage",
+      "target": "app_my_dress_token_page_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/my-dress/[token]/page.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "app_my_dress_token_page_mydresspage",
+      "target": "lib_supabase_createserviceroleclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "components/dashboard/ActiveRentalsTable.tsx",
       "source_location": "L96",
       "weight": 1.0,
@@ -9996,8 +11720,104 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_dashboard_activityfeed",
+      "target": "components_dashboard_activityfeed_activityfeed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_dashboard_activityfeed",
+      "target": "components_dashboard_activityfeed_formatwhen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_activityfeed",
+      "target": "types_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/ActivityFeed.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_activityfeed",
+      "target": "types_dashboard_activityitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_dashboard_attentionlist",
+      "target": "components_dashboard_attentionlist_attentionlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_attentionlist",
+      "target": "components_dashboard_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_attentionlist",
+      "target": "components_dashboard_statuspill_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_dashboard_attentionlist",
+      "target": "types_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/AttentionList.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_dashboard_attentionlist",
+      "target": "types_dashboard_activerentalsummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "components/dashboard/DashboardShell.tsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "source": "components_dashboard_dashboardshell",
       "target": "components_dashboard_dashboardshell_dashboardshell",
@@ -10037,7 +11857,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/dashboard/DashboardShell.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "source": "components_dashboard_dashboardshell",
       "target": "components_dashboard_dashboardshell_sectiontitle",
@@ -10058,10 +11878,74 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "components/dashboard/DashboardShell.tsx",
-      "source_location": "L98",
+      "source_location": "L102",
       "weight": 1.0,
       "source": "components_dashboard_dashboardshell_dashboardshell",
       "target": "components_dashboard_dashboardshell_sectiontitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_dashboard_dressesoutlist",
+      "target": "components_dashboard_dressesoutlist_dressesoutlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_dashboard_dressesoutlist",
+      "target": "components_dashboard_dressesoutlist_isoverdue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_dressesoutlist",
+      "target": "components_dashboard_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_dressesoutlist",
+      "target": "components_dashboard_statuspill_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_dashboard_dressesoutlist",
+      "target": "types_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/DressesOutList.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_dashboard_dressesoutlist",
+      "target": "types_dashboard_activerentalsummary",
       "confidence_score": 1.0
     },
     {
@@ -10232,6 +12116,431 @@
       "weight": 1.0,
       "source": "components_dashboard_logrentalform_logrentalform",
       "target": "components_dashboard_logrentalform_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "components_dashboard_neworderform_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "components_dashboard_neworderform_method_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "components_dashboard_neworderform_neworderform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "types_order_unconvertedinquiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "types_rental",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform",
+      "target": "types_rental_paymentmethod",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/NewOrderForm.tsx",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "components_dashboard_neworderform_neworderform",
+      "target": "components_dashboard_neworderform_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "components_dashboard_orderprogressupdates_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "components_dashboard_orderprogressupdates_orderprogressupdates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "components_dashboard_orderstable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "components_dashboard_orderstable_stage_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "components_dashboard_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "components_dashboard_statuspill_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "types_order_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "types_order_orderstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrderProgressUpdates.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_orderprogressupdates",
+      "target": "types_order_orderupdatewithsignedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderprogressupdates_orderprogressupdates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_advancestageaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_method_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_next_stage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_orderactions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_orderstable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_recorddeliveryaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_orderstable_stage_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_sharelinkbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_sharelinkbutton_sharelinkbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_statuspill_pilltone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "components_dashboard_statuspill_statuspill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "types_order_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "types_order_orderstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "types_order_orderupdatewithsignedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "types_rental",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/OrdersTable.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_dashboard_orderstable",
+      "target": "types_rental_paymentmethod",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/ShareLinkButton.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_dashboard_sharelinkbutton",
+      "target": "components_dashboard_sharelinkbutton_sharelinkbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/dashboard/StatCard.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_dashboard_statcard",
+      "target": "components_dashboard_statcard_statcard",
       "confidence_score": 1.0
     },
     {
@@ -10934,6 +13243,121 @@
       "weight": 1.0,
       "source": "components_ui_dressdetails",
       "target": "types_look_look",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "components_ui_dressjourney",
+      "target": "components_ui_dressjourney_dressjourney",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_ui_dressjourney",
+      "target": "components_ui_dressjourney_ease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_ui_dressjourney",
+      "target": "components_ui_dressjourney_stages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_ui_dressjourney",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressJourney.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_ui_dressjourney",
+      "target": "types_order_orderstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "components_ui_dressupdatecard",
+      "target": "components_ui_dressupdatecard_dressupdatecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_ui_dressupdatecard",
+      "target": "components_ui_dressupdatecard_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_ui_dressupdatecard",
+      "target": "components_ui_dressupdatecard_stage_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_ui_dressupdatecard",
+      "target": "types_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_ui_dressupdatecard",
+      "target": "types_order_orderstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/DressUpdateCard.tsx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "components_ui_dressupdatecard_dressupdatecard",
+      "target": "components_ui_dressupdatecard_formatdate",
       "confidence_score": 1.0
     },
     {
@@ -12610,6 +15034,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "types/dashboard.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_dashboard",
+      "target": "types_dashboard_activerentalsummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/dashboard.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "types_dashboard",
+      "target": "types_dashboard_activityitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "types/dress.ts",
       "source_location": "L3",
       "weight": 1.0,
@@ -12645,6 +15089,76 @@
       "weight": 1.0,
       "source": "types_measurement",
       "target": "types_measurement_measurement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_brideorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_mediatype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_orderstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_orderupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_orderupdatewithsignedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/order.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "types_order",
+      "target": "types_order_unconvertedinquiry",
       "confidence_score": 1.0
     },
     {
@@ -14065,6 +16579,136 @@
       "weight": 1.0,
       "source": "skills_backend_notifications_skill_backend_notifications",
       "target": "skills_backend_notifications_where_email_is_sent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "skills_backend_orders",
+      "target": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_append_only_attribution_same_theft_protection_as_rentals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_custom_orders_are_half_of_linda_s_income_the_other_half_of_the_business_alongside_rentals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_data_model_orders_table_already_exists_see_backend_data_model_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_delivery_completion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_hard_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_order_creation_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_permissions_owner_centric_this_is_linda_s_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_read_this_before_building_anything_related_to_custom_orders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_stage_advancement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_the_bride_s_progress_page_separate_feature_see_backend_storage_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_the_key_difference_from_rentals_price_is_set_by_linda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/backend-orders.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "skills_backend_orders_skill_backend_orders_custom_commissions",
+      "target": "skills_backend_orders_what_a_custom_order_is",
       "confidence_score": 1.0
     },
     {
@@ -16190,5 +18834,5 @@
       "source_file": "skills/animation.md"
     }
   ],
-  "built_at_commit": "d8fbd960ef0356a34402b41ffa15f21f62da857c"
+  "built_at_commit": "231f19e2f74fab3086507dafb3422bbf74f89116"
 }

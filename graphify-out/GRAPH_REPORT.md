@@ -1,16 +1,16 @@
 # Graph Report - lmwed  (2026-07-05)
 
 ## Corpus Check
-- 98 files · ~1,227,095 words
+- 120 files · ~1,236,066 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 720 nodes · 826 edges · 108 communities (45 shown, 63 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.77)
+- 810 nodes · 991 edges · 111 communities (48 shown, 63 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d8fbd960`
+- Built from commit: `231f19e2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -123,30 +123,33 @@
 - [[_COMMUNITY_DressDetails.tsx|DressDetails.tsx]]
 - [[_COMMUNITY_middleware.ts|middleware.ts]]
 - [[_COMMUNITY_DressesTable.tsx|DressesTable.tsx]]
+- [[_COMMUNITY_SKILL Backend Orders (Custom Commissions)|SKILL: Backend Orders (Custom Commissions)]]
+- [[_COMMUNITY_SectionMarker.tsx|SectionMarker.tsx]]
+- [[_COMMUNITY_CollectionsGrid.tsx|CollectionsGrid.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `CLAUDE.md — LM Weddyli Frontend` - 25 edges
-2. `createUserScopedClient()` - 15 edges
+1. `createUserScopedClient()` - 27 edges
+2. `CLAUDE.md — LM Weddyli Frontend` - 25 edges
 3. `compilerOptions` - 15 edges
 4. `SKILL: Forms` - 14 edges
-5. `main()` - 11 edges
-6. `SKILL: Backend API` - 11 edges
-7. `SKILL: Backend Auth` - 11 edges
-8. `SKILL: Backend Data Model` - 11 edges
-9. `SKILL: Backend Security` - 11 edges
-10. `Component Inventory & Specs` - 11 edges
+5. `SKILL: Backend Orders (Custom Commissions)` - 13 edges
+6. `main()` - 11 edges
+7. `SKILL: Backend API` - 11 edges
+8. `SKILL: Backend Auth` - 11 edges
+9. `SKILL: Backend Data Model` - 11 edges
+10. `SKILL: Backend Security` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
-  app/api/rentals/complete/route.ts → lib/supabase.ts
-- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
-  app/api/rentals/route.ts → lib/supabase.ts
-- `DressesPage()` --calls--> `createUserScopedClient()`  [EXTRACTED]
-  app/dashboard/(protected)/dresses/page.tsx → lib/supabase.ts
-- `ProtectedDashboardLayout()` --calls--> `createUserScopedClient()`  [EXTRACTED]
-  app/dashboard/(protected)/layout.tsx → lib/supabase.ts
+- `OrdersPage()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/dashboard/(protected)/orders/page.tsx → lib/supabase.ts
 - `RentalsPage()` --calls--> `createUserScopedClient()`  [EXTRACTED]
   app/dashboard/(protected)/rentals/page.tsx → lib/supabase.ts
+- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/api/order-updates/route.ts → lib/supabase.ts
+- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/api/orders/advance/route.ts → lib/supabase.ts
+- `POST()` --calls--> `createUserScopedClient()`  [EXTRACTED]
+  app/api/orders/complete/route.ts → lib/supabase.ts
 
 ## Import Cycles
 - None detected.
@@ -156,11 +159,11 @@
 - **Augen Pro Visual Language Applied Across Design Docs** — skills_augen_pro_numbered_navigation, skills_augen_pro_section_markers, skills_augen_pro_oversized_headlines, skills_design_system_navigation_pattern, skills_design_system_section_structure, claude_lmweddyli_augen_pro_reference [INFERRED 0.85]
 - **Standard Luxury Easing Curve Used Across Animation Contexts** — skills_animation_luxury_ease, skills_animation_standard_section_reveal, skills_animation_form_step_transition, claude_lmweddyli_animation_rules, skills_forms_step_transitions [INFERRED 0.85]
 
-## Communities (108 total, 63 thin omitted)
+## Communities (111 total, 63 thin omitted)
 
 ### Community 0 - "page.tsx"
-Cohesion: 0.07
-Nodes (31): budgetLabels, buildEmailBody(), foundUsLabels, inquirySchema, isWithinWeeks(), POST(), qualificationTag(), serviceLabels (+23 more)
+Cohesion: 0.06
+Nodes (41): budgetLabels, buildEmailBody(), foundUsLabels, inquirySchema, isWithinWeeks(), POST(), qualificationTag(), serviceLabels (+33 more)
 
 ### Community 1 - "NPM Package Dependencies"
 Cohesion: 0.07
@@ -271,12 +274,12 @@ Cohesion: 0.11
 Nodes (18): 10. HeroSection, 1. SectionMarker, 2. Navbar, 3. Footer, 4. LookCard, 5. ProcessStep, 6. TestimonialCard, 7. MeasurementCard (+10 more)
 
 ### Community 90 - "page.tsx"
-Cohesion: 0.16
-Nodes (8): Props, Breadcrumb(), Crumb, DetailHero(), Props, ease, Props, StickyInquiryBar()
+Cohesion: 0.12
+Nodes (14): Props, Breadcrumb(), Crumb, DetailHero(), Props, DressDetails(), ease, sentence (+6 more)
 
 ### Community 91 - "page.tsx"
-Cohesion: 0.07
-Nodes (29): metadata, metadata, timelineStages, AboutHero(), ease, fade, MeasurementCard(), Props (+21 more)
+Cohesion: 0.24
+Nodes (8): metadata, founderTestimonial, productionModel, stats, storyParagraphs, values, Stat, Value
 
 ### Community 92 - "SKILL: Dashboard Design"
 Cohesion: 0.12
@@ -288,15 +291,15 @@ Nodes (14): 1. User-scoped client (default for authenticated actions), 2. Servic
 
 ### Community 94 - "InquiryForm.tsx"
 Cohesion: 0.06
-Nodes (29): metadata, budgetOptions, budgetSlugs, ease, FieldError, FormData, foundUsOptions, foundUsSlugs (+21 more)
+Nodes (29): metadata, FormField(), Props, budgetOptions, budgetSlugs, ease, FieldError, FormData (+21 more)
 
 ### Community 95 - "page.tsx"
-Cohesion: 0.18
-Nodes (9): metadata, CollectionsGrid(), ease, HeroSection(), Props, sentence, word, collectionInfo (+1 more)
+Cohesion: 0.14
+Nodes (16): DashboardPage(), DeliveryPaymentRow, formatMoney(), OrderRow, RecentOrderRow, RecentRentalRow, RentalRow, ReturnPaymentRow (+8 more)
 
 ### Community 96 - "CollectionsGrid.tsx"
-Cohesion: 0.20
-Nodes (9): Filter, filters, ease, LookCard(), Props, container, ease, item (+1 more)
+Cohesion: 0.13
+Nodes (12): metadata, timelineStages, MeasurementCard(), Props, ProcessStep(), Props, ease, Props (+4 more)
 
 ### Community 97 - "SKILL: Backend API"
 Cohesion: 0.17
@@ -307,8 +310,8 @@ Cohesion: 0.17
 Nodes (11): Account creation model, Checking auth in a route (pattern), First-login password change, Hard rules, Login, Read this before anything touching login, sessions, roles, or the dashboard., Roles, Session & route protection (+3 more)
 
 ### Community 99 - "page.tsx"
-Cohesion: 0.22
-Nodes (7): featuredLooks, featuredSlugs, previewSteps, ProcessStep(), Props, Props, TestimonialCard()
+Cohesion: 0.21
+Nodes (7): featuredLooks, featuredSlugs, previewSteps, Props, TestimonialCard(), processSteps, ProcessStep
 
 ### Community 100 - "SKILL: Backend Data Model"
 Cohesion: 0.17
@@ -327,23 +330,35 @@ Cohesion: 0.33
 Nodes (14): createFixtures(), main(), printSummary(), record(), results, signIn(), testInquiries(), testPaymentImmutability() (+6 more)
 
 ### Community 104 - "page.tsx"
-Cohesion: 0.29
-Nodes (6): metadata, remainingTestimonials, Reveal, instagramSection, loveNotesHeader, scarcityNote
+Cohesion: 0.24
+Nodes (7): metadata, remainingTestimonials, instagramSection, loveNotesHeader, scarcityNote, testimonials, Testimonial
 
 ### Community 105 - "DressDetails.tsx"
-Cohesion: 0.28
-Nodes (6): DressDetails(), ease, sentence, word, looks, Look
+Cohesion: 0.16
+Nodes (10): metadata, CollectionsGrid(), ease, HeroSection(), Props, sentence, word, Reveal (+2 more)
 
 ### Community 107 - "DressesTable.tsx"
+Cohesion: 0.06
+Nodes (37): OrdersPage(), RentalsPage(), ActiveRentalsTable(), METHOD_OPTIONS, STATUS_CONFIG, formatPrice(), LogRentalForm(), METHOD_OPTIONS (+29 more)
+
+### Community 108 - "SKILL: Backend Orders (Custom Commissions)"
 Cohesion: 0.14
-Nodes (14): ActiveRentalsTable(), METHOD_OPTIONS, STATUS_CONFIG, formatPrice(), LogRentalForm(), METHOD_OPTIONS, PillTone, StatusPill() (+6 more)
+Nodes (13): Append-only & attribution (same theft protection as rentals), Custom orders are ~half of Linda's income — the other half of the business alongside rentals., Data model (orders table already exists — see backend-data-model.md), Delivery / completion, Hard rules, Order creation flow, Permissions (owner-centric — this is Linda's domain), Read this before building anything related to custom orders. (+5 more)
+
+### Community 109 - "SectionMarker.tsx"
+Cohesion: 0.20
+Nodes (9): AboutHero(), ease, fade, ease, ProcessHero(), sentence, word, Props (+1 more)
+
+### Community 111 - "CollectionsGrid.tsx"
+Cohesion: 0.20
+Nodes (9): Filter, filters, ease, LookCard(), Props, container, ease, item (+1 more)
 
 ## Ambiguous Edges - Review These
 - `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` → `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`  [AMBIGUOUS]
   public/brand_assets/photography/naomi-hero.jpg.jpg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **417 isolated node(s):** `extends`, `metadata`, `Props`, `metadata`, `metadata` (+412 more)
+- **449 isolated node(s):** `extends`, `metadata`, `Props`, `metadata`, `metadata` (+444 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **63 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -352,15 +367,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Naomi Hero Image (actually a purple/lavender wedding bouquet, not a gown)` and `Filename/Content Mismatch: 'naomi-hero' implies bridal gown hero shot, but image shows a bouquet`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `createUserScopedClient()` connect `page.tsx` to `DressesTable.tsx`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
-- **Why does `FormField()` connect `page.tsx` to `InquiryForm.tsx`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `createUserScopedClient()` connect `page.tsx` to `DressesTable.tsx`, `page.tsx`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `Reveal` connect `DressDetails.tsx` to `CollectionsGrid.tsx`, `page.tsx`, `page.tsx`, `page.tsx`, `page.tsx`, `page.tsx`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `StaggerReveal()` connect `CollectionsGrid.tsx` to `CollectionsGrid.tsx`, `page.tsx`, `page.tsx`, `page.tsx`, `page.tsx`, `page.tsx`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `extends`, `metadata`, `Props` to the rest of the system?**
-  _424 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _456 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `page.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05649350649350649 - nodes in this community are weakly interconnected._
 - **Should `NPM Package Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
-- **Should `TypeScript Compiler Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

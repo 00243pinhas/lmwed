@@ -420,8 +420,8 @@
     "semantic_hash": ""
   },
   "app/dashboard/(protected)/page.tsx": {
-    "mtime": 1783215757.5678446,
-    "ast_hash": "81b8c2d60d0b49a0ca4084eac82cda04",
+    "mtime": 1783280744.5891292,
+    "ast_hash": "c4db6e4f345c398eb865d88a8185976a",
     "semantic_hash": ""
   },
   "app/dashboard/actions.ts": {
@@ -440,8 +440,8 @@
     "semantic_hash": ""
   },
   "components/dashboard/DashboardShell.tsx": {
-    "mtime": 1783264251.5788498,
-    "ast_hash": "0de13eb9dbfa922be9f98ff61009b9ab",
+    "mtime": 1783281432.5315096,
+    "ast_hash": "cc7d0a297764ae7b3fc6a21d1500d296",
     "semantic_hash": ""
   },
   "components/dashboard/DressesTable.tsx": {
@@ -562,6 +562,116 @@
   "supabase/migrations/006_rentals_staff_transition_guard.sql": {
     "mtime": 1783270257.966519,
     "ast_hash": "6b9118295986ecc6e30b9c51a71a8e0f",
+    "semantic_hash": ""
+  },
+  "app/api/orders/route.ts": {
+    "mtime": 1783274601.327294,
+    "ast_hash": "f88eeb5e3fb08aa375a481e02fbf5679",
+    "semantic_hash": ""
+  },
+  "app/dashboard/(protected)/orders/page.tsx": {
+    "mtime": 1783284210.3927534,
+    "ast_hash": "280b383647aa757aef906bce4d6c9344",
+    "semantic_hash": ""
+  },
+  "components/dashboard/NewOrderForm.tsx": {
+    "mtime": 1783274653.34852,
+    "ast_hash": "28a21cbdb042b826e05cc1cce394be48",
+    "semantic_hash": ""
+  },
+  "components/dashboard/OrdersTable.tsx": {
+    "mtime": 1783284304.4072225,
+    "ast_hash": "0a5ff116a6445648ca434ad45f375605",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/007_create_order_rpc.sql": {
+    "mtime": 1783274586.2697084,
+    "ast_hash": "21b2284ca08fc7718309f80ac39fc76a",
+    "semantic_hash": ""
+  },
+  "types/order.ts": {
+    "mtime": 1783284183.8452015,
+    "ast_hash": "6e60d76f8e2a8a16bc18912f4f74b1f4",
+    "semantic_hash": ""
+  },
+  "skills/backend-orders.md": {
+    "mtime": 1783274146.154561,
+    "ast_hash": "357821261b3aae89bd5de259a547f61a",
+    "semantic_hash": ""
+  },
+  "app/api/orders/advance/route.ts": {
+    "mtime": 1783277143.286587,
+    "ast_hash": "9ca991ef65ad84d15c9ec199cf18698c",
+    "semantic_hash": ""
+  },
+  "app/api/orders/complete/route.ts": {
+    "mtime": 1783277266.0259566,
+    "ast_hash": "7a04f7f6dabe0e71854d4da16d90173f",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/008_order_stage_lifecycle_rpc.sql": {
+    "mtime": 1783277086.6971874,
+    "ast_hash": "3e37c1314577be23d3f7e627c8399de6",
+    "semantic_hash": ""
+  },
+  "components/dashboard/ActivityFeed.tsx": {
+    "mtime": 1783280710.8046377,
+    "ast_hash": "25cc1c28b8a5a67cf551a0016b76b601",
+    "semantic_hash": ""
+  },
+  "components/dashboard/AttentionList.tsx": {
+    "mtime": 1783280664.727925,
+    "ast_hash": "cf15a231f72bb964efd3cc0df19bc46e",
+    "semantic_hash": ""
+  },
+  "components/dashboard/DressesOutList.tsx": {
+    "mtime": 1783280699.4884672,
+    "ast_hash": "756beedcd09e7cd049f99efededcabe6",
+    "semantic_hash": ""
+  },
+  "components/dashboard/StatCard.tsx": {
+    "mtime": 1783280655.503776,
+    "ast_hash": "b065ae4ecd0e42fb94e5faa605f4661b",
+    "semantic_hash": ""
+  },
+  "types/dashboard.ts": {
+    "mtime": 1783280645.5276127,
+    "ast_hash": "60d36afee7369aecb6f726f092c986e5",
+    "semantic_hash": ""
+  },
+  "app/api/order-updates/route.ts": {
+    "mtime": 1783283041.6379557,
+    "ast_hash": "46d1d4d300f7d231711429f0fb77cfa5",
+    "semantic_hash": ""
+  },
+  "components/dashboard/OrderProgressUpdates.tsx": {
+    "mtime": 1783283122.1051757,
+    "ast_hash": "c1c63fe9a1aa556be03591139f0b2d79",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/009_order_media_storage_policies.sql": {
+    "mtime": 1783282988.9094374,
+    "ast_hash": "56026a79c3778aab0db186aaeeb245e0",
+    "semantic_hash": ""
+  },
+  "app/my-dress/[token]/page.tsx": {
+    "mtime": 1783284776.7024598,
+    "ast_hash": "76f6bb9e058d12a174ce867287120ec3",
+    "semantic_hash": ""
+  },
+  "components/dashboard/ShareLinkButton.tsx": {
+    "mtime": 1783284236.0803268,
+    "ast_hash": "bd3e394ecd7f1c7385ebed67d0052af1",
+    "semantic_hash": ""
+  },
+  "components/ui/DressJourney.tsx": {
+    "mtime": 1783284323.5629203,
+    "ast_hash": "97b101e3eea46f50db1093ac9a772c60",
+    "semantic_hash": ""
+  },
+  "components/ui/DressUpdateCard.tsx": {
+    "mtime": 1783284340.5146556,
+    "ast_hash": "e52d6a616965cd2488f4a3283f0e4d6d",
     "semantic_hash": ""
   }
 }
