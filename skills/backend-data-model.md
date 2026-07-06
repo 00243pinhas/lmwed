@@ -34,8 +34,12 @@ RESEND_API_KEY=...
 create table profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   name text not null,
+  email text not null,          -- denormalized from auth.users at creation
+                                 -- time (migration 010) so the staff list can
+                                 -- display it without touching auth.users
   role text not null default 'staff' check (role in ('owner','staff')),
   active boolean not null default true,
+  must_change_password boolean not null default true,  -- migration 010
   created_at timestamptz not null default now()
 );
 
@@ -249,6 +253,45 @@ compare OLD to NEW — closing exactly the gap RLS structurally can't. Owner is
 exempt (`my_role() = 'owner'` returns immediately, no restriction). Any other
 caller that reaches this trigger must be transitioning `deposit_paid -> completed`
 with every other column byte-identical to OLD, or the whole statement is rejected.
+
+## Migration 010 — staff management
+
+Adds `profiles.email` and `profiles.must_change_password` (see schema above),
+backfills `email` for pre-existing rows from `auth.users`, and adds:
+
+```sql
+create or replace function complete_password_change() returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  update profiles set must_change_password = false where id = auth.uid();
+end;
+$$;
+```
+
+The only UPDATE policy on `profiles` is `my_role() = 'owner'` — a staff
+member cannot update their own row via the user-scoped client, including
+their own `must_change_password` flag. Rather than open a general
+self-update policy (which would let a staffer also rewrite their own
+`role`/`active`), this is a narrow `security definer` function: no
+parameters besides the implicit `auth.uid()`, touches only the caller's own
+row, and only ever flips `must_change_password` to `false`. Called once, by
+the staffer themselves, right after they set their new password
+(`app/dashboard/set-password`).
+
+### Staff creation — the sanctioned third service-role use
+`skills/backend-security.md`'s golden rule lists two service-role exceptions
+(public inquiry insert, bride magic-link read). Creating a staff auth user is
+a third, necessary one: `supabase.auth.admin.createUser()` has no
+user-scoped equivalent — only the service-role key can call the Auth admin
+API. `app/api/staff/route.ts` is owner-gated first (checked via the
+user-scoped client), and only then uses the service-role client to (1) call
+`auth.admin.createUser` and (2) insert the matching `profiles` row — there is
+no INSERT policy on `profiles` at all, so this insert would otherwise be
+impossible even for the owner via the user-scoped client. If step 2 fails,
+the route deletes the just-created auth user so no orphaned account is left
+behind. Deactivating/reactivating staff afterward uses the ordinary
+user-scoped client — RLS's `owner manages profiles` policy already permits
+that UPDATE, no service role needed.
 
 ## Why payments have NO update policy even for the owner
 Accounting integrity. If a payment was entered wrong, the correction is a NEW row

@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import { FormField } from '@/components/forms/FormField';
 import { login } from './actions';
 
-export default function DashboardLoginPage() {
+function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -72,5 +72,13 @@ export default function DashboardLoginPage() {
         </form>
       </div>
     </div>
+  );
+}
+
+export default function DashboardLoginPage() {
+  return (
+    <Suspense fallback={null}>
+      <LoginForm />
+    </Suspense>
   );
 }

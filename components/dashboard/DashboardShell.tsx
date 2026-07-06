@@ -20,6 +20,7 @@ const NAV_ITEMS = [
   { label: 'Rentals', href: '/dashboard/rentals', ownerOnly: false },
   { label: 'Dresses', href: '/dashboard/dresses', ownerOnly: false },
   { label: 'Orders', href: '/dashboard/orders', ownerOnly: true },
+  { label: 'Staff', href: '/dashboard/staff', ownerOnly: true },
 ];
 
 function sectionTitle(pathname: string) {

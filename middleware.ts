@@ -32,6 +32,7 @@ export async function middleware(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const isLoginPage = request.nextUrl.pathname === '/dashboard/login';
+  const isSetPasswordPage = request.nextUrl.pathname === '/dashboard/set-password';
 
   if (!user) {
     if (isLoginPage) return response;
@@ -45,7 +46,7 @@ export async function middleware(request: NextRequest) {
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('active')
+    .select('active, must_change_password')
     .eq('id', user.id)
     .single();
 
@@ -54,6 +55,17 @@ export async function middleware(request: NextRequest) {
     const url = new URL('/dashboard/login', request.url);
     url.searchParams.set('message', 'account-inactive');
     return NextResponse.redirect(url);
+  }
+
+  // First-login forced password change (skills/backend-auth.md) — enforced
+  // here, not just in the UI, so a staffer can't reach any dashboard content
+  // (including via a direct URL) before setting their own password.
+  if (profile.must_change_password && !isSetPasswordPage) {
+    return NextResponse.redirect(new URL('/dashboard/set-password', request.url));
+  }
+
+  if (!profile.must_change_password && isSetPasswordPage) {
+    return NextResponse.redirect(new URL('/dashboard', request.url));
   }
 
   return response;
