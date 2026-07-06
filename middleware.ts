@@ -39,11 +39,11 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/dashboard/login', request.url));
   }
 
-  if (isLoginPage) {
-    // Already signed in — no reason to see the login form again.
-    return NextResponse.redirect(new URL('/dashboard', request.url));
-  }
-
+  // Fetch the profile before deciding what an already-authenticated session
+  // is allowed to do — an inactive profile must never reach the "already
+  // signed in" branch below, whatever page it's on (including /dashboard/login
+  // itself, e.g. right after a login attempt that succeeded at the auth
+  // level but belongs to a deactivated account).
   const { data: profile } = await supabase
     .from('profiles')
     .select('active, must_change_password')
@@ -54,7 +54,22 @@ export async function middleware(request: NextRequest) {
     await supabase.auth.signOut();
     const url = new URL('/dashboard/login', request.url);
     url.searchParams.set('message', 'account-inactive');
-    return NextResponse.redirect(url);
+    // supabase.auth.signOut() clears the session cookies by reassigning the
+    // `response` closure variable above (via the cookies.setAll callback) —
+    // but NextResponse.redirect() below creates a brand-new response object
+    // that would otherwise discard those cleared cookies, leaving the old
+    // session cookie intact and causing an infinite redirect loop between
+    // this page and /dashboard/login (the still-"logged in" cookie keeps
+    // bouncing back here). Copy the cleared cookies onto the response we
+    // actually return.
+    const redirectResponse = NextResponse.redirect(url);
+    response.cookies.getAll().forEach((cookie) => redirectResponse.cookies.set(cookie));
+    return redirectResponse;
+  }
+
+  if (isLoginPage) {
+    // Already signed in (and active) — no reason to see the login form again.
+    return NextResponse.redirect(new URL('/dashboard', request.url));
   }
 
   // First-login forced password change (skills/backend-auth.md) — enforced

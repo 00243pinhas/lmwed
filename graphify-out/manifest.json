@@ -430,13 +430,13 @@
     "semantic_hash": ""
   },
   "app/dashboard/login/actions.ts": {
-    "mtime": 1783215662.0139499,
-    "ast_hash": "fecc957926f4541cb3d139aa85518f31",
+    "mtime": 1783352229.1282465,
+    "ast_hash": "c3886a42b61ac4775ef2ac3875de67a7",
     "semantic_hash": ""
   },
   "app/dashboard/login/page.tsx": {
-    "mtime": 1783215687.646458,
-    "ast_hash": "fb3817bca6561752151e3617aacdde82",
+    "mtime": 1783352258.6840055,
+    "ast_hash": "e899461ca24b4dc1be8da6fd476837d8",
     "semantic_hash": ""
   },
   "components/dashboard/DashboardShell.tsx": {
@@ -460,8 +460,8 @@
     "semantic_hash": ""
   },
   "middleware.ts": {
-    "mtime": 1783347846.8102562,
-    "ast_hash": "0b6411994e05ad3c1ea60a7b6341050c",
+    "mtime": 1783352027.3940742,
+    "ast_hash": "d6ccde6fd001260941a406ad7294d292",
     "semantic_hash": ""
   },
   "supabase/migrations/003_seed_dresses.sql": {
@@ -727,6 +727,11 @@
   "types/staff.ts": {
     "mtime": 1783347158.3467536,
     "ast_hash": "a24cb843fd1a9ca24fcbb1347e56cd79",
+    "semantic_hash": ""
+  },
+  "lib/auth-messages.ts": {
+    "mtime": 1783352194.3925378,
+    "ast_hash": "6e1069b7ff6cb10bed399f91c71627d6",
     "semantic_hash": ""
   }
 }

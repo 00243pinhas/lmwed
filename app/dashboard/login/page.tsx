@@ -4,6 +4,7 @@ import { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import { FormField } from '@/components/forms/FormField';
+import { ACCOUNT_INACTIVE_MESSAGE } from '@/lib/auth-messages';
 import { login } from './actions';
 
 function LoginForm() {
@@ -58,7 +59,7 @@ function LoginForm() {
 
           {(error || deactivated) && (
             <p className="font-body text-[10px] text-[#B91C1C]">
-              {error ?? 'This account has been deactivated.'}
+              {error ?? ACCOUNT_INACTIVE_MESSAGE}
             </p>
           )}
 
