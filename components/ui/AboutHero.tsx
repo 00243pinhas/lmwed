@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 
 import { SectionMarker } from '@/components/ui/SectionMarker';
@@ -14,6 +15,7 @@ const fade = {
 
 export function AboutHero() {
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('about.hero');
 
   return (
     <section className="relative w-full h-[100svh] overflow-hidden bg-dark">
@@ -33,13 +35,11 @@ export function AboutHero() {
           initial={prefersReduced ? undefined : 'hidden'}
           animate={prefersReduced ? undefined : 'visible'}
         >
-          <SectionMarker label="03 The Maker" light />
+          <SectionMarker label={t('marker')} light />
           <h1 className="font-display italic font-light text-display-sm md:text-display-lg text-white mt-md leading-[1.1]">
-            Linda Monga.
+            {t('headline')}
           </h1>
-          <p className="font-body text-[11px] uppercase tracking-[0.1em] text-white/70 mt-md">
-            Founder · LM Weddyli · Lubumbashi
-          </p>
+          <p className="font-body text-[11px] uppercase tracking-[0.1em] text-white/70 mt-md">{t('subline')}</p>
         </motion.div>
       </div>
     </section>

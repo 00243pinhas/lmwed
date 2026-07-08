@@ -1,8 +1,10 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+
+import { Link } from '@/i18n/navigation';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -17,6 +19,7 @@ export function StickyInquiryBar({ dressName, collection, ctaHref, mainCtaId }: 
   const [pastThreshold, setPastThreshold] = useState(false);
   const [mainCtaVisible, setMainCtaVisible] = useState(false);
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('collectionDetail.stickyBar');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,7 +59,7 @@ export function StickyInquiryBar({ dressName, collection, ctaHref, mainCtaId }: 
             {dressName} <span className="font-body text-[9px] uppercase tracking-[0.1em] text-muted">— {collection}</span>
           </p>
           <Link href={ctaHref} className="font-body text-nav uppercase text-white shrink-0 ml-md">
-            Inquire →
+            {t('inquire')}
           </Link>
         </motion.div>
       )}

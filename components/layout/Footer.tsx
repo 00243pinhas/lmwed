@@ -1,26 +1,29 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
-const navLinks = [
-  { number: '01', label: 'Collections', href: '/collections' },
-  { number: '02', label: 'Process', href: '/process' },
-  { number: '03', label: 'About', href: '/about' },
-  { number: '04', label: 'Inquire', href: '/inquire' },
-];
-
-const socialHandles = ['Instagram', 'TikTok', 'WhatsApp'];
+import { Link } from '@/i18n/navigation';
 
 export function Footer() {
+  const tNav = useTranslations('nav');
+  const t = useTranslations('footer');
+
+  const navLinks = [
+    { number: '01', label: tNav('collections'), href: '/collections' as const },
+    { number: '02', label: tNav('process'), href: '/process' as const },
+    { number: '03', label: tNav('about'), href: '/about' as const },
+    { number: '04', label: tNav('inquire'), href: '/inquire' as const },
+  ];
+
+  const socialHandles = [t('instagram'), t('tiktok'), t('whatsapp')];
+
   return (
     <footer className="bg-dark px-md py-3xl md:px-xl md:py-4xl">
       <div className="flex flex-col gap-2xl md:flex-row md:items-baseline md:justify-between">
         <p className="font-display text-display-xs font-light text-white">LM Weddyli</p>
-        <p className="font-display italic text-display-2xs font-light text-accent">
-          Chaque robe, une histoire.
-        </p>
+        <p className="font-display italic text-display-2xs font-light text-accent">{t('tagline')}</p>
       </div>
 
       <nav
-        aria-label="Footer"
+        aria-label={t('footerLabel')}
         className="mt-2xl flex flex-col items-start gap-md md:mt-3xl md:flex-row md:items-center md:justify-center md:gap-xl"
       >
         {navLinks.map((link) => (
@@ -43,7 +46,7 @@ export function Footer() {
           ))}
         </div>
         <p className="font-body text-[9px] uppercase tracking-[0.1em] text-muted">
-          © {new Date().getFullYear()} LM Weddyli. All rights reserved.
+          {t('copyright', { year: new Date().getFullYear() })}
         </p>
       </div>
     </footer>

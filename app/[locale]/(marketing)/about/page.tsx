@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { AboutHero } from '@/components/ui/AboutHero';
 import { SectionMarker } from '@/components/ui/SectionMarker';
 import { Reveal } from '@/components/ui/Reveal';
 import { StaggerReveal } from '@/components/ui/StaggerReveal';
+import { Link } from '@/i18n/navigation';
 
 import {
   storyPullQuote,
@@ -16,13 +16,17 @@ import {
   founderTestimonial,
 } from '@/data/dummy/about-content';
 
-export const metadata: Metadata = {
-  title: 'About Linda Monga — LM Weddyli',
-  description:
-    'Linda Monga is the founder of LM Weddyli, a made-to-measure bridal house designed in Lubumbashi and hand-crafted in Istanbul.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about.meta' });
+  return { title: t('title'), description: t('description') };
+}
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('about');
+
   return (
     <>
       <AboutHero />
@@ -30,7 +34,7 @@ export default function AboutPage() {
       {/* 3.1 Her Story */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="3.1 Her Story" />
+          <SectionMarker label={t('herStory.marker')} />
         </Reveal>
 
         <div className="mt-2xl md:mt-3xl grid grid-cols-1 md:grid-cols-2 gap-xl md:gap-4xl">
@@ -53,7 +57,7 @@ export default function AboutPage() {
       {/* 3.2 Two Cities, One Dress */}
       <section className="bg-dark px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="3.2 The Atelier" light />
+          <SectionMarker label={t('atelier.marker')} light />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-white mt-md max-w-[16ch]">
             {productionModel.headline}
           </h2>
@@ -84,9 +88,9 @@ export default function AboutPage() {
       {/* 3.3 What We Stand For */}
       <section className="bg-surface px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="3.3 What We Stand For" />
+          <SectionMarker label={t('values.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[18ch]">
-            The Principles Behind Every Gown
+            {t('values.headline')}
           </h2>
         </Reveal>
 
@@ -122,7 +126,7 @@ export default function AboutPage() {
       {/* 3.4 In Her Words */}
       <section className="bg-dark px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="3.4 In Her Words" light />
+          <SectionMarker label={t('inHerWords.marker')} light />
           <div className="mt-2xl md:mt-3xl flex flex-col items-center text-center gap-lg md:gap-xl max-w-[720px] mx-auto">
             <p className="font-display italic font-light text-display-xs md:text-display-md text-white leading-[1.5]">
               &ldquo;{founderTestimonial.quote}&rdquo;
@@ -137,23 +141,20 @@ export default function AboutPage() {
       {/* 3.5 Begin */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section text-center">
         <Reveal className="flex flex-col items-center">
-          <SectionMarker label="3.5 Begin" />
+          <SectionMarker label={t('begin.marker')} />
           <h2 className="font-display font-light text-display-sm md:text-display-md text-ink mt-md max-w-[16ch]">
-            Let&rsquo;s Design Your Story
+            {t('begin.headline')}
           </h2>
-          <p className="font-body text-body text-muted mt-lg max-w-[48ch]">
-            Whether you&rsquo;re ready to begin or simply want to see the collection first, Linda
-            would love to hear from you.
-          </p>
+          <p className="font-body text-body text-muted mt-lg max-w-[48ch]">{t('begin.body')}</p>
           <div className="flex flex-col md:flex-row gap-md md:gap-2xl mt-xl items-center">
             <Link href="/inquire" className="cta-link font-body text-nav uppercase text-ink inline-block">
-              Begin your journey →
+              {t('begin.ctaInquire')}
             </Link>
             <Link
               href="/collections"
               className="cta-link font-body text-nav uppercase text-ink inline-block"
             >
-              View the collection →
+              {t('begin.ctaCollection')}
             </Link>
           </div>
         </Reveal>

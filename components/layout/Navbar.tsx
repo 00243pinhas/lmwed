@@ -1,15 +1,11 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 
-const primaryLinks = [
-  { number: '01', label: 'Collections', href: '/collections' },
-  { number: '02', label: 'Process', href: '/process' },
-];
-
-const secondaryLinks = [{ number: '03', label: 'About', href: '/about' }];
+import { Link } from '@/i18n/navigation';
+import { LanguageToggle } from '@/components/layout/LanguageToggle';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -17,6 +13,13 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('nav');
+
+  const primaryLinks = [
+    { number: '01', label: t('collections'), href: '/collections' as const },
+    { number: '02', label: t('process'), href: '/process' as const },
+  ];
+  const secondaryLinks = [{ number: '03', label: t('about'), href: '/about' as const }];
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -39,7 +42,7 @@ export function Navbar() {
           scrolled ? 'bg-light/[0.92] backdrop-blur-sm' : 'bg-transparent'
         }`}
       >
-        <nav className="hidden md:flex items-center gap-lg" aria-label="Primary">
+        <nav className="hidden md:flex items-center gap-lg" aria-label={t('primaryLabel')}>
           {primaryLinks.map((link) => (
             <Link
               key={link.href}
@@ -62,7 +65,7 @@ export function Navbar() {
           LM WEDDYLI
         </Link>
 
-        <nav className="hidden md:flex items-center gap-lg" aria-label="Secondary">
+        <nav className="hidden md:flex items-center gap-lg" aria-label={t('secondaryLabel')}>
           {secondaryLinks.map((link) => (
             <Link
               key={link.href}
@@ -74,6 +77,7 @@ export function Navbar() {
               {link.number} {link.label}
             </Link>
           ))}
+          <LanguageToggle tone={scrolled ? 'onLight' : 'onDark'} />
           <Link
             href="/inquire"
             className={`font-body text-nav uppercase border border-hairline px-md py-xs transition-colors duration-ui ease-standard ${
@@ -82,13 +86,13 @@ export function Navbar() {
                 : 'text-white border-white hover:bg-white hover:text-ink'
             }`}
           >
-            04 Inquire →
+            04 {t('inquire')} →
           </Link>
         </nav>
 
         <button
           type="button"
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={menuOpen ? t('closeMenu') : t('openMenu')}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
           className="md:hidden ml-auto flex h-11 w-11 flex-col items-center justify-center gap-[5px]"
@@ -117,7 +121,7 @@ export function Navbar() {
           >
             <button
               type="button"
-              aria-label="Close menu"
+              aria-label={t('closeMenu')}
               onClick={() => setMenuOpen(false)}
               className="absolute top-0 right-0 flex h-14 w-14 items-center justify-center text-white"
             >
@@ -125,7 +129,7 @@ export function Navbar() {
               <span className="absolute block h-[0.5px] w-5 bg-white -rotate-45" />
             </button>
 
-            {[...primaryLinks, ...secondaryLinks, { number: '04', label: 'Inquire', href: '/inquire' }].map(
+            {[...primaryLinks, ...secondaryLinks, { number: '04', label: t('inquire'), href: '/inquire' as const }].map(
               (link) => (
                 <Link
                   key={link.href}
@@ -137,6 +141,8 @@ export function Navbar() {
                 </Link>
               ),
             )}
+
+            <LanguageToggle tone="onDark" />
           </motion.div>
         )}
       </AnimatePresence>

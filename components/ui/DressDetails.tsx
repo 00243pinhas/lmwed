@@ -1,8 +1,9 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 
+import { Link } from '@/i18n/navigation';
 import type { Look } from '@/types/look';
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -20,6 +21,7 @@ const word = {
 export function DressDetails({ look }: { look: Look }) {
   const prefersReduced = useReducedMotion();
   const words = look.name.split(' ');
+  const t = useTranslations('collectionDetail.details');
 
   return (
     <div className="px-md py-2xl md:px-2xl md:py-4xl">
@@ -58,11 +60,11 @@ export function DressDetails({ look }: { look: Look }) {
 
       <div className="grid grid-cols-2 mt-xl">
         <div>
-          <p className="font-body text-[9px] uppercase tracking-[0.14em] text-muted">Production Time</p>
+          <p className="font-body text-[9px] uppercase tracking-[0.14em] text-muted">{t('productionTime')}</p>
           <p className="font-display text-display-2xs text-ink mt-xs">{look.productionWeeks}</p>
         </div>
         <div className="border-l-hairline border-border-l pl-lg">
-          <p className="font-body text-[9px] uppercase tracking-[0.14em] text-muted">Starting At</p>
+          <p className="font-body text-[9px] uppercase tracking-[0.14em] text-muted">{t('startingAt')}</p>
           <p className="font-display text-display-2xs text-ink mt-xs">${look.startingPrice.toLocaleString()}</p>
         </div>
       </div>
@@ -73,11 +75,11 @@ export function DressDetails({ look }: { look: Look }) {
           href="/inquire"
           className="flex w-full items-center justify-center bg-dark text-white font-body text-[12px] uppercase tracking-[0.14em] h-[52px] md:h-12 hover:bg-[#2A2420] transition-colors duration-ui ease-standard"
         >
-          Inquire About {look.name}
+          {t('inquireAbout', { name: look.name })}
         </Link>
-        <p className="font-body text-[10px] text-muted mt-md">Linda responds within 24 hours via WhatsApp.</p>
+        <p className="font-body text-[10px] text-muted mt-md">{t('whatsappNote')}</p>
         <Link href="/collections" className="cta-link font-body text-nav uppercase text-ink mt-lg inline-block">
-          or begin with a different look →
+          {t('differentLook')}
         </Link>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { InquiryForm } from '@/components/forms/InquiryForm';
 import { InquireHeader } from '@/components/ui/InquireHeader';
@@ -6,12 +6,15 @@ import { InquireHeader } from '@/components/ui/InquireHeader';
 import { trustPoints } from '@/data/dummy/trust-points';
 import { testimonials } from '@/data/dummy/testimonials';
 
-export const metadata: Metadata = {
-  title: 'Inquire — LM Weddyli',
-  description: 'Tell us about your wedding. Linda reviews every inquiry personally and responds within 24 hours.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'inquire.meta' });
+  return { title: t('title'), description: t('description') };
+}
 
-export default function InquirePage() {
+export default async function InquirePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const testimonial = testimonials.find((t) => t.featured) ?? testimonials[0];
 
   return (

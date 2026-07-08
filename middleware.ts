@@ -2,10 +2,19 @@
 // Runs on every dashboard request: refreshes the Supabase session cookie,
 // then enforces: no session -> login; inactive profile -> sign out + login;
 // active session -> allow through.
+//
+// The dashboard is deliberately English-only (see CLAUDE.md) and stays
+// completely outside next-intl's locale routing below — this function is
+// dispatched to only for /dashboard/* requests.
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import createIntlMiddleware from 'next-intl/middleware';
 
-export async function middleware(request: NextRequest) {
+import { routing } from '@/i18n/routing';
+
+const intlMiddleware = createIntlMiddleware(routing);
+
+async function dashboardMiddleware(request: NextRequest) {
   let response = NextResponse.next({ request });
 
   const supabase = createServerClient(
@@ -86,6 +95,18 @@ export async function middleware(request: NextRequest) {
   return response;
 }
 
+// The public site (marketing pages + /my-dress) is locale-aware; /dashboard
+// keeps its own English-only auth middleware, untouched by next-intl.
+export function middleware(request: NextRequest) {
+  if (request.nextUrl.pathname.startsWith('/dashboard')) {
+    return dashboardMiddleware(request);
+  }
+  return intlMiddleware(request);
+}
+
 export const config = {
-  matcher: ['/dashboard/:path*'],
+  // Runs on every request except /api, Next internals, and static files —
+  // this covers /dashboard/* (handled above) and every locale-prefixed
+  // public route (handled by next-intl).
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 };

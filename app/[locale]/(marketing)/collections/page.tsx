@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { HeroSection } from '@/components/ui/HeroSection';
 import { SectionMarker } from '@/components/ui/SectionMarker';
@@ -8,18 +8,23 @@ import { Reveal } from '@/components/ui/Reveal';
 import { looks } from '@/data/dummy/collections';
 import { collectionInfo } from '@/data/dummy/collection-info';
 
-export const metadata: Metadata = {
-  title: 'Collections — LM Weddyli',
-  description: 'Twelve made-to-measure silhouettes across two collections — Lumière and Harmattan.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'collections.meta' });
+  return { title: t('title'), description: t('description') };
+}
 
-export default function CollectionsPage() {
+export default async function CollectionsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('collections');
+
   return (
     <>
       <HeroSection
-        eyebrow="The Collection"
-        headline="Where Light Meets Structure"
-        subline="Two collections, twelve silhouettes — Lumière and Harmattan, each gown made to your measurements alone."
+        eyebrow={t('hero.eyebrow')}
+        headline={t('hero.headline')}
+        subline={t('hero.subline')}
         mediaSrc="/brand_assets/photography/isabelle-hero.png"
         height="half"
       />
@@ -27,9 +32,9 @@ export default function CollectionsPage() {
       {/* 0.1 The Two Collections */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="0.1 The Two Collections" />
+          <SectionMarker label={t('twoCollections.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[16ch]">
-            Structure And Light, Named
+            {t('twoCollections.headline')}
           </h2>
         </Reveal>
 
@@ -49,9 +54,9 @@ export default function CollectionsPage() {
       {/* 0.2 The Looks */}
       <section className="bg-surface px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="0.2 The Looks" />
+          <SectionMarker label={t('looks.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[16ch]">
-            Browse The Full Collection
+            {t('looks.headline')}
           </h2>
         </Reveal>
 

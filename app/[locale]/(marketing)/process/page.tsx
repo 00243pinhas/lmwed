@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { ProcessHero } from '@/components/ui/ProcessHero';
 import { Timeline } from '@/components/ui/Timeline';
@@ -9,28 +8,33 @@ import { MeasurementCard } from '@/components/ui/MeasurementCard';
 import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import { Reveal } from '@/components/ui/Reveal';
 import { StaggerReveal } from '@/components/ui/StaggerReveal';
+import { Link } from '@/i18n/navigation';
 
 import { processSteps } from '@/data/dummy/process-steps';
 import { measurements } from '@/data/dummy/measurements';
 import { testimonials } from '@/data/dummy/testimonials';
 
-export const metadata: Metadata = {
-  title: 'The Process — LM Weddyli',
-  description:
-    'From first conversation to final stitch — how a made-to-measure LM Weddyli gown comes to life, from Lubumbashi to Istanbul.',
-};
-
-const timelineStages = [
-  { week: 'Week 0', label: 'Consultation' },
-  { week: 'Week 1 – 2', label: 'Design & Fabric' },
-  { week: 'Week 3', label: 'Measurements' },
-  { week: 'Week 4 – 12', label: 'Creation' },
-  { week: 'Week 13 – 14', label: 'Delivery' },
-];
-
 const remoteTestimonial = testimonials.find((t) => t.id === '6') ?? testimonials[0];
 
-export default function ProcessPage() {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'process.meta' });
+  return { title: t('title'), description: t('description') };
+}
+
+export default async function ProcessPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('process');
+
+  const timelineStages = [
+    { week: t('timeline.week0'), label: t('timeline.consultation') },
+    { week: t('timeline.week1_2'), label: t('timeline.designFabric') },
+    { week: t('timeline.week3'), label: t('timeline.measurements') },
+    { week: t('timeline.week4_12'), label: t('timeline.creation') },
+    { week: t('timeline.week13_14'), label: t('timeline.delivery') },
+  ];
+
   return (
     <>
       <ProcessHero />
@@ -45,9 +49,9 @@ export default function ProcessPage() {
       {/* 2.1 Five Steps */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="2.1 Five Steps" />
+          <SectionMarker label={t('fiveSteps.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[18ch]">
-            Every Detail, Considered
+            {t('fiveSteps.headline')}
           </h2>
         </Reveal>
 
@@ -71,14 +75,11 @@ export default function ProcessPage() {
       {/* 2.2 Measurement Guide */}
       <section className="bg-surface px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="2.2 Measurement Guide" />
+          <SectionMarker label={t('measurementGuide.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[18ch]">
-            Eight Measurements, Taken At Home
+            {t('measurementGuide.headline')}
           </h2>
-          <p className="font-body text-body text-muted mt-lg max-w-[52ch]">
-            No showroom visit required. A written guide and a video call with Linda walk you
-            through each of these, step by step.
-          </p>
+          <p className="font-body text-body text-muted mt-lg max-w-[52ch]">{t('measurementGuide.body')}</p>
         </Reveal>
 
         <StaggerReveal className="grid grid-cols-2 md:grid-cols-4 gap-md md:gap-lg mt-2xl md:mt-3xl">
@@ -96,7 +97,7 @@ export default function ProcessPage() {
       {/* 2.3 In Their Words */}
       <section className="bg-dark px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="2.3 In Their Words" light />
+          <SectionMarker label={t('inTheirWords.marker')} light />
           <div className="mt-2xl md:mt-3xl">
             <TestimonialCard
               quote={remoteTestimonial.quote}
@@ -114,16 +115,13 @@ export default function ProcessPage() {
       {/* 2.4 Begin */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section text-center">
         <Reveal className="flex flex-col items-center">
-          <SectionMarker label="2.4 Begin" />
+          <SectionMarker label={t('begin.marker')} />
           <h2 className="font-display font-light text-display-sm md:text-display-md text-ink mt-md max-w-[14ch]">
-            Ready To Begin Your Story?
+            {t('begin.headline')}
           </h2>
-          <p className="font-body text-body text-muted mt-lg max-w-[48ch]">
-            A free consultation is the first step. No pressure, no obligation — just a
-            conversation about the dress only you could wear.
-          </p>
+          <p className="font-body text-body text-muted mt-lg max-w-[48ch]">{t('begin.body')}</p>
           <Link href="/inquire" className="cta-link font-body text-nav uppercase text-ink mt-xl inline-block">
-            Begin your journey →
+            {t('begin.cta')}
           </Link>
         </Reveal>
       </section>

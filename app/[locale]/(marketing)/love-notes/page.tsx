@@ -1,30 +1,35 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { SectionMarker } from '@/components/ui/SectionMarker';
 import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import { Reveal } from '@/components/ui/Reveal';
 import { StaggerReveal } from '@/components/ui/StaggerReveal';
+import { Link } from '@/i18n/navigation';
 
 import { testimonials } from '@/data/dummy/testimonials';
 import { loveNotesHeader, instagramSection, scarcityNote } from '@/data/dummy/love-notes-content';
 
-export const metadata: Metadata = {
-  title: 'Love Notes — LM Weddyli',
-  description: 'What our brides say — real words from the women who wore an LM Weddyli gown.',
-};
-
 const featuredTestimonial = testimonials.find((t) => t.featured) ?? testimonials[0];
 const remainingTestimonials = testimonials.filter((t) => t.id !== featuredTestimonial.id);
 
-export default function LoveNotesPage() {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'loveNotes.meta' });
+  return { title: t('title'), description: t('description') };
+}
+
+export default async function LoveNotesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('loveNotes');
+
   return (
     <>
       {/* 04 Love Notes — header */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="04 Love Notes" />
+          <SectionMarker label={t('header.marker')} />
           <h1 className="font-display font-light text-display-sm md:text-display-lg text-ink mt-md max-w-[14ch] leading-[1.1]">
             {loveNotesHeader.headline}
           </h1>
@@ -63,9 +68,9 @@ export default function LoveNotesPage() {
       {/* 4.1 More Stories */}
       <section className="bg-surface px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="4.1 More Stories" />
+          <SectionMarker label={t('moreStories.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[18ch]">
-            Every Dress, A Different Story
+            {t('moreStories.headline')}
           </h2>
         </Reveal>
 
@@ -88,7 +93,7 @@ export default function LoveNotesPage() {
       {/* 4.2 Follow Along */}
       <section className="bg-dark px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="4.2 Follow Along" light />
+          <SectionMarker label={t('followAlong.marker')} light />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-white mt-md max-w-[16ch]">
             {instagramSection.headline}
           </h2>
@@ -109,7 +114,7 @@ export default function LoveNotesPage() {
             rel="noopener noreferrer"
             className="cta-link font-body text-nav uppercase text-white"
           >
-            Instagram →
+            {t('followAlong.instagram')}
           </Link>
           <Link
             href={instagramSection.tiktokUrl}
@@ -117,7 +122,7 @@ export default function LoveNotesPage() {
             rel="noopener noreferrer"
             className="cta-link font-body text-nav uppercase text-white"
           >
-            TikTok →
+            {t('followAlong.tiktok')}
           </Link>
         </Reveal>
       </section>
@@ -125,7 +130,7 @@ export default function LoveNotesPage() {
       {/* 4.3 A note on availability */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section text-center">
         <Reveal className="flex flex-col items-center">
-          <SectionMarker label="4.3 Availability" />
+          <SectionMarker label={t('availability.marker')} />
           <h2 className="font-display italic font-light text-display-xs md:text-display-sm text-ink mt-md max-w-[20ch]">
             {scarcityNote.headline}
           </h2>
@@ -136,16 +141,13 @@ export default function LoveNotesPage() {
       {/* 4.4 Begin */}
       <section className="bg-dark px-md py-3xl md:px-xl md:py-section text-center">
         <Reveal className="flex flex-col items-center">
-          <SectionMarker label="4.4 Begin" light />
+          <SectionMarker label={t('begin.marker')} light />
           <h2 className="font-display font-light text-display-sm md:text-display-md text-white mt-md max-w-[16ch]">
-            Ready To Write Your Own?
+            {t('begin.headline')}
           </h2>
-          <p className="font-body text-body text-white/70 mt-lg max-w-[48ch]">
-            A free consultation is the first step. No pressure, no obligation — just a conversation
-            about the dress only you could wear.
-          </p>
+          <p className="font-body text-body text-white/70 mt-lg max-w-[48ch]">{t('begin.body')}</p>
           <Link href="/inquire" className="cta-link font-body text-nav uppercase text-white mt-xl inline-block">
-            Begin your journey →
+            {t('begin.cta')}
           </Link>
         </Reveal>
       </section>

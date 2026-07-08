@@ -6,6 +6,10 @@ type Props = {
   name?: string;
   placeholder?: string;
   optional?: boolean;
+  // Shared with the (English-only, non-localized) dashboard — callers on the
+  // public site pass a translated string; dashboard callers rely on this
+  // English default.
+  optionalLabel?: string;
   note?: string;
   error?: string;
   autoComplete?: string;
@@ -19,6 +23,7 @@ export function FormField({
   name,
   placeholder,
   optional,
+  optionalLabel = '(Optional)',
   note,
   error,
   autoComplete,
@@ -27,7 +32,7 @@ export function FormField({
     <div>
       <label className="font-body text-[9px] uppercase tracking-[0.14em] text-muted block">
         {label}
-        {optional && <span className="normal-case tracking-normal"> (Optional)</span>}
+        {optional && <span className="normal-case tracking-normal"> {optionalLabel}</span>}
       </label>
       <input
         type={type}

@@ -1,11 +1,11 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 
 import { SectionMarker } from '@/components/ui/SectionMarker';
 
 const ease = [0.16, 1, 0.3, 1] as const;
-const headline = 'Tell us about your wedding';
 
 const sentence = {
   hidden: {},
@@ -19,11 +19,12 @@ const word = {
 
 export function InquireHeader() {
   const prefersReduced = useReducedMotion();
-  const words = headline.split(' ');
+  const t = useTranslations('inquire.header');
+  const words = t('headline').split(' ');
 
   return (
     <section className="relative w-full bg-dark h-[50svh] min-h-[420px] flex flex-col justify-end px-md pb-3xl md:px-xl md:pb-4xl">
-      <SectionMarker label="07 Begin" light />
+      <SectionMarker label={t('marker')} light />
       <motion.h1
         variants={prefersReduced ? undefined : sentence}
         initial={prefersReduced ? undefined : 'hidden'}
@@ -40,9 +41,7 @@ export function InquireHeader() {
           </motion.span>
         ))}
       </motion.h1>
-      <p className="font-body text-body text-white/70 mt-lg max-w-[46ch]">
-        Linda reviews every inquiry personally and responds within 24 hours.
-      </p>
+      <p className="font-body text-body text-white/70 mt-lg max-w-[46ch]">{t('subline')}</p>
     </section>
   );
 }

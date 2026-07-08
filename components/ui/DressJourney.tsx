@@ -1,22 +1,18 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 
 import type { OrderStage } from '@/types/order';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const STAGES: { key: OrderStage; label: string }[] = [
-  { key: 'consultation', label: 'Consultation' },
-  { key: 'design', label: 'Design' },
-  { key: 'measurements', label: 'Measurements' },
-  { key: 'production', label: 'Production' },
-  { key: 'arrived', label: 'Arrived' },
-  { key: 'delivered', label: 'Delivered' },
-];
+const STAGE_KEYS: OrderStage[] = ['consultation', 'design', 'measurements', 'production', 'arrived', 'delivered'];
 
 export function DressJourney({ stage }: { stage: OrderStage }) {
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('myDress.stages');
+  const STAGES = STAGE_KEYS.map((key) => ({ key, label: t(key) }));
   const currentIndex = STAGES.findIndex((s) => s.key === stage);
   const filledRatio = currentIndex / (STAGES.length - 1);
 

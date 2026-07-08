@@ -1,15 +1,17 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 
 const ease = [0.16, 1, 0.3, 1] as const;
-const labels = ['About You', 'Your Vision', 'Your Plans'];
 
 export function StepIndicator({ current }: { current: number }) {
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('inquire');
+  const labels = [t('steps.aboutYou'), t('steps.yourVision'), t('steps.yourPlans')];
 
   return (
-    <div className="flex items-center flex-wrap gap-sm md:gap-md" aria-label="Form progress">
+    <div className="flex items-center flex-wrap gap-sm md:gap-md" aria-label={t('formProgressLabel')}>
       {labels.map((label, i) => {
         const num = String(i + 1).padStart(2, '0');
         const isActive = i === current;

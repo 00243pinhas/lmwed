@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 import { LookCard } from '@/components/ui/LookCard';
@@ -12,10 +13,11 @@ const filters: Filter[] = ['All', 'Lumière', 'Harmattan'];
 export function CollectionsGrid({ looks }: { looks: Look[] }) {
   const [active, setActive] = useState<Filter>('All');
   const filtered = active === 'All' ? looks : looks.filter((look) => look.collection === active);
+  const t = useTranslations('collections.looks');
 
   return (
     <div>
-      <div className="flex items-center gap-lg" role="tablist" aria-label="Filter by collection">
+      <div className="flex items-center gap-lg" role="tablist" aria-label={t('filterAriaLabel')}>
         {filters.map((filter) => (
           <button
             key={filter}
@@ -27,7 +29,7 @@ export function CollectionsGrid({ looks }: { looks: Look[] }) {
               active === filter ? 'text-ink border-ink' : 'text-muted border-transparent hover:text-ink'
             }`}
           >
-            {filter}
+            {filter === 'All' ? t('filterAll') : filter}
           </button>
         ))}
       </div>

@@ -1,9 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useRef } from 'react';
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+
+import { Link } from '@/i18n/navigation';
 
 type Props = {
   eyebrow?: string;
@@ -30,6 +32,7 @@ const word = {
 export function HeroSection({ eyebrow, headline, subline, ctaText, ctaHref, mediaSrc, height = 'full' }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('common');
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], ['0%', prefersReduced ? '0%' : '20%']);
 
@@ -83,7 +86,7 @@ export function HeroSection({ eyebrow, headline, subline, ctaText, ctaHref, medi
           className="font-body text-[10px] uppercase tracking-[0.16em] text-white/70"
           style={{ writingMode: 'vertical-rl' }}
         >
-          Scroll
+          {t('scroll')}
         </span>
         <span className="h-2xl w-px bg-white/40" />
       </div>

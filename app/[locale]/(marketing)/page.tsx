@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { HeroSection } from '@/components/ui/HeroSection';
 import { SectionMarker } from '@/components/ui/SectionMarker';
@@ -7,6 +7,7 @@ import { ProcessStep } from '@/components/ui/ProcessStep';
 import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import { Reveal } from '@/components/ui/Reveal';
 import { StaggerReveal } from '@/components/ui/StaggerReveal';
+import { Link } from '@/i18n/navigation';
 
 import { looks } from '@/data/dummy/collections';
 import { testimonials } from '@/data/dummy/testimonials';
@@ -21,14 +22,24 @@ const featuredLooks = featuredSlugs
 const featuredTestimonial = testimonials.find((t) => t.featured) ?? testimonials[0];
 const previewSteps = processSteps.slice(0, 3);
 
-export default function HomePage() {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'home.meta' });
+  return { title: t('title'), description: t('description') };
+}
+
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('home');
+
   return (
     <>
       <HeroSection
-        eyebrow="LM Weddyli — Lubumbashi · Istanbul"
-        headline="Where Your Dress Becomes Your Story"
-        subline="Made-to-measure bridal, designed in Lubumbashi and hand-crafted in our Istanbul atelier."
-        ctaText="Begin your journey →"
+        eyebrow={t('hero.eyebrow')}
+        headline={t('hero.headline')}
+        subline={t('hero.subline')}
+        ctaText={t('hero.cta')}
         ctaHref="/inquire"
         mediaSrc="/brand_assets/photography/solene-hero.jpg"
         height="full"
@@ -37,17 +48,13 @@ export default function HomePage() {
       {/* 0.1 The Atelier */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="0.1 The Atelier" />
+          <SectionMarker label={t('atelier.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[14ch]">
-            Every Gown Begins With A Conversation
+            {t('atelier.headline')}
           </h2>
-          <p className="font-body text-body text-muted mt-lg max-w-[52ch]">
-            LM Weddyli is a made-to-measure bridal atelier founded by Linda Monga. Each gown is
-            designed in Lubumbashi and hand-constructed in our Istanbul workshop — fitted to you
-            alone, and sent wherever you call home.
-          </p>
+          <p className="font-body text-body text-muted mt-lg max-w-[52ch]">{t('atelier.body')}</p>
           <Link href="/process" className="cta-link font-body text-nav uppercase text-ink mt-xl inline-block">
-            See the full process →
+            {t('atelier.cta')}
           </Link>
         </Reveal>
       </section>
@@ -55,9 +62,9 @@ export default function HomePage() {
       {/* 0.2 The Collection */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="0.2 The Collection" />
+          <SectionMarker label={t('collection.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[16ch]">
-            Twelve Silhouettes, One Philosophy
+            {t('collection.headline')}
           </h2>
         </Reveal>
 
@@ -80,7 +87,7 @@ export default function HomePage() {
             href="/collections"
             className="cta-link font-body text-nav uppercase text-ink mt-2xl inline-block"
           >
-            View all looks →
+            {t('collection.cta')}
           </Link>
         </Reveal>
       </section>
@@ -88,9 +95,9 @@ export default function HomePage() {
       {/* 1.0 The Process */}
       <section className="bg-surface px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="1.0 The Process" />
+          <SectionMarker label={t('process.marker')} />
           <h2 className="font-display font-light text-display-xs md:text-display-md text-ink mt-md max-w-[16ch]">
-            From Conversation To Gown, Five Steps
+            {t('process.headline')}
           </h2>
         </Reveal>
 
@@ -111,7 +118,7 @@ export default function HomePage() {
 
         <Reveal>
           <Link href="/process" className="cta-link font-body text-nav uppercase text-ink mt-2xl inline-block">
-            See the full process →
+            {t('process.cta')}
           </Link>
         </Reveal>
       </section>
@@ -119,7 +126,7 @@ export default function HomePage() {
       {/* 2.0 Love Notes */}
       <section className="bg-dark px-md py-3xl md:px-xl md:py-section">
         <Reveal>
-          <SectionMarker label="2.0 Love Notes" light />
+          <SectionMarker label={t('loveNotes.marker')} light />
           <div className="mt-2xl md:mt-3xl">
             <TestimonialCard
               quote={featuredTestimonial.quote}
@@ -137,16 +144,13 @@ export default function HomePage() {
       {/* 3.0 Begin */}
       <section className="bg-light px-md py-3xl md:px-xl md:py-section text-center">
         <Reveal className="flex flex-col items-center">
-          <SectionMarker label="3.0 Begin" />
+          <SectionMarker label={t('begin.marker')} />
           <h2 className="font-display font-light text-display-sm md:text-display-md text-ink mt-md max-w-[14ch]">
-            Ready To Begin Your Story?
+            {t('begin.headline')}
           </h2>
-          <p className="font-body text-body text-muted mt-lg max-w-[48ch]">
-            A free consultation is the first step. No pressure, no obligation — just a
-            conversation about the dress only you could wear.
-          </p>
+          <p className="font-body text-body text-muted mt-lg max-w-[48ch]">{t('begin.body')}</p>
           <Link href="/inquire" className="cta-link font-body text-nav uppercase text-ink mt-xl inline-block">
-            Begin your journey →
+            {t('begin.cta')}
           </Link>
         </Reveal>
       </section>

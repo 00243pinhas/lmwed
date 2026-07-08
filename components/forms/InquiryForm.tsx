@@ -1,9 +1,10 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 
+import { Link } from '@/i18n/navigation';
 import { FormField } from '@/components/forms/FormField';
 import { OptionRow } from '@/components/forms/OptionRow';
 import { StepIndicator } from '@/components/forms/StepIndicator';
@@ -12,11 +13,6 @@ import type { Testimonial } from '@/types/testimonial';
 import type { TrustPoint } from '@/types/trust-point';
 
 const ease = [0.16, 1, 0.3, 1] as const;
-
-const serviceOptions = ['Custom Gown', 'Rental', 'Not sure yet'];
-const silhouetteOptions = ['A-Line', 'Ball Gown', 'Mermaid', 'Slip', 'Not sure'];
-const budgetOptions = ['Under $500', '$500–$1,200', '$1,200–$2,500', '$2,500+'];
-const foundUsOptions = ['Instagram', 'TikTok', 'A friend', 'Other'];
 
 // Maps the human-readable option labels shown in the UI to the exact enum
 // slugs app/api/inquire/route.ts validates with zod.
@@ -39,6 +35,15 @@ const foundUsSlugs: Record<string, string> = {
   'A friend': 'friend',
   Other: 'other',
 };
+
+// Users paste bare domains ("pinterest.com/board/x") into the inspiration
+// link field. The API's zod schema requires a fully-qualified URL, so add a
+// protocol here rather than rejecting a real, valid link from a real user.
+function normalizeUrl(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed) return '';
+  return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+}
 
 type FormData = {
   firstName: string;
@@ -80,32 +85,13 @@ const stepVariants = {
   exit: { x: -40, opacity: 0 },
 };
 
-function validateStep(step: number, data: FormData): FieldError {
-  if (step === 0) {
-    if (!data.firstName.trim()) return { field: 'firstName', message: 'Please share your first name.' };
-    if (!data.city.trim()) return { field: 'city', message: 'Please share your city.' };
-    if (!data.whatsapp.trim()) return { field: 'whatsapp', message: 'A WhatsApp number is required.' };
-  }
-  if (step === 1) {
-    if (!data.serviceType) return { field: 'serviceType', message: 'Please choose one option.' };
-    if (!data.dreamDress.trim()) return { field: 'dreamDress', message: 'Tell us a little about the dress.' };
-  }
-  if (step === 2) {
-    if (!data.weddingMonth.trim()) return { field: 'weddingMonth', message: 'Wedding month is required.' };
-    if (!data.weddingYear.trim()) return { field: 'weddingYear', message: 'Wedding year is required.' };
-    if (!data.weddingCity.trim()) return { field: 'weddingCity', message: 'Wedding city is required.' };
-    if (!data.budget) return { field: 'budget', message: 'Please select a budget range.' };
-    if (!data.foundUs) return { field: 'foundUs', message: 'Please tell us how you found us.' };
-  }
-  return null;
-}
-
 type Props = {
   trustPoints: TrustPoint[];
   testimonial: Testimonial;
 };
 
 export function InquiryForm({ trustPoints, testimonial }: Props) {
+  const t = useTranslations('inquire');
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -113,6 +99,47 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
   const [data, setData] = useState<FormData>(initialData);
   const [error, setError] = useState<FieldError>(null);
   const prefersReduced = useReducedMotion();
+
+  const serviceOptions = [t('options.service.customGown'), t('options.service.rental'), t('options.service.notSure')];
+  const silhouetteOptions = [
+    t('options.silhouette.aLine'),
+    t('options.silhouette.ballGown'),
+    t('options.silhouette.mermaid'),
+    t('options.silhouette.slip'),
+    t('options.silhouette.notSure'),
+  ];
+  const budgetOptions = [
+    t('options.budget.under500'),
+    t('options.budget.range500_1200'),
+    t('options.budget.range1200_2500'),
+    t('options.budget.over2500'),
+  ];
+  const foundUsOptions = [
+    t('options.foundUs.instagram'),
+    t('options.foundUs.tiktok'),
+    t('options.foundUs.friend'),
+    t('options.foundUs.other'),
+  ];
+
+  function validateStep(step: number, data: FormData): FieldError {
+    if (step === 0) {
+      if (!data.firstName.trim()) return { field: 'firstName', message: t('errors.firstName') };
+      if (!data.city.trim()) return { field: 'city', message: t('errors.city') };
+      if (!data.whatsapp.trim()) return { field: 'whatsapp', message: t('errors.whatsapp') };
+    }
+    if (step === 1) {
+      if (!data.serviceType) return { field: 'serviceType', message: t('errors.serviceType') };
+      if (!data.dreamDress.trim()) return { field: 'dreamDress', message: t('errors.dreamDress') };
+    }
+    if (step === 2) {
+      if (!data.weddingMonth.trim()) return { field: 'weddingMonth', message: t('errors.weddingMonth') };
+      if (!data.weddingYear.trim()) return { field: 'weddingYear', message: t('errors.weddingYear') };
+      if (!data.weddingCity.trim()) return { field: 'weddingCity', message: t('errors.weddingCity') };
+      if (!data.budget) return { field: 'budget', message: t('errors.budget') };
+      if (!data.foundUs) return { field: 'foundUs', message: t('errors.foundUs') };
+    }
+    return null;
+  }
 
   const update = (field: keyof FormData, value: string) => {
     setData((d) => ({ ...d, [field]: value }));
@@ -162,7 +189,7 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
           serviceType: serviceTypeSlugs[data.serviceType],
           silhouette: data.silhouette,
           dreamDress: data.dreamDress,
-          inspirationLink: data.inspirationLink,
+          inspirationLink: normalizeUrl(data.inspirationLink),
           weddingMonth: data.weddingMonth,
           weddingYear: data.weddingYear,
           weddingCity: data.weddingCity,
@@ -176,10 +203,10 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
       if (result.ok) {
         setSubmitted(true);
       } else {
-        setSubmitError(result.error || 'Something went wrong. Please try again.');
+        setSubmitError(result.error || t('errors.submitDefault'));
       }
     } catch {
-      setSubmitError('Something went wrong. Please check your connection and try again.');
+      setSubmitError(t('errors.submitNetwork'));
     } finally {
       setSubmitting(false);
     }
@@ -212,38 +239,39 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                       {step === 0 && (
                         <>
                           <FormField
-                            label="Your first name"
+                            label={t('fields.firstName.label')}
                             value={data.firstName}
                             onChange={(v) => update('firstName', v)}
-                            placeholder="Linda, Marie, Amara..."
+                            placeholder={t('fields.firstName.placeholder')}
                             error={errorFor('firstName')}
                             autoComplete="given-name"
                           />
                           <FormField
-                            label="Your city"
+                            label={t('fields.city.label')}
                             value={data.city}
                             onChange={(v) => update('city', v)}
-                            placeholder="Lubumbashi, Kinshasa..."
+                            placeholder={t('fields.city.placeholder')}
                             error={errorFor('city')}
                             autoComplete="address-level2"
                           />
                           <FormField
-                            label="WhatsApp number"
+                            label={t('fields.whatsapp.label')}
                             type="tel"
                             value={data.whatsapp}
                             onChange={(v) => update('whatsapp', v)}
-                            placeholder="+243 ..."
-                            note="Linda will reach out here within 24 hours."
+                            placeholder={t('fields.whatsapp.placeholder')}
+                            note={t('fields.whatsapp.note')}
                             error={errorFor('whatsapp')}
                             autoComplete="tel"
                           />
                           <FormField
-                            label="Email"
+                            label={t('fields.email.label')}
                             type="email"
                             value={data.email}
                             onChange={(v) => update('email', v)}
-                            placeholder="Optional — WhatsApp is enough"
+                            placeholder={t('fields.email.placeholder')}
                             optional
+                            optionalLabel={t('fields.optional')}
                             autoComplete="email"
                           />
                         </>
@@ -252,27 +280,27 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                       {step === 1 && (
                         <>
                           <OptionRow
-                            label="What are you looking for?"
+                            label={t('fields.serviceType.label')}
                             options={serviceOptions}
                             value={data.serviceType}
                             onChange={(v) => update('serviceType', v)}
                             error={errorFor('serviceType')}
                           />
                           <OptionRow
-                            label="Silhouette"
+                            label={t('fields.silhouette.label')}
                             options={silhouetteOptions}
                             value={data.silhouette}
                             onChange={(v) => update('silhouette', v)}
                           />
                           <div>
                             <label className="font-body text-[9px] uppercase tracking-[0.14em] text-muted block">
-                              Describe your dream dress
+                              {t('fields.dreamDress.label')}
                             </label>
                             <textarea
                               rows={5}
                               value={data.dreamDress}
                               onChange={(e) => update('dreamDress', e.target.value)}
-                              placeholder="Tell Linda about the silhouette, fabric, or feeling you're imagining..."
+                              placeholder={t('fields.dreamDress.placeholder')}
                               className={`mt-sm block w-full resize-none border-0 border-b-hairline bg-transparent font-display text-[18px] text-ink outline-none transition-colors duration-200 ease-standard placeholder:text-accent ${
                                 errorFor('dreamDress')
                                   ? 'border-b-[1px] border-[#B91C1C]'
@@ -284,12 +312,13 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                             )}
                           </div>
                           <FormField
-                            label="Inspiration link"
+                            label={t('fields.inspirationLink.label')}
                             type="url"
                             value={data.inspirationLink}
                             onChange={(v) => update('inspirationLink', v)}
-                            placeholder="A Pinterest board, Instagram post..."
+                            placeholder={t('fields.inspirationLink.placeholder')}
                             optional
+                            optionalLabel={t('fields.optional')}
                           />
                         </>
                       )}
@@ -298,36 +327,36 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                         <>
                           <div className="grid grid-cols-2 gap-lg">
                             <FormField
-                              label="Wedding month"
+                              label={t('fields.weddingMonth.label')}
                               value={data.weddingMonth}
                               onChange={(v) => update('weddingMonth', v)}
-                              placeholder="June"
+                              placeholder={t('fields.weddingMonth.placeholder')}
                               error={errorFor('weddingMonth')}
                             />
                             <FormField
-                              label="Wedding year"
+                              label={t('fields.weddingYear.label')}
                               value={data.weddingYear}
                               onChange={(v) => update('weddingYear', v)}
-                              placeholder="2027"
+                              placeholder={t('fields.weddingYear.placeholder')}
                               error={errorFor('weddingYear')}
                             />
                           </div>
                           <FormField
-                            label="Wedding city/country"
+                            label={t('fields.weddingCity.label')}
                             value={data.weddingCity}
                             onChange={(v) => update('weddingCity', v)}
-                            placeholder="Lubumbashi, DRC..."
+                            placeholder={t('fields.weddingCity.placeholder')}
                             error={errorFor('weddingCity')}
                           />
                           <OptionRow
-                            label="Budget range"
+                            label={t('fields.budget.label')}
                             options={budgetOptions}
                             value={data.budget}
                             onChange={(v) => update('budget', v)}
                             error={errorFor('budget')}
                           />
                           <OptionRow
-                            label="How did you find us?"
+                            label={t('fields.foundUs.label')}
                             options={foundUsOptions}
                             value={data.foundUs}
                             onChange={(v) => update('foundUs', v)}
@@ -341,7 +370,7 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
 
                 {step === 2 && (
                   <p className="md:hidden font-body text-[10px] uppercase tracking-[0.1em] text-accent text-center mt-xl">
-                    Linda reviews every inquiry personally — private, WhatsApp only.
+                    {t('privacyNoteMobile')}
                   </p>
                 )}
 
@@ -352,7 +381,7 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                       onClick={handleBack}
                       className="flex items-center w-fit min-h-11 order-2 md:order-1"
                     >
-                      <span className="cta-link font-body text-nav uppercase text-ink">← Back</span>
+                      <span className="cta-link font-body text-nav uppercase text-ink">{t('actions.back')}</span>
                     </button>
                   )}
                   {step < 2 ? (
@@ -361,7 +390,7 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                       onClick={handleNext}
                       className="flex items-center w-fit min-h-11 ml-auto order-1 md:order-2"
                     >
-                      <span className="cta-link font-body text-nav uppercase text-ink">Continue →</span>
+                      <span className="cta-link font-body text-nav uppercase text-ink">{t('actions.continue')}</span>
                     </button>
                   ) : (
                     <button
@@ -370,7 +399,7 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                       disabled={submitting}
                       className="order-1 md:order-2 w-full md:w-auto md:min-w-[280px] h-14 bg-dark text-white font-body text-[13px] uppercase tracking-[0.14em] hover:bg-[#2A2420] transition-colors duration-200 ease-standard disabled:opacity-60"
                     >
-                      {submitting ? 'Sending...' : 'Send My Inquiry'}
+                      {submitting ? t('actions.sending') : t('actions.send')}
                     </button>
                   )}
                 </div>
@@ -384,11 +413,9 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                 {step === 2 && (
                   <div className="mt-lg text-center md:text-left">
                     <p className="font-body text-[10px] uppercase tracking-[0.1em] text-accent">
-                      Linda responds within 24 hours via WhatsApp
+                      {t('responseNote')}
                     </p>
-                    <p className="font-body text-[10px] text-muted mt-xs">
-                      Your information is private and never shared
-                    </p>
+                    <p className="font-body text-[10px] text-muted mt-xs">{t('privacyNote')}</p>
                   </div>
                 )}
               </motion.div>
@@ -400,28 +427,27 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
                 transition={{ duration: prefersReduced ? 0 : 0.5, ease }}
                 className="max-w-[480px] mx-auto text-center py-2xl"
               >
-                <p className="font-body text-[10px] uppercase tracking-[0.14em] text-accent">✓ Received</p>
-                <h2 className="font-display italic font-light text-[44px] text-ink mt-md leading-[1.1]">
-                  Thank you, {data.firstName}.
-                </h2>
-                <p className="font-body text-body text-muted mt-lg">
-                  Linda has received your inquiry and will review it personally. She&rsquo;ll reach out to you on
-                  WhatsApp within 24 hours to begin the conversation about your dress.
+                <p className="font-body text-[10px] uppercase tracking-[0.14em] text-accent">
+                  {t('confirmation.received')}
                 </p>
+                <h2 className="font-display italic font-light text-[44px] text-ink mt-md leading-[1.1]">
+                  {t('confirmation.thankYou', { firstName: data.firstName })}
+                </h2>
+                <p className="font-body text-body text-muted mt-lg">{t('confirmation.body')}</p>
                 <a
                   href={contact.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cta-link font-body text-nav uppercase text-ink mt-xl inline-block"
                 >
-                  Message Linda on WhatsApp →
+                  {t('confirmation.whatsappCta')}
                 </a>
                 <div className="flex items-center justify-center gap-lg mt-2xl">
                   <Link href="/collections" className="cta-link font-body text-nav uppercase text-muted">
-                    ← View the collection
+                    {t('confirmation.viewCollection')}
                   </Link>
                   <Link href="/love-notes" className="cta-link font-body text-nav uppercase text-muted">
-                    Read love notes →
+                    {t('confirmation.readLoveNotes')}
                   </Link>
                 </div>
               </motion.div>
@@ -430,7 +456,7 @@ export function InquiryForm({ trustPoints, testimonial }: Props) {
         </div>
 
         <aside className="hidden md:block md:col-span-2 border-l-hairline border-border-l pl-2xl h-fit md:sticky md:top-[120px]">
-          <p className="font-body text-[10px] uppercase tracking-[0.16em] text-accent">Why LM Weddyli</p>
+          <p className="font-body text-[10px] uppercase tracking-[0.16em] text-accent">{t('trustPanel.heading')}</p>
           <div className="flex flex-col gap-lg mt-lg">
             {trustPoints.map((point) => (
               <div key={point.title}>

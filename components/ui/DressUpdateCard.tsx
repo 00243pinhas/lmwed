@@ -1,16 +1,9 @@
+import { useLocale, useTranslations } from 'next-intl';
+
 import type { OrderStage } from '@/types/order';
 
-const STAGE_LABELS: Record<OrderStage, string> = {
-  consultation: 'Consultation',
-  design: 'Design',
-  measurements: 'Measurements',
-  production: 'Production',
-  arrived: 'Arrived',
-  delivered: 'Delivered',
-};
-
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString(undefined, {
+function formatDate(iso: string, locale: string) {
+  return new Date(iso).toLocaleDateString(locale, {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
@@ -34,6 +27,9 @@ export function DressUpdateCard({
   stage: OrderStage | null;
   createdAt: string;
 }) {
+  const locale = useLocale();
+  const t = useTranslations('myDress');
+
   return (
     <div className="relative aspect-[4/3] w-full overflow-hidden bg-dark">
       {signedUrl ? (
@@ -51,7 +47,7 @@ export function DressUpdateCard({
       ) : (
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="font-body text-[11px] uppercase tracking-[0.1em] text-white/60">
-            Photo unavailable
+            {t('progress.photoUnavailable')}
           </p>
         </div>
       )}
@@ -62,11 +58,11 @@ export function DressUpdateCard({
         <div className="flex items-center gap-md">
           {stage && (
             <p className="font-body text-[10px] uppercase tracking-[0.14em] text-accent">
-              {STAGE_LABELS[stage]}
+              {t(`stages.${stage}`)}
             </p>
           )}
           <p className="font-body text-[10px] uppercase tracking-[0.1em] text-white/70">
-            {formatDate(createdAt)}
+            {formatDate(createdAt, locale)}
           </p>
         </div>
         {caption && (

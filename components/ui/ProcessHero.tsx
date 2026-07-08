@@ -1,11 +1,11 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 
 import { SectionMarker } from '@/components/ui/SectionMarker';
 
 const ease = [0.16, 1, 0.3, 1] as const;
-const headline = 'From first conversation to final stitch.';
 
 const sentence = {
   hidden: {},
@@ -19,11 +19,12 @@ const word = {
 
 export function ProcessHero() {
   const prefersReduced = useReducedMotion();
-  const words = headline.split(' ');
+  const t = useTranslations('process.hero');
+  const words = t('headline').split(' ');
 
   return (
     <section className="relative w-full bg-dark h-[50svh] min-h-[420px] flex flex-col justify-end px-md pb-3xl md:px-xl md:pb-4xl">
-      <SectionMarker label="02 The Process" light />
+      <SectionMarker label={t('marker')} light />
       <motion.h1
         variants={prefersReduced ? undefined : sentence}
         initial={prefersReduced ? undefined : 'hidden'}

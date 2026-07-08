@@ -1,0 +1,375 @@
+{
+  "common": {
+    "scroll": "Scroll"
+  },
+  "nav": {
+    "collections": "Collections",
+    "process": "Process",
+    "about": "About",
+    "inquire": "Inquire",
+    "primaryLabel": "Primary",
+    "secondaryLabel": "Secondary",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Chaque robe, une histoire.",
+    "footerLabel": "Footer",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "whatsapp": "WhatsApp",
+    "copyright": "© {year} LM Weddyli. All rights reserved."
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "EN",
+    "fr": "FR",
+    "sw": "SW"
+  },
+  "home": {
+    "meta": {
+      "title": "LM Weddyli — Luxury Bridal by Linda Monga",
+      "description": "LM Weddyli — luxury bridal atelier by Linda Monga. Designed in Lubumbashi, produced in Istanbul."
+    },
+    "hero": {
+      "eyebrow": "LM Weddyli — Lubumbashi · Istanbul",
+      "headline": "Where Your Dress Becomes Your Story",
+      "subline": "Made-to-measure bridal, designed in Lubumbashi and hand-crafted in our Istanbul atelier.",
+      "cta": "Begin your journey →"
+    },
+    "atelier": {
+      "marker": "0.1 The Atelier",
+      "headline": "Every Gown Begins With A Conversation",
+      "body": "LM Weddyli is a made-to-measure bridal atelier founded by Linda Monga. Each gown is designed in Lubumbashi and hand-constructed in our Istanbul workshop — fitted to you alone, and sent wherever you call home.",
+      "cta": "See the full process →"
+    },
+    "collection": {
+      "marker": "0.2 The Collection",
+      "headline": "Twelve Silhouettes, One Philosophy",
+      "cta": "View all looks →"
+    },
+    "process": {
+      "marker": "1.0 The Process",
+      "headline": "From Conversation To Gown, Five Steps",
+      "cta": "See the full process →"
+    },
+    "loveNotes": {
+      "marker": "2.0 Love Notes"
+    },
+    "begin": {
+      "marker": "3.0 Begin",
+      "headline": "Ready To Begin Your Story?",
+      "body": "A free consultation is the first step. No pressure, no obligation — just a conversation about the dress only you could wear.",
+      "cta": "Begin your journey →"
+    }
+  },
+  "collections": {
+    "meta": {
+      "title": "Collections — LM Weddyli",
+      "description": "Twelve made-to-measure silhouettes across two collections — Lumière and Harmattan."
+    },
+    "hero": {
+      "eyebrow": "The Collection",
+      "headline": "Where Light Meets Structure",
+      "subline": "Two collections, twelve silhouettes — Lumière and Harmattan, each gown made to your measurements alone."
+    },
+    "twoCollections": {
+      "marker": "0.1 The Two Collections",
+      "headline": "Structure And Light, Named"
+    },
+    "looks": {
+      "marker": "0.2 The Looks",
+      "headline": "Browse The Full Collection",
+      "filterAll": "All",
+      "filterAriaLabel": "Filter by collection"
+    }
+  },
+  "collectionDetail": {
+    "metaTitleSuffix": "— LM Weddyli",
+    "breadcrumbCollections": "Collections",
+    "detail": {
+      "marker": "0.1 The Detail"
+    },
+    "loveNotes": {
+      "marker": "1.0 Love Notes"
+    },
+    "recommended": {
+      "marker": "2.0 Recommended",
+      "headline": "You Might Also Love"
+    },
+    "details": {
+      "productionTime": "Production Time",
+      "startingAt": "Starting At",
+      "inquireAbout": "Inquire About {name}",
+      "whatsappNote": "Linda responds within 24 hours via WhatsApp.",
+      "differentLook": "or begin with a different look →"
+    },
+    "stickyBar": {
+      "inquire": "Inquire →"
+    },
+    "breadcrumbAriaLabel": "Breadcrumb"
+  },
+  "process": {
+    "meta": {
+      "title": "The Process — LM Weddyli",
+      "description": "From first conversation to final stitch — how a made-to-measure LM Weddyli gown comes to life, from Lubumbashi to Istanbul."
+    },
+    "hero": {
+      "marker": "02 The Process",
+      "headline": "From first conversation to final stitch."
+    },
+    "timeline": {
+      "week0": "Week 0",
+      "week1_2": "Week 1 – 2",
+      "week3": "Week 3",
+      "week4_12": "Week 4 – 12",
+      "week13_14": "Week 13 – 14",
+      "consultation": "Consultation",
+      "designFabric": "Design & Fabric",
+      "measurements": "Measurements",
+      "creation": "Creation",
+      "delivery": "Delivery"
+    },
+    "fiveSteps": {
+      "marker": "2.1 Five Steps",
+      "headline": "Every Detail, Considered"
+    },
+    "measurementGuide": {
+      "marker": "2.2 Measurement Guide",
+      "headline": "Eight Measurements, Taken At Home",
+      "body": "No showroom visit required. A written guide and a video call with Linda walk you through each of these, step by step."
+    },
+    "inTheirWords": {
+      "marker": "2.3 In Their Words"
+    },
+    "begin": {
+      "marker": "2.4 Begin",
+      "headline": "Ready To Begin Your Story?",
+      "body": "A free consultation is the first step. No pressure, no obligation — just a conversation about the dress only you could wear.",
+      "cta": "Begin your journey →"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Linda Monga — LM Weddyli",
+      "description": "Linda Monga is the founder of LM Weddyli, a made-to-measure bridal house designed in Lubumbashi and hand-crafted in Istanbul."
+    },
+    "hero": {
+      "marker": "03 The Maker",
+      "headline": "Linda Monga.",
+      "subline": "Founder · LM Weddyli · Lubumbashi"
+    },
+    "herStory": {
+      "marker": "3.1 Her Story"
+    },
+    "atelier": {
+      "marker": "3.2 The Atelier"
+    },
+    "values": {
+      "marker": "3.3 What We Stand For",
+      "headline": "The Principles Behind Every Gown"
+    },
+    "inHerWords": {
+      "marker": "3.4 In Her Words"
+    },
+    "begin": {
+      "marker": "3.5 Begin",
+      "headline": "Let’s Design Your Story",
+      "body": "Whether you’re ready to begin or simply want to see the collection first, Linda would love to hear from you.",
+      "ctaInquire": "Begin your journey →",
+      "ctaCollection": "View the collection →"
+    }
+  },
+  "loveNotes": {
+    "meta": {
+      "title": "Love Notes — LM Weddyli",
+      "description": "What our brides say — real words from the women who wore an LM Weddyli gown."
+    },
+    "header": {
+      "marker": "04 Love Notes"
+    },
+    "moreStories": {
+      "marker": "4.1 More Stories",
+      "headline": "Every Dress, A Different Story"
+    },
+    "followAlong": {
+      "marker": "4.2 Follow Along",
+      "instagram": "Instagram →",
+      "tiktok": "TikTok →"
+    },
+    "availability": {
+      "marker": "4.3 Availability"
+    },
+    "begin": {
+      "marker": "4.4 Begin",
+      "headline": "Ready To Write Your Own?",
+      "body": "A free consultation is the first step. No pressure, no obligation — just a conversation about the dress only you could wear.",
+      "cta": "Begin your journey →"
+    }
+  },
+  "inquire": {
+    "meta": {
+      "title": "Inquire — LM Weddyli",
+      "description": "Tell us about your wedding. Linda reviews every inquiry personally and responds within 24 hours."
+    },
+    "header": {
+      "marker": "07 Begin",
+      "headline": "Tell us about your wedding",
+      "subline": "Linda reviews every inquiry personally and responds within 24 hours."
+    },
+    "steps": {
+      "aboutYou": "About You",
+      "yourVision": "Your Vision",
+      "yourPlans": "Your Plans"
+    },
+    "fields": {
+      "firstName": {
+        "label": "Your first name",
+        "placeholder": "Linda, Marie, Amara..."
+      },
+      "city": {
+        "label": "Your city",
+        "placeholder": "Lubumbashi, Kinshasa..."
+      },
+      "whatsapp": {
+        "label": "WhatsApp number",
+        "placeholder": "+243 ...",
+        "note": "Linda will reach out here within 24 hours."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Optional — WhatsApp is enough"
+      },
+      "serviceType": {
+        "label": "What are you looking for?"
+      },
+      "silhouette": {
+        "label": "Silhouette"
+      },
+      "dreamDress": {
+        "label": "Describe your dream dress",
+        "placeholder": "Tell Linda about the silhouette, fabric, or feeling you're imagining..."
+      },
+      "inspirationLink": {
+        "label": "Inspiration link",
+        "placeholder": "A Pinterest board, Instagram post..."
+      },
+      "weddingMonth": {
+        "label": "Wedding month",
+        "placeholder": "June"
+      },
+      "weddingYear": {
+        "label": "Wedding year",
+        "placeholder": "2027"
+      },
+      "weddingCity": {
+        "label": "Wedding city/country",
+        "placeholder": "Lubumbashi, DRC..."
+      },
+      "budget": {
+        "label": "Budget range"
+      },
+      "foundUs": {
+        "label": "How did you find us?"
+      },
+      "optional": "(Optional)"
+    },
+    "options": {
+      "service": {
+        "customGown": "Custom Gown",
+        "rental": "Rental",
+        "notSure": "Not sure yet"
+      },
+      "silhouette": {
+        "aLine": "A-Line",
+        "ballGown": "Ball Gown",
+        "mermaid": "Mermaid",
+        "slip": "Slip",
+        "notSure": "Not sure"
+      },
+      "budget": {
+        "under500": "Under $500",
+        "range500_1200": "$500–$1,200",
+        "range1200_2500": "$1,200–$2,500",
+        "over2500": "$2,500+"
+      },
+      "foundUs": {
+        "instagram": "Instagram",
+        "tiktok": "TikTok",
+        "friend": "A friend",
+        "other": "Other"
+      }
+    },
+    "errors": {
+      "firstName": "Please share your first name.",
+      "city": "Please share your city.",
+      "whatsapp": "A WhatsApp number is required.",
+      "serviceType": "Please choose one option.",
+      "dreamDress": "Tell us a little about the dress.",
+      "weddingMonth": "Wedding month is required.",
+      "weddingYear": "Wedding year is required.",
+      "weddingCity": "Wedding city is required.",
+      "budget": "Please select a budget range.",
+      "foundUs": "Please tell us how you found us.",
+      "submitDefault": "Something went wrong. Please try again.",
+      "submitNetwork": "Something went wrong. Please check your connection and try again."
+    },
+    "actions": {
+      "back": "← Back",
+      "continue": "Continue →",
+      "sending": "Sending...",
+      "send": "Send My Inquiry"
+    },
+    "privacyNoteMobile": "Linda reviews every inquiry personally — private, WhatsApp only.",
+    "responseNote": "Linda responds within 24 hours via WhatsApp",
+    "privacyNote": "Your information is private and never shared",
+    "trustPanel": {
+      "heading": "Why LM Weddyli"
+    },
+    "confirmation": {
+      "received": "✓ Received",
+      "thankYou": "Thank you, {firstName}.",
+      "body": "Linda has received your inquiry and will review it personally. She’ll reach out to you on WhatsApp within 24 hours to begin the conversation about your dress.",
+      "whatsappCta": "Message Linda on WhatsApp →",
+      "viewCollection": "← View the collection",
+      "readLoveNotes": "Read love notes →"
+    },
+    "formProgressLabel": "Form progress"
+  },
+  "myDress": {
+    "meta": {
+      "title": "Your Gown's Journey — LM Weddyli",
+      "description": "Follow the progress of your custom gown, from consultation to delivery."
+    },
+    "notFound": {
+      "marker": "0.1 Not Found",
+      "headline": "We couldn't find that gown",
+      "body": "This link may have expired or been mistyped. If you believe this is a mistake, please reach out to Linda directly on WhatsApp and she'll be glad to help."
+    },
+    "header": {
+      "marker": "0.1 Your Gown",
+      "greeting": "Hello, {firstName}.",
+      "expectedDelivery": "Expected Delivery — {date}"
+    },
+    "journey": {
+      "marker": "0.2 The Journey",
+      "headline": "Where Your Gown Stands"
+    },
+    "stages": {
+      "consultation": "Consultation",
+      "design": "Design",
+      "measurements": "Measurements",
+      "production": "Production",
+      "arrived": "Arrived",
+      "delivered": "Delivered"
+    },
+    "progress": {
+      "marker": "0.3 Progress",
+      "headline": "From the Atelier",
+      "emptyHeadline": "Your gown is being brought to life.",
+      "emptyBody": "Linda is preparing your gown — your first update will appear here soon.",
+      "photoUnavailable": "Photo unavailable"
+    },
+    "footerNote": "With care, Linda Monga · LM Weddyli"
+  }
+}
